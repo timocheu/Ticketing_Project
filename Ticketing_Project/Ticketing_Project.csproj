@@ -88,5 +88,14 @@
   <ItemGroup>
     <None Include="Resources\Login Section.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBarRemovedBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comfortable flights, turns into happy travel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Background Photo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

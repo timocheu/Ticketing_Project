@@ -63,6 +63,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Comfortable_flights__turns_into_happy_travel {
+            get {
+                object obj = ResourceManager.GetObject("Comfortable flights, turns into happy travel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Background_Photo {
             get {
                 object obj = ResourceManager.GetObject("Login Background Photo", resourceCulture);
@@ -73,9 +83,29 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Login_Background_Photo1 {
+            get {
+                object obj = ResourceManager.GetObject("Login Background Photo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Section {
             get {
                 object obj = ResourceManager.GetObject("Login Section", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginBarRemovedBackground {
+            get {
+                object obj = ResourceManager.GetObject("LoginBarRemovedBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

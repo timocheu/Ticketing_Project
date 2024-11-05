@@ -10,13 +10,18 @@ using System.Windows.Forms;
 
 namespace Ticketing_Project
 {
-    public partial class form_Login : Form
+    public partial class Form_Login : Form
     {
-        Utilities util = new Utilities();
-        public form_Login()
+        readonly Utilities util = new Utilities();
+        public Form_Login()
         {
             InitializeComponent();
             util.Change_Font(this);
         }
+
+        private void cb_ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+} 
