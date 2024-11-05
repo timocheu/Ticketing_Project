@@ -12,9 +12,11 @@ namespace Ticketing_Project
 {
     public partial class form_Login : Form
     {
+        Utilities util = new Utilities();
         public form_Login()
         {
             InitializeComponent();
+            util.Change_Font(this);
         }
     }
 }
