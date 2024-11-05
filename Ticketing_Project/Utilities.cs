@@ -16,7 +16,7 @@ namespace Ticketing_Project
             // Create a font variable
             PrivateFontCollection pfc = new PrivateFontCollection();
             // Locate the path of the font.ttf
-            pfc.AddFontFile("C:\\Users\\ACT-STUDENT\\Desktop\\Ticketing_Project\\Ticketing_Project\\Resources\\Poppins-Regular.ttf");
+            pfc.AddFontFile(System.Environment.CurrentDirectory + "\\..\\..\\Resources\\Poppins-Regular.ttf");
             // Loop through all the characters in the forms and change it to the corresponding font
             foreach (Control c in form.Controls)
             {
