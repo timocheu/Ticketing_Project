@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            SuspendLayout();
             // 
             // HomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 755);
-            this.Name = "HomePage";
-            this.Text = "Cloud Express";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1598, 871);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "HomePage";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Cloud Express";
+            ResumeLayout(false);
         }
 
         #endregion

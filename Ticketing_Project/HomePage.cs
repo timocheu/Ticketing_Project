@@ -12,7 +12,7 @@ namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
-        public HomePage()
+        public HomePage(Account account)
         {
             InitializeComponent();
         }

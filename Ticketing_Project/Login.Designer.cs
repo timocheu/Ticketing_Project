@@ -107,6 +107,7 @@
             btn_Login.TabIndex = 5;
             btn_Login.Text = "Log In";
             btn_Login.UseVisualStyleBackColor = false;
+            btn_Login.Click += btn_Login_Click;
             // 
             // pb_LoginSection
             // 
