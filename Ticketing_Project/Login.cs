@@ -18,10 +18,5 @@ namespace Ticketing_Project
             InitializeComponent();
             util.Change_Font(this);
         }
-
-        private void cb_ShowPassword_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 } 

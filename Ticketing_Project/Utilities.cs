@@ -13,14 +13,17 @@ namespace Ticketing_Project
     {
         public void Change_Font(Form form)
         {
-            // Create a font variable
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            // Locate the path of the font.ttf
-            pfc.AddFontFile(System.Environment.CurrentDirectory + "\\..\\..\\Resources\\Poppins-Regular.ttf");
-            // Loop through all the characters in the forms and change it to the corresponding font
-            foreach (Control c in form.Controls)
+            if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows))
             {
-                c.Font = new Font(pfc.Families[0], c.Font.Size, c.Font.Style);
+                // Create a font variable
+                PrivateFontCollection pfc = new PrivateFontCollection();
+                // Locate the path of the font.ttf
+                pfc.AddFontFile(System.Environment.CurrentDirectory + "\\..\\..\\..\\Resources\\Poppins-Regular.ttf");
+                // Loop through all the characters in the forms and change it to the corresponding font
+                foreach (Control c in form.Controls)
+                {
+                    c.Font = new Font(pfc.Families[0], c.Font.Size, c.Font.Style);
+                }
             }
         }
     }
