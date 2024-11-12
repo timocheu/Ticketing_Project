@@ -22,7 +22,7 @@ namespace Ticketing_Project.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Ticketing_Project.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Ticketing_Project.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Ticketing_Project.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,57 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Comfortable_flights__turns_into_happy_travel {
+        public static System.Drawing.Bitmap Brand_Leftside_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Brand Leftside Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Button_Book_Flight {
+            get {
+                object obj = ResourceManager.GetObject("Button Book Flight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap button_for_book_flight {
+            get {
+                object obj = ResourceManager.GetObject("button for book flight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap button_for_book_flight1 {
+            get {
+                object obj = ResourceManager.GetObject("button for book flight1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CardDealsBackground {
+            get {
+                object obj = ResourceManager.GetObject("CardDealsBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Comfortable_flights__turns_into_happy_travel {
             get {
                 object obj = ResourceManager.GetObject("Comfortable flights, turns into happy travel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +123,7 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Login_Background_Photo {
+        public static System.Drawing.Bitmap Login_Background_Photo {
             get {
                 object obj = ResourceManager.GetObject("Login Background Photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +133,7 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Login_Background_Photo1 {
+        public static System.Drawing.Bitmap Login_Background_Photo1 {
             get {
                 object obj = ResourceManager.GetObject("Login Background Photo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +143,7 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Login_Section {
+        public static System.Drawing.Bitmap Login_Section {
             get {
                 object obj = ResourceManager.GetObject("Login Section", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +153,7 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LoginBarRemovedBackground {
+        public static System.Drawing.Bitmap LoginBarRemovedBackground {
             get {
                 object obj = ResourceManager.GetObject("LoginBarRemovedBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,10 +163,30 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Poppins_Regular {
+        public static byte[] Poppins_Regular {
             get {
                 object obj = ResourceManager.GetObject("Poppins_Regular", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap typcn_arrow_up_outline {
+            get {
+                object obj = ResourceManager.GetObject("typcn_arrow-up-outline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap typcn_arrow_up_outline1 {
+            get {
+                object obj = ResourceManager.GetObject("typcn_arrow-up-outline1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

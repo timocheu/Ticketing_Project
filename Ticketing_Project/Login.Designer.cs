@@ -135,7 +135,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(1380, 756);
+            ClientSize = new System.Drawing.Size(1370, 749);
             Controls.Add(cb_ShowPassword);
             Controls.Add(lbl_ForgotPassword);
             Controls.Add(btn_Login);
