@@ -63,7 +63,58 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Brand_Leftside_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Brand Leftside Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Button_Book_Flight {
+            get {
+                object obj = ResourceManager.GetObject("Button Book Flight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap button_for_book_flight {
+            get {
+                object obj = ResourceManager.GetObject("button for book flight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap button_for_book_flight1 {
+            get {
+                object obj = ResourceManager.GetObject("button for book flight1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CardDealsBackground {
         public static System.Drawing.Bitmap CalcutorButtonRemovedBackground {
+            get {
+                object obj = ResourceManager.GetObject("CardDealsBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Comfortable_flights__turns_into_happy_travel {
             get {
                 object obj = ResourceManager.GetObject("CalcutorButtonRemovedBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
