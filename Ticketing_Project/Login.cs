@@ -22,13 +22,13 @@ namespace Ticketing_Project
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            if (txt_LoginEmail.Text == dummyAcc.Email && 
+            if (txt_LoginEmail.Text == dummyAcc.Email &&
                 txt_PasswordLogin.Text == dummyAcc.Password)
             {
                 HomePage home = new HomePage(dummyAcc);
                 this.Hide();
                 home.Show();
-            } 
+            }
             else
             {
                 MessageBox.Show("Incorrect credentials");
