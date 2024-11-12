@@ -101,7 +101,7 @@
             // pb_CalculatorFromSelection
             // 
             pb_CalculatorFromSelection.BackColor = System.Drawing.SystemColors.Window;
-            pb_CalculatorFromSelection.Image = Properties.Resources.From_Selection;
+            pb_CalculatorFromSelection.Image = Properties.Resources.from_box;
             pb_CalculatorFromSelection.Location = new System.Drawing.Point(34, 90);
             pb_CalculatorFromSelection.Name = "pb_CalculatorFromSelection";
             pb_CalculatorFromSelection.Size = new System.Drawing.Size(310, 50);
@@ -111,7 +111,7 @@
             // pb_CalculatorDestination
             // 
             pb_CalculatorDestination.BackColor = System.Drawing.SystemColors.Window;
-            pb_CalculatorDestination.Image = Properties.Resources.From_Selection;
+            pb_CalculatorDestination.Image = Properties.Resources.from_box;
             pb_CalculatorDestination.Location = new System.Drawing.Point(383, 90);
             pb_CalculatorDestination.Name = "pb_CalculatorDestination";
             pb_CalculatorDestination.Size = new System.Drawing.Size(310, 50);

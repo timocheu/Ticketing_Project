@@ -103,10 +103,9 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap CardDealsBackground {
         public static System.Drawing.Bitmap CalcutorButtonRemovedBackground {
             get {
-                object obj = ResourceManager.GetObject("CardDealsBackground", resourceCulture);
+                object obj = ResourceManager.GetObject("CalcutorButtonRemovedBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -114,9 +113,9 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Comfortable_flights__turns_into_happy_travel {
+        public static System.Drawing.Bitmap CardDealsBackground {
             get {
-                object obj = ResourceManager.GetObject("CalcutorButtonRemovedBackground", resourceCulture);
+                object obj = ResourceManager.GetObject("CardDealsBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -177,16 +176,6 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap from_box {
             get {
                 object obj = ResourceManager.GetObject("from box", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap From_Selection {
-            get {
-                object obj = ResourceManager.GetObject("From Selection", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -257,6 +246,16 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap typcn_arrow_up_outline {
             get {
                 object obj = ResourceManager.GetObject("typcn_arrow-up-outline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap typcn_arrow_up_outline1 {
+            get {
+                object obj = ResourceManager.GetObject("typcn_arrow-up-outline1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

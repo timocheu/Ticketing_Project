@@ -127,8 +127,9 @@
   <data name="Comfortable flights, turns into happy travel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Comfortable flights, turns into happy travel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	<data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</data>
   <data name="typcn_arrow-up-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\typcn_arrow-up-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,8 +145,9 @@
   <data name="Button Book Flight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Book Flight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	<data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</data>
   <data name="typcn_arrow-up-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\typcn_arrow-up-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
