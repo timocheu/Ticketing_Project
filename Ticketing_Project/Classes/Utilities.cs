@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ticketing_Project
+namespace Ticketing_Project.Classes
 {
     public class Utilities
     {
@@ -18,7 +18,7 @@ namespace Ticketing_Project
                 // Create a font variable
                 PrivateFontCollection pfc = new PrivateFontCollection();
                 // Locate the path of the font.ttf
-                pfc.AddFontFile(System.Environment.CurrentDirectory + "\\..\\..\\..\\Resources\\Poppins-Regular.ttf");
+                pfc.AddFontFile(Environment.CurrentDirectory + "\\..\\..\\..\\Resources\\Poppins-Regular.ttf");
                 // Loop through all the characters in the forms and change it to the corresponding font
                 foreach (Control c in form.Controls)
                 {

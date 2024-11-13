@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ticketing_Project
+namespace Ticketing_Project.Classes
 {
     public class Account
     {
@@ -12,23 +12,26 @@ namespace Ticketing_Project
         readonly private string email;
         readonly private string password;
 
-        public Account(string _Name, string _Email, String _Password)
+        public Account(string _Name, string _Email, string _Password)
         {
             name = _Name;
             email = _Email;
             password = _Password;
         }
 
-        public string Name {
-            get {return name;}
+        public string Name
+        {
+            get { return name; }
         }
 
-        public string Email{
-            get {return email;}
+        public string Email
+        {
+            get { return email; }
         }
 
-        public string Password {
-            get {return password;}
+        public string Password
+        {
+            get { return password; }
         }
     }
 }

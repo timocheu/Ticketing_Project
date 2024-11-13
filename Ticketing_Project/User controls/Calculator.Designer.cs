@@ -38,8 +38,6 @@
             pb_CalculatorBackground = new System.Windows.Forms.PictureBox();
             btn_Calculate = new System.Windows.Forms.Button();
             dtp_FlightDate = new System.Windows.Forms.DateTimePicker();
-            txt_CalculatorFrom = new System.Windows.Forms.TextBox();
-            txt_CalculatorDestination = new System.Windows.Forms.TextBox();
             cbb_From = new System.Windows.Forms.ComboBox();
             cbb_Destination = new System.Windows.Forms.ComboBox();
             lbl_TripType = new System.Windows.Forms.Label();
@@ -58,9 +56,10 @@
             cb_BoardClass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cb_BoardClass.FormattingEnabled = true;
             cb_BoardClass.Items.AddRange(new object[] { "Economy", "Business Class" });
-            cb_BoardClass.Location = new System.Drawing.Point(338, 55);
+            cb_BoardClass.Location = new System.Drawing.Point(291, 74);
+            cb_BoardClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cb_BoardClass.Name = "cb_BoardClass";
-            cb_BoardClass.Size = new System.Drawing.Size(129, 28);
+            cb_BoardClass.Size = new System.Drawing.Size(113, 23);
             cb_BoardClass.TabIndex = 2;
             cb_BoardClass.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
@@ -70,18 +69,20 @@
             cbb_NumberOfPassengers.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_NumberOfPassengers.FormattingEnabled = true;
             cbb_NumberOfPassengers.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cbb_NumberOfPassengers.Location = new System.Drawing.Point(176, 55);
+            cbb_NumberOfPassengers.Location = new System.Drawing.Point(149, 74);
+            cbb_NumberOfPassengers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_NumberOfPassengers.Name = "cbb_NumberOfPassengers";
-            cbb_NumberOfPassengers.Size = new System.Drawing.Size(151, 28);
+            cbb_NumberOfPassengers.Size = new System.Drawing.Size(133, 23);
             cbb_NumberOfPassengers.TabIndex = 3;
             // 
             // pb_CalculatorPeopleIcon
             // 
             pb_CalculatorPeopleIcon.BackColor = System.Drawing.Color.White;
             pb_CalculatorPeopleIcon.Image = Properties.Resources.ic_baseline_people;
-            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(155, 60);
+            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(131, 75);
+            pb_CalculatorPeopleIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorPeopleIcon.Name = "pb_CalculatorPeopleIcon";
-            pb_CalculatorPeopleIcon.Size = new System.Drawing.Size(17, 17);
+            pb_CalculatorPeopleIcon.Size = new System.Drawing.Size(15, 13);
             pb_CalculatorPeopleIcon.TabIndex = 4;
             pb_CalculatorPeopleIcon.TabStop = false;
             // 
@@ -92,9 +93,10 @@
             cbb_TripType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_TripType.FormattingEnabled = true;
             cbb_TripType.Items.AddRange(new object[] { "One Way", "Round Trip" });
-            cbb_TripType.Location = new System.Drawing.Point(37, 55);
+            cbb_TripType.Location = new System.Drawing.Point(27, 74);
+            cbb_TripType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_TripType.Name = "cbb_TripType";
-            cbb_TripType.Size = new System.Drawing.Size(112, 28);
+            cbb_TripType.Size = new System.Drawing.Size(98, 23);
             cbb_TripType.TabIndex = 5;
             cbb_TripType.SelectedIndexChanged += cb_CalculatorWay_SelectedIndexChanged;
             // 
@@ -102,9 +104,10 @@
             // 
             pb_CalculatorFromSelection.BackColor = System.Drawing.SystemColors.Window;
             pb_CalculatorFromSelection.Image = Properties.Resources.from_box;
-            pb_CalculatorFromSelection.Location = new System.Drawing.Point(34, 90);
+            pb_CalculatorFromSelection.Location = new System.Drawing.Point(25, 101);
+            pb_CalculatorFromSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorFromSelection.Name = "pb_CalculatorFromSelection";
-            pb_CalculatorFromSelection.Size = new System.Drawing.Size(310, 50);
+            pb_CalculatorFromSelection.Size = new System.Drawing.Size(310, 52);
             pb_CalculatorFromSelection.TabIndex = 6;
             pb_CalculatorFromSelection.TabStop = false;
             // 
@@ -112,9 +115,10 @@
             // 
             pb_CalculatorDestination.BackColor = System.Drawing.SystemColors.Window;
             pb_CalculatorDestination.Image = Properties.Resources.from_box;
-            pb_CalculatorDestination.Location = new System.Drawing.Point(383, 90);
+            pb_CalculatorDestination.Location = new System.Drawing.Point(394, 101);
+            pb_CalculatorDestination.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorDestination.Name = "pb_CalculatorDestination";
-            pb_CalculatorDestination.Size = new System.Drawing.Size(310, 50);
+            pb_CalculatorDestination.Size = new System.Drawing.Size(314, 52);
             pb_CalculatorDestination.TabIndex = 7;
             pb_CalculatorDestination.TabStop = false;
             // 
@@ -122,18 +126,21 @@
             // 
             pb_CalculatorArrow.BackColor = System.Drawing.SystemColors.Window;
             pb_CalculatorArrow.Image = Properties.Resources.typcn_arrow_up_outline;
-            pb_CalculatorArrow.Location = new System.Drawing.Point(351, 106);
+            pb_CalculatorArrow.Location = new System.Drawing.Point(355, 113);
+            pb_CalculatorArrow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorArrow.Name = "pb_CalculatorArrow";
-            pb_CalculatorArrow.Size = new System.Drawing.Size(24, 24);
+            pb_CalculatorArrow.Size = new System.Drawing.Size(24, 26);
             pb_CalculatorArrow.TabIndex = 8;
             pb_CalculatorArrow.TabStop = false;
             // 
             // pb_CalculatorBackground
             // 
+            pb_CalculatorBackground.BackColor = System.Drawing.SystemColors.Control;
             pb_CalculatorBackground.Image = Properties.Resources.Flight_Calculator1;
-            pb_CalculatorBackground.Location = new System.Drawing.Point(9, 16);
+            pb_CalculatorBackground.Location = new System.Drawing.Point(8, 12);
+            pb_CalculatorBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorBackground.Name = "pb_CalculatorBackground";
-            pb_CalculatorBackground.Size = new System.Drawing.Size(983, 163);
+            pb_CalculatorBackground.Size = new System.Drawing.Size(988, 161);
             pb_CalculatorBackground.TabIndex = 10;
             pb_CalculatorBackground.TabStop = false;
             pb_CalculatorBackground.Click += pb_CalculatorBackground_Click_1;
@@ -148,9 +155,10 @@
             btn_Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_Calculate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_Calculate.ForeColor = System.Drawing.Color.White;
-            btn_Calculate.Location = new System.Drawing.Point(848, 88);
+            btn_Calculate.Location = new System.Drawing.Point(843, 101);
+            btn_Calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             btn_Calculate.Name = "btn_Calculate";
-            btn_Calculate.Size = new System.Drawing.Size(125, 50);
+            btn_Calculate.Size = new System.Drawing.Size(127, 49);
             btn_Calculate.TabIndex = 11;
             btn_Calculate.Text = "Calculate";
             btn_Calculate.UseVisualStyleBackColor = false;
@@ -158,39 +166,13 @@
             // dtp_FlightDate
             // 
             dtp_FlightDate.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dtp_FlightDate.Enabled = false;
             dtp_FlightDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dtp_FlightDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dtp_FlightDate.Location = new System.Drawing.Point(702, 97);
+            dtp_FlightDate.Location = new System.Drawing.Point(714, 113);
+            dtp_FlightDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             dtp_FlightDate.Name = "dtp_FlightDate";
-            dtp_FlightDate.Size = new System.Drawing.Size(140, 38);
+            dtp_FlightDate.Size = new System.Drawing.Size(123, 32);
             dtp_FlightDate.TabIndex = 12;
-            // 
-            // txt_CalculatorFrom
-            // 
-            txt_CalculatorFrom.BackColor = System.Drawing.SystemColors.Window;
-            txt_CalculatorFrom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            txt_CalculatorFrom.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            txt_CalculatorFrom.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            txt_CalculatorFrom.Location = new System.Drawing.Point(47, 95);
-            txt_CalculatorFrom.Name = "txt_CalculatorFrom";
-            txt_CalculatorFrom.ReadOnly = true;
-            txt_CalculatorFrom.Size = new System.Drawing.Size(56, 19);
-            txt_CalculatorFrom.TabIndex = 13;
-            txt_CalculatorFrom.Text = "From";
-            // 
-            // txt_CalculatorDestination
-            // 
-            txt_CalculatorDestination.BackColor = System.Drawing.SystemColors.Window;
-            txt_CalculatorDestination.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            txt_CalculatorDestination.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            txt_CalculatorDestination.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            txt_CalculatorDestination.Location = new System.Drawing.Point(396, 96);
-            txt_CalculatorDestination.Name = "txt_CalculatorDestination";
-            txt_CalculatorDestination.ReadOnly = true;
-            txt_CalculatorDestination.Size = new System.Drawing.Size(56, 19);
-            txt_CalculatorDestination.TabIndex = 14;
-            txt_CalculatorDestination.Text = "To";
             // 
             // cbb_From
             // 
@@ -199,9 +181,10 @@
             cbb_From.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbb_From.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_From.FormattingEnabled = true;
-            cbb_From.Location = new System.Drawing.Point(47, 94);
+            cbb_From.Location = new System.Drawing.Point(32, 108);
+            cbb_From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_From.Name = "cbb_From";
-            cbb_From.Size = new System.Drawing.Size(290, 43);
+            cbb_From.Size = new System.Drawing.Size(299, 36);
             cbb_From.TabIndex = 15;
             // 
             // cbb_Destination
@@ -211,9 +194,10 @@
             cbb_Destination.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbb_Destination.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_Destination.FormattingEnabled = true;
-            cbb_Destination.Location = new System.Drawing.Point(394, 93);
+            cbb_Destination.Location = new System.Drawing.Point(407, 108);
+            cbb_Destination.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_Destination.Name = "cbb_Destination";
-            cbb_Destination.Size = new System.Drawing.Size(290, 43);
+            cbb_Destination.Size = new System.Drawing.Size(289, 36);
             cbb_Destination.TabIndex = 16;
             // 
             // lbl_TripType
@@ -221,9 +205,9 @@
             lbl_TripType.AutoSize = true;
             lbl_TripType.BackColor = System.Drawing.Color.White;
             lbl_TripType.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_TripType.Location = new System.Drawing.Point(40, 26);
+            lbl_TripType.Location = new System.Drawing.Point(30, 53);
             lbl_TripType.Name = "lbl_TripType";
-            lbl_TripType.Size = new System.Drawing.Size(82, 25);
+            lbl_TripType.Size = new System.Drawing.Size(69, 20);
             lbl_TripType.TabIndex = 17;
             lbl_TripType.Text = "Trip Type";
             // 
@@ -232,9 +216,9 @@
             lbl_NumberOfPassenger.AutoSize = true;
             lbl_NumberOfPassenger.BackColor = System.Drawing.Color.White;
             lbl_NumberOfPassenger.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_NumberOfPassenger.Location = new System.Drawing.Point(176, 27);
+            lbl_NumberOfPassenger.Location = new System.Drawing.Point(149, 53);
             lbl_NumberOfPassenger.Name = "lbl_NumberOfPassenger";
-            lbl_NumberOfPassenger.Size = new System.Drawing.Size(115, 25);
+            lbl_NumberOfPassenger.Size = new System.Drawing.Size(93, 20);
             lbl_NumberOfPassenger.TabIndex = 18;
             lbl_NumberOfPassenger.Text = "# Passengers";
             // 
@@ -243,15 +227,15 @@
             lbl_BoardClass.AutoSize = true;
             lbl_BoardClass.BackColor = System.Drawing.Color.White;
             lbl_BoardClass.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_BoardClass.Location = new System.Drawing.Point(341, 28);
+            lbl_BoardClass.Location = new System.Drawing.Point(291, 53);
             lbl_BoardClass.Name = "lbl_BoardClass";
-            lbl_BoardClass.Size = new System.Drawing.Size(104, 25);
+            lbl_BoardClass.Size = new System.Drawing.Size(86, 20);
             lbl_BoardClass.TabIndex = 19;
             lbl_BoardClass.Text = "Board Class";
             // 
             // Calculator
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Transparent;
             Controls.Add(lbl_BoardClass);
@@ -259,8 +243,6 @@
             Controls.Add(lbl_TripType);
             Controls.Add(cbb_Destination);
             Controls.Add(cbb_From);
-            Controls.Add(txt_CalculatorDestination);
-            Controls.Add(txt_CalculatorFrom);
             Controls.Add(dtp_FlightDate);
             Controls.Add(btn_Calculate);
             Controls.Add(pb_CalculatorArrow);
@@ -271,8 +253,9 @@
             Controls.Add(cbb_NumberOfPassengers);
             Controls.Add(cb_BoardClass);
             Controls.Add(pb_CalculatorBackground);
+            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Name = "Calculator";
-            Size = new System.Drawing.Size(1000, 183);
+            Size = new System.Drawing.Size(1003, 178);
             ((System.ComponentModel.ISupportInitialize)pb_CalculatorPeopleIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_CalculatorFromSelection).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_CalculatorDestination).EndInit();
@@ -294,8 +277,6 @@
         private System.Windows.Forms.PictureBox pb_CalculatorBackground;
         private System.Windows.Forms.Button btn_Calculate;
         private System.Windows.Forms.DateTimePicker dtp_FlightDate;
-        private System.Windows.Forms.TextBox txt_CalculatorFrom;
-        private System.Windows.Forms.TextBox txt_CalculatorDestination;
         private System.Windows.Forms.ComboBox cbb_From;
         private System.Windows.Forms.ComboBox cbb_Destination;
         private System.Windows.Forms.Label lbl_TripType;
