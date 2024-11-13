@@ -133,6 +133,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Content_background {
+            get {
+                object obj = ResourceManager.GetObject("Content background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Date_Selection {
             get {
                 object obj = ResourceManager.GetObject("Date Selection", resourceCulture);
@@ -226,6 +236,26 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap LoginBarRemovedBackground {
             get {
                 object obj = ResourceManager.GetObject("LoginBarRemovedBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NavigationButtonRem_Background {
+            get {
+                object obj = ResourceManager.GetObject("NavigationButtonRem_Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NavigationLogo {
+            get {
+                object obj = ResourceManager.GetObject("NavigationLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

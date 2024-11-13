@@ -123,7 +123,7 @@
             // 
             pb_LoginBackgroundPhoto.BackColor = System.Drawing.Color.Transparent;
             pb_LoginBackgroundPhoto.Image = Properties.Resources.Login_Background_Photo1;
-            pb_LoginBackgroundPhoto.Location = new System.Drawing.Point(701, 12);
+            pb_LoginBackgroundPhoto.Location = new System.Drawing.Point(700, 19);
             pb_LoginBackgroundPhoto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             pb_LoginBackgroundPhoto.Name = "pb_LoginBackgroundPhoto";
             pb_LoginBackgroundPhoto.Size = new System.Drawing.Size(666, 742);
@@ -135,7 +135,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            ClientSize = new System.Drawing.Size(1380, 756);
+            ClientSize = new System.Drawing.Size(1380, 768);
             Controls.Add(cb_ShowPassword);
             Controls.Add(lbl_ForgotPassword);
             Controls.Add(btn_Login);

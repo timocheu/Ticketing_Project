@@ -124,38 +124,35 @@
   <data name="LoginBarRemovedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginBarRemovedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Comfortable flights, turns into happy travel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Comfortable flights, turns into happy travel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-	<data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-		<value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</data>
-  <data name="typcn_arrow-up-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\typcn_arrow-up-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="typcn_arrow-up-outline1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\typcn_arrow-up-outline1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Brand Leftside Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Brand Leftside Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="typcn_arrow-up-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\typcn_arrow-up-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardDealsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardDealsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Comfortable flights, turns into happy travel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Comfortable flights, turns into happy travel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login Background Photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Background Photo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flight Calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flight Calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NavigationLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavigationLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Button Book Flight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Book Flight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-	<data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
-		<value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</data>
-  <data name="typcn_arrow-up-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\typcn_arrow-up-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Flight Calculator1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Flight Calculator1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login Background Photo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Background Photo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="from box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\from box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flight Class" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flight Class.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,28 +163,28 @@
   <data name="Login Section" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login Section.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="from box" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\from box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button for book flight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button for book flight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Flight Calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Flight Calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button for book flight1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button for book flight1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CalcutorButtonRemovedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CalcutorButtonRemovedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login Background Photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login Background Photo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Flight Calculator1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flight Calculator1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button for book flight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button for book flight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Brand Leftside Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brand Leftside Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CardDealsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CardDealsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login Background Photo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login Background Photo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LoginBarRemovedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginBarRemovedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Content background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Content background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button for book flight1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button for book flight1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NavigationButtonRem_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavigationButtonRem_Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

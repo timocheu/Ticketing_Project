@@ -13,9 +13,11 @@ namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
-        public HomePage(Account account)
+        public HomePage(Account account, Utilities util)
         {
             InitializeComponent();
+            // Change the fonts of this form
+            util.Change_Font(this);
         }
     }
 }
