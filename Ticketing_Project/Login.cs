@@ -13,12 +13,12 @@ namespace Ticketing_Project
 {
     public partial class Form_Login : Form
     {
-        readonly public Utilities util = new Utilities();
+        readonly public Utilities utility = new Utilities();
         readonly Account dummyAcc = new Account("Timotheo", "tim@gmail.com", "1234");
         public Form_Login()
         {
             InitializeComponent();
-            util.Change_Font(this);
+            utility.Change_Font(this);
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace Ticketing_Project
             if (txt_LoginEmail.Text == dummyAcc.Email &&
                 txt_PasswordLogin.Text == dummyAcc.Password)
             {
-                HomePage home = new HomePage(dummyAcc, util);
+                HomePage home = new HomePage();
                 this.Hide();
                 home.Show();
             }

@@ -78,7 +78,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.SystemColors.Control;
+            BackColor = System.Drawing.Color.Transparent;
             Controls.Add(label1);
             Controls.Add(flow_Deals);
             Controls.Add(pb_DealsBackground);

@@ -135,7 +135,7 @@
             // 
             // pb_CalculatorBackground
             // 
-            pb_CalculatorBackground.BackColor = System.Drawing.SystemColors.Control;
+            pb_CalculatorBackground.BackColor = System.Drawing.Color.Transparent;
             pb_CalculatorBackground.Image = Properties.Resources.Flight_Calculator1;
             pb_CalculatorBackground.Location = new System.Drawing.Point(8, 12);
             pb_CalculatorBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

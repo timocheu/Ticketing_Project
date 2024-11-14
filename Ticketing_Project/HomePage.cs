@@ -13,10 +13,11 @@ namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
-        public HomePage(Account account, Utilities util)
+        public HomePage()
         {
             InitializeComponent();
-            // Change the fonts of this form
+            uc_CalculatorAndFlightDeals.Parent = pb_ContentBackground;
+            uc_CalculatorAndFlightDeals.Location = new Point(0, 90);
         }
     }
 }

@@ -36,7 +36,6 @@
             btn_Login = new System.Windows.Forms.Button();
             pb_LoginSection = new System.Windows.Forms.PictureBox();
             pb_LoginBackgroundPhoto = new System.Windows.Forms.PictureBox();
-            card_Deals1 = new Card_Deals();
             ((System.ComponentModel.ISupportInitialize)pb_LoginSection).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb_LoginBackgroundPhoto).BeginInit();
             SuspendLayout();
@@ -131,21 +130,12 @@
             pb_LoginBackgroundPhoto.TabIndex = 0;
             pb_LoginBackgroundPhoto.TabStop = false;
             // 
-            // card_Deals1
-            // 
-            card_Deals1.BackColor = System.Drawing.Color.Transparent;
-            card_Deals1.Location = new System.Drawing.Point(60, 12);
-            card_Deals1.Name = "card_Deals1";
-            card_Deals1.Size = new System.Drawing.Size(445, 168);
-            card_Deals1.TabIndex = 6;
-            // 
             // Form_Login
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
             ClientSize = new System.Drawing.Size(1380, 768);
-            Controls.Add(card_Deals1);
             Controls.Add(cb_ShowPassword);
             Controls.Add(lbl_ForgotPassword);
             Controls.Add(btn_Login);
@@ -173,7 +163,6 @@
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Label lbl_ForgotPassword;
         private System.Windows.Forms.CheckBox cb_ShowPassword;
-        private Card_Deals card_Deals1;
     }
 }
 
