@@ -30,10 +30,10 @@
         {
             pb_ContentBackground = new System.Windows.Forms.PictureBox();
             panel1 = new System.Windows.Forms.Panel();
+            btn_NavigationBookingHistory = new System.Windows.Forms.Button();
+            btn_NavigationTicketOwned = new System.Windows.Forms.Button();
             btn_NavigationHome = new System.Windows.Forms.Button();
             pictureBox1 = new System.Windows.Forms.PictureBox();
-            btn_NavigationTicketOwned = new System.Windows.Forms.Button();
-            btn_NavigationBookingHistory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)pb_ContentBackground).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -59,6 +59,40 @@
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(332, 768);
             panel1.TabIndex = 1;
+            // 
+            // btn_NavigationBookingHistory
+            // 
+            btn_NavigationBookingHistory.BackColor = System.Drawing.Color.White;
+            btn_NavigationBookingHistory.BackgroundImage = Properties.Resources.NavigationButtonRem_Background;
+            btn_NavigationBookingHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            btn_NavigationBookingHistory.FlatAppearance.BorderSize = 0;
+            btn_NavigationBookingHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_NavigationBookingHistory.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_NavigationBookingHistory.ForeColor = System.Drawing.Color.Black;
+            btn_NavigationBookingHistory.Location = new System.Drawing.Point(39, 264);
+            btn_NavigationBookingHistory.Name = "btn_NavigationBookingHistory";
+            btn_NavigationBookingHistory.Size = new System.Drawing.Size(245, 50);
+            btn_NavigationBookingHistory.TabIndex = 3;
+            btn_NavigationBookingHistory.Text = "Booking History";
+            btn_NavigationBookingHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btn_NavigationBookingHistory.UseVisualStyleBackColor = false;
+            // 
+            // btn_NavigationTicketOwned
+            // 
+            btn_NavigationTicketOwned.BackColor = System.Drawing.Color.White;
+            btn_NavigationTicketOwned.BackgroundImage = Properties.Resources.NavigationButtonRem_Background;
+            btn_NavigationTicketOwned.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            btn_NavigationTicketOwned.FlatAppearance.BorderSize = 0;
+            btn_NavigationTicketOwned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_NavigationTicketOwned.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_NavigationTicketOwned.ForeColor = System.Drawing.Color.Black;
+            btn_NavigationTicketOwned.Location = new System.Drawing.Point(39, 196);
+            btn_NavigationTicketOwned.Name = "btn_NavigationTicketOwned";
+            btn_NavigationTicketOwned.Size = new System.Drawing.Size(245, 50);
+            btn_NavigationTicketOwned.TabIndex = 2;
+            btn_NavigationTicketOwned.Text = "Tickets Owned";
+            btn_NavigationTicketOwned.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btn_NavigationTicketOwned.UseVisualStyleBackColor = false;
             // 
             // btn_NavigationHome
             // 
@@ -86,40 +120,6 @@
             pictureBox1.Size = new System.Drawing.Size(245, 38);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // btn_NavigationTicketOwned
-            // 
-            btn_NavigationTicketOwned.BackColor = System.Drawing.Color.White;
-            btn_NavigationTicketOwned.BackgroundImage = Properties.Resources.NavigationButtonRem_Background;
-            btn_NavigationTicketOwned.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            btn_NavigationTicketOwned.FlatAppearance.BorderSize = 0;
-            btn_NavigationTicketOwned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationTicketOwned.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            btn_NavigationTicketOwned.ForeColor = System.Drawing.Color.Black;
-            btn_NavigationTicketOwned.Location = new System.Drawing.Point(39, 196);
-            btn_NavigationTicketOwned.Name = "btn_NavigationTicketOwned";
-            btn_NavigationTicketOwned.Size = new System.Drawing.Size(245, 50);
-            btn_NavigationTicketOwned.TabIndex = 2;
-            btn_NavigationTicketOwned.Text = "Tickets Owned";
-            btn_NavigationTicketOwned.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btn_NavigationTicketOwned.UseVisualStyleBackColor = false;
-            // 
-            // btn_NavigationBookingHistory
-            // 
-            btn_NavigationBookingHistory.BackColor = System.Drawing.Color.White;
-            btn_NavigationBookingHistory.BackgroundImage = Properties.Resources.NavigationButtonRem_Background;
-            btn_NavigationBookingHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            btn_NavigationBookingHistory.FlatAppearance.BorderSize = 0;
-            btn_NavigationBookingHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationBookingHistory.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            btn_NavigationBookingHistory.ForeColor = System.Drawing.Color.Black;
-            btn_NavigationBookingHistory.Location = new System.Drawing.Point(39, 264);
-            btn_NavigationBookingHistory.Name = "btn_NavigationBookingHistory";
-            btn_NavigationBookingHistory.Size = new System.Drawing.Size(245, 50);
-            btn_NavigationBookingHistory.TabIndex = 3;
-            btn_NavigationBookingHistory.Text = "Booking History";
-            btn_NavigationBookingHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btn_NavigationBookingHistory.UseVisualStyleBackColor = false;
             // 
             // HomePage
             // 

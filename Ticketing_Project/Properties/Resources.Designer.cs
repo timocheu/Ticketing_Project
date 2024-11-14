@@ -183,6 +183,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap FlightDealBackground {
+            get {
+                object obj = ResourceManager.GetObject("FlightDealBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap from_box {
             get {
                 object obj = ResourceManager.GetObject("from box", resourceCulture);
