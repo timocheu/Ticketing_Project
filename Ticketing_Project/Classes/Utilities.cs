@@ -26,5 +26,39 @@ namespace Ticketing_Project.Classes
                 }
             }
         }
+
+        public double GeneratePrice(double distance, string boardClass)
+        {
+            double multiplier;
+            int basePrice;
+            // Convert degrees of coordinates into kilometers
+            double distanceKM = distance * 111;
+
+            // set prices base on accommodation class
+            if (boardClass == "Business Class")
+            {
+                multiplier = 0.5;
+                basePrice = 1500;
+            } 
+            else
+            {
+                multiplier = 0.3;
+                basePrice = 750;
+            }
+
+            double price = basePrice + (distanceKM * multiplier);
+
+            return price;
+        }
+
+        public double CalculateDistance(Location loc1, Location loc2)
+        {
+            // utilize distance formula for finding distance between two coordinates
+            double x = Math.Pow((loc2.Latitude - loc1.Latitude), 2);
+            double y = Math.Pow((loc2.Longitude - loc1.Longitude), 2);
+            double distance = Math.Sqrt(x + y);
+
+            return distance;
+        }
     }
 }
