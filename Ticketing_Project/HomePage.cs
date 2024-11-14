@@ -17,7 +17,6 @@ namespace Ticketing_Project
         {
             InitializeComponent();
             // Change the fonts of this form
-            util.Change_Font(this);
         }
     }
 }

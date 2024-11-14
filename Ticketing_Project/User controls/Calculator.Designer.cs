@@ -140,7 +140,7 @@
             pb_CalculatorBackground.Location = new System.Drawing.Point(8, 12);
             pb_CalculatorBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorBackground.Name = "pb_CalculatorBackground";
-            pb_CalculatorBackground.Size = new System.Drawing.Size(988, 161);
+            pb_CalculatorBackground.Size = new System.Drawing.Size(988, 155);
             pb_CalculatorBackground.TabIndex = 10;
             pb_CalculatorBackground.TabStop = false;
             pb_CalculatorBackground.Click += pb_CalculatorBackground_Click_1;
@@ -255,7 +255,7 @@
             Controls.Add(pb_CalculatorBackground);
             Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Name = "Calculator";
-            Size = new System.Drawing.Size(1003, 178);
+            Size = new System.Drawing.Size(1003, 169);
             ((System.ComponentModel.ISupportInitialize)pb_CalculatorPeopleIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_CalculatorFromSelection).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_CalculatorDestination).EndInit();
