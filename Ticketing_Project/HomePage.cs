@@ -16,8 +16,6 @@ namespace Ticketing_Project
         public HomePage()
         {
             InitializeComponent();
-            uc_CalculatorAndFlightDeals.Parent = pb_ContentBackground;
-            uc_CalculatorAndFlightDeals.Location = new Point(0, 90);
         }
     }
 }

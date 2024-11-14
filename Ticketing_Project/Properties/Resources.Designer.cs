@@ -299,5 +299,25 @@ namespace Ticketing_Project.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to name_en,country,country_code,latitude,longitude
+        ///Tirana,Albania,AL,41.327499,19.81889
+        ///Algiers,Algeria,DZ,36.752499,3.04197
+        ///Oran,Algeria,DZ,35.691109,-0.64167
+        ///Buenos Aires,Argentina,AR,-34.613152,-58.377232
+        ///San Carlos de Bariloche,Argentina,AR,-41.145569,-71.30822
+        ///Mendoza,Argentina,AR,-32.890839,-68.827171
+        ///Salta,Argentina,AR,-24.7859,-65.411659
+        ///Córdoba,Argentina,AR,-31.4135,-64.181053
+        ///Ushuaia,Argentina,AR,-54.799999,-68.300003
+        ///Rosario,Argentina,AR,-32.946819,-60.63932
+        ///Mar del Plata,Argentina,AR,-38 [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string world_cities_geoname {
+            get {
+                return ResourceManager.GetString("world_cities_geoname", resourceCulture);
+            }
+        }
     }
 }

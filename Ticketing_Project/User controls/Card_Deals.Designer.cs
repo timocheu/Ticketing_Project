@@ -170,7 +170,6 @@
         private System.Windows.Forms.Label lbl_From;
         private System.Windows.Forms.Label lbl_CardDestination;
         private System.Windows.Forms.Label lbl_FlightDescription;
-        private System.Windows.Forms.PictureBox pb_Logo;
         private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.Label lbl_TripType;
         private System.Windows.Forms.Panel pnl_Arrow;

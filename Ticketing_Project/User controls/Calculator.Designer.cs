@@ -266,7 +266,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pb_CalculatorClass;
         private System.Windows.Forms.ComboBox cb_BoardClass;
         private System.Windows.Forms.ComboBox cbb_NumberOfPassengers;
         private System.Windows.Forms.PictureBox pb_CalculatorPeopleIcon;
