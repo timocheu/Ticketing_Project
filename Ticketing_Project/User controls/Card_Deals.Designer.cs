@@ -98,9 +98,9 @@
             // 
             table_FromToDestination.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             table_FromToDestination.ColumnCount = 3;
-            table_FromToDestination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            table_FromToDestination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            table_FromToDestination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            table_FromToDestination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.0620537F));
+            table_FromToDestination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.398568F));
+            table_FromToDestination.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.53938F));
             table_FromToDestination.Controls.Add(lbl_From, 0, 0);
             table_FromToDestination.Controls.Add(lbl_Destination, 2, 0);
             table_FromToDestination.Controls.Add(pnl_Arrow, 1, 0);
@@ -108,29 +108,29 @@
             table_FromToDestination.Name = "table_FromToDestination";
             table_FromToDestination.RowCount = 1;
             table_FromToDestination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            table_FromToDestination.Size = new System.Drawing.Size(419, 30);
+            table_FromToDestination.Size = new System.Drawing.Size(419, 33);
             table_FromToDestination.TabIndex = 10;
             // 
             // lbl_From
             // 
-            lbl_From.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            lbl_From.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_From.AutoSize = true;
             lbl_From.BackColor = System.Drawing.Color.Transparent;
             lbl_From.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_From.Location = new System.Drawing.Point(102, 5);
+            lbl_From.Location = new System.Drawing.Point(107, 0);
             lbl_From.Name = "lbl_From";
-            lbl_From.Size = new System.Drawing.Size(83, 25);
+            lbl_From.Size = new System.Drawing.Size(83, 33);
             lbl_From.TabIndex = 1;
             lbl_From.Text = "<From>";
             lbl_From.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_Destination
             // 
-            lbl_Destination.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            lbl_Destination.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_Destination.AutoSize = true;
             lbl_Destination.BackColor = System.Drawing.Color.Transparent;
             lbl_Destination.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_Destination.Location = new System.Drawing.Point(232, 5);
+            lbl_Destination.Location = new System.Drawing.Point(227, 4);
             lbl_Destination.Name = "lbl_Destination";
             lbl_Destination.Size = new System.Drawing.Size(137, 25);
             lbl_Destination.TabIndex = 2;
@@ -143,7 +143,7 @@
             pnl_Arrow.BackColor = System.Drawing.Color.Transparent;
             pnl_Arrow.BackgroundImage = Properties.Resources.typcn_arrow_up_outline1;
             pnl_Arrow.ForeColor = System.Drawing.Color.Transparent;
-            pnl_Arrow.Location = new System.Drawing.Point(196, 3);
+            pnl_Arrow.Location = new System.Drawing.Point(196, 6);
             pnl_Arrow.Name = "pnl_Arrow";
             pnl_Arrow.Size = new System.Drawing.Size(25, 24);
             pnl_Arrow.TabIndex = 7;

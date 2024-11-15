@@ -34,8 +34,10 @@
             btn_NavigationHome = new System.Windows.Forms.Button();
             pb_Logo = new System.Windows.Forms.PictureBox();
             pnl = new System.Windows.Forms.Panel();
+            calculatorAndFlightDeals1 = new CalculatorAndFlightDeals();
             pnl_NavigationBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Logo).BeginInit();
+            pnl.SuspendLayout();
             SuspendLayout();
             // 
             // pnl_NavigationBar
@@ -59,7 +61,7 @@
             btn_NavigationBookingHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_NavigationBookingHistory.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_NavigationBookingHistory.ForeColor = System.Drawing.Color.Black;
-            btn_NavigationBookingHistory.Location = new System.Drawing.Point(39, 264);
+            btn_NavigationBookingHistory.Location = new System.Drawing.Point(39, 270);
             btn_NavigationBookingHistory.Name = "btn_NavigationBookingHistory";
             btn_NavigationBookingHistory.Size = new System.Drawing.Size(245, 50);
             btn_NavigationBookingHistory.TabIndex = 3;
@@ -76,7 +78,7 @@
             btn_NavigationTicketOwned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_NavigationTicketOwned.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_NavigationTicketOwned.ForeColor = System.Drawing.Color.Black;
-            btn_NavigationTicketOwned.Location = new System.Drawing.Point(39, 196);
+            btn_NavigationTicketOwned.Location = new System.Drawing.Point(39, 202);
             btn_NavigationTicketOwned.Name = "btn_NavigationTicketOwned";
             btn_NavigationTicketOwned.Size = new System.Drawing.Size(245, 50);
             btn_NavigationTicketOwned.TabIndex = 2;
@@ -93,7 +95,7 @@
             btn_NavigationHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_NavigationHome.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_NavigationHome.ForeColor = System.Drawing.Color.White;
-            btn_NavigationHome.Location = new System.Drawing.Point(39, 120);
+            btn_NavigationHome.Location = new System.Drawing.Point(39, 126);
             btn_NavigationHome.Name = "btn_NavigationHome";
             btn_NavigationHome.Size = new System.Drawing.Size(245, 50);
             btn_NavigationHome.TabIndex = 1;
@@ -105,7 +107,7 @@
             // 
             pb_Logo.BackColor = System.Drawing.Color.Transparent;
             pb_Logo.Image = Properties.Resources.NavigationLogo;
-            pb_Logo.Location = new System.Drawing.Point(39, 55);
+            pb_Logo.Location = new System.Drawing.Point(39, 61);
             pb_Logo.Name = "pb_Logo";
             pb_Logo.Size = new System.Drawing.Size(245, 38);
             pb_Logo.TabIndex = 0;
@@ -114,10 +116,19 @@
             // pnl
             // 
             pnl.BackgroundImage = Properties.Resources.Content_background;
+            pnl.Controls.Add(calculatorAndFlightDeals1);
             pnl.Location = new System.Drawing.Point(329, 0);
             pnl.Name = "pnl";
             pnl.Size = new System.Drawing.Size(1052, 775);
             pnl.TabIndex = 2;
+            // 
+            // calculatorAndFlightDeals1
+            // 
+            calculatorAndFlightDeals1.BackColor = System.Drawing.Color.Transparent;
+            calculatorAndFlightDeals1.Location = new System.Drawing.Point(0, 91);
+            calculatorAndFlightDeals1.Name = "calculatorAndFlightDeals1";
+            calculatorAndFlightDeals1.Size = new System.Drawing.Size(1050, 698);
+            calculatorAndFlightDeals1.TabIndex = 0;
             // 
             // HomePage
             // 
@@ -132,6 +143,7 @@
             Text = "Cloud Express";
             pnl_NavigationBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pb_Logo).EndInit();
+            pnl.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -142,5 +154,6 @@
         private System.Windows.Forms.Button btn_NavigationBookingHistory;
         private System.Windows.Forms.Button btn_NavigationTicketOwned;
         private System.Windows.Forms.Panel pnl;
+        private CalculatorAndFlightDeals calculatorAndFlightDeals1;
     }
 }

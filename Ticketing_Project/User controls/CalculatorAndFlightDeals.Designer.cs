@@ -32,6 +32,7 @@
             pb_DealsBackground = new System.Windows.Forms.PictureBox();
             flow_Deals = new System.Windows.Forms.FlowLayoutPanel();
             label1 = new System.Windows.Forms.Label();
+            btn_RefreshDeals = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)pb_DealsBackground).BeginInit();
             SuspendLayout();
             // 
@@ -55,11 +56,12 @@
             // 
             // flow_Deals
             // 
+            flow_Deals.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom;
             flow_Deals.AutoScroll = true;
             flow_Deals.BackColor = System.Drawing.Color.White;
-            flow_Deals.Location = new System.Drawing.Point(72, 280);
+            flow_Deals.Location = new System.Drawing.Point(54, 280);
             flow_Deals.Name = "flow_Deals";
-            flow_Deals.Size = new System.Drawing.Size(916, 400);
+            flow_Deals.Size = new System.Drawing.Size(949, 400);
             flow_Deals.TabIndex = 2;
             // 
             // label1
@@ -74,11 +76,26 @@
             label1.TabIndex = 3;
             label1.Text = "Flight Deals";
             // 
+            // btn_RefreshDeals
+            // 
+            btn_RefreshDeals.BackColor = System.Drawing.Color.White;
+            btn_RefreshDeals.BackgroundImage = Properties.Resources.loading_arrow;
+            btn_RefreshDeals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            btn_RefreshDeals.FlatAppearance.BorderSize = 0;
+            btn_RefreshDeals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_RefreshDeals.Location = new System.Drawing.Point(953, 235);
+            btn_RefreshDeals.Name = "btn_RefreshDeals";
+            btn_RefreshDeals.Size = new System.Drawing.Size(35, 35);
+            btn_RefreshDeals.TabIndex = 4;
+            btn_RefreshDeals.UseVisualStyleBackColor = false;
+            btn_RefreshDeals.Click += btn_RefreshDeals_Click;
+            // 
             // CalculatorAndFlightDeals
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Transparent;
+            Controls.Add(btn_RefreshDeals);
             Controls.Add(label1);
             Controls.Add(flow_Deals);
             Controls.Add(pb_DealsBackground);
@@ -96,5 +113,6 @@
         private System.Windows.Forms.PictureBox pb_DealsBackground;
         private System.Windows.Forms.FlowLayoutPanel flow_Deals;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_RefreshDeals;
     }
 }
