@@ -142,7 +142,7 @@ namespace Ticketing_Project.Classes
 
 
                 int price = (int) GeneratePrice(distance, boardClass, tripType, true);
-                CardDeal temp = new CardDeal(price, tripType,loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
+                CardDeal temp = new CardDeal(price, tripType, loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
                 panel.Controls.Add(temp);
             }
         }
