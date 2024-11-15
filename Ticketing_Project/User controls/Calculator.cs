@@ -12,7 +12,7 @@ namespace Ticketing_Project
 {
     public partial class Calculator : UserControl
     {
-        public Calculator(string from, string destination, string flightDate, string flightDuration, string boardClass)
+        public Calculator()
         {
             InitializeComponent();
         }

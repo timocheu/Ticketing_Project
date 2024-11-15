@@ -1,6 +1,6 @@
 ﻿namespace Ticketing_Project
 {
-    partial class Card_Deals
+    partial class CardDeal
     {
         /// <summary> 
         /// Required designer variable.
@@ -188,13 +188,13 @@
             btn_BookFlight.Text = " Book Flight";
             btn_BookFlight.UseVisualStyleBackColor = false;
             // 
-            // Card_Deals
+            // CardDeal
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Transparent;
             Controls.Add(pnl_CardDeals);
-            Name = "Card_Deals";
+            Name = "CardDeal";
             Size = new System.Drawing.Size(445, 169);
             pnl_CardDeals.ResumeLayout(false);
             pnl_CardDeals.PerformLayout();

@@ -14,6 +14,14 @@ namespace Ticketing_Project.Classes
         // Randomizer
         Random random = new Random();
 
+        Places place = new Places();
+        List<Location> data;
+
+        public Utilities()
+        {
+            data = place.GetLocationList();
+        }
+
         public void Change_Font(Form form)
         {
             if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows))
@@ -30,12 +38,13 @@ namespace Ticketing_Project.Classes
             }
         }
 
-        public double GeneratePrice(double distance, string boardClass)
+        public double GeneratePrice(double distance, string boardClass, string TripType, bool deal = false)
         {
+            int trips = 1;
             double multiplier;
             int basePrice;
-            // Convert degrees of coordinates into kilometers
-            double distanceKM = distance * 111;
+            
+            if (TripType == "Round Trip") trips = 2;
 
             // set prices base on accommodation class
             if (boardClass == "Business Class")
@@ -49,29 +58,60 @@ namespace Ticketing_Project.Classes
                 basePrice = 750;
             }
 
-            double price = basePrice + (distanceKM * multiplier);
 
-            return price;
+            double price = (basePrice + (distance * multiplier)) * trips;
+
+            // Check if its a deal
+            if (deal == true)
+            {
+                // Discounted 20% for deals
+                Math.Truncate(price - (price * .2));
+            }
+
+            return Math.Truncate(price);
         }
 
         public double CalculateDistance(Location loc1, Location loc2)
         {
+            // Latitude and Longitude
             // utilize distance formula for finding distance between two coordinates
             double x = Math.Pow((loc2.Latitude - loc1.Latitude), 2);
             double y = Math.Pow((loc2.Longitude - loc1.Longitude), 2);
             double distance = Math.Sqrt(x + y);
 
-            return distance;
+            // Return as kilometer
+            return distance * 111;
+        }
+
+        private string CalculateDuration(double distance)
+        {
+            // Average plane speed km/h
+            double hours = Math.Round(distance / 880);
+            // decimal hours to minutes
+            double minutes = 60 * (hours - Math.Truncate(hours));
+
+            string duration = $"{hours}hr {minutes}min";
+            return duration;
+        }
+
+        private string RandomTripType()
+        {
+            if (random.Next(1, 2) == 1)
+            {
+                return "Round Trip";
+            }
+
+            return "One way";
+        }
+
+        private Location RandomLocation() 
+        {
+            Location location = data[random.Next(0, 1046)];
+            return location;
         }
 
         public void GenerateFlashDeals (FlowLayoutPanel panel)
         {
-
-
-            for (int i = 0; i < 10; i++)
-            {
-
-            }
         }
     }
 }

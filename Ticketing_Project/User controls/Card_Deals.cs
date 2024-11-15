@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Ticketing_Project
 {
-    public partial class Card_Deals : UserControl
+    public partial class CardDeal : UserControl
     {
-        public Card_Deals(int price, string tripType, string from, string destination, string flightDate, string flightDuration, string boardClass)
+        public CardDeal(int price, string tripType, string from, string destination, string flightDate, string flightDuration, string boardClass)
         {
             lbl_From.Text = from;
             lbl_Destination.Text = destination;
