@@ -86,11 +86,11 @@ namespace Ticketing_Project.Classes
         private string CalculateDuration(double distance)
         {
             // Average plane speed km/h
-            double hours = Math.Round(distance / 880);
+            double hours = distance / 880;
             // decimal hours to minutes
             double minutes = 60 * (hours - Math.Truncate(hours));
 
-            string duration = $"{hours}hr {minutes}min";
+            string duration = $"{Math.Round(hours)}hr {Math.Round(minutes)}min";
             return duration;
         }
 
