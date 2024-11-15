@@ -104,6 +104,16 @@ namespace Ticketing_Project.Classes
             return "One way";
         }
 
+        private string RandomBoardClass()
+        {
+            if (random.Next(1, 2) == 1)
+            {
+                return "Economy";
+            }
+
+            return "Business Class";
+        }
+
         private Location RandomLocation() 
         {
             Location location = data[random.Next(0, 1046)];
@@ -112,6 +122,29 @@ namespace Ticketing_Project.Classes
 
         public void GenerateFlashDeals (FlowLayoutPanel panel)
         {
+            // Number of flash deals
+            int numCards = 10;
+
+            for ( int i = 0; i < numCards; i++) 
+            { 
+                Location loc1 = RandomLocation();
+                Location loc2 = RandomLocation();
+                while (loc1 == loc2)
+                {
+                    loc2 = RandomLocation();
+                }
+
+                // Flight Details
+                double distance = CalculateDistance(loc1, loc2);
+                string duration = CalculateDuration(distance);
+                string boardClass = RandomBoardClass();
+                string tripType = RandomTripType();
+
+
+                int price = (int) GeneratePrice(distance, boardClass, tripType, true);
+                CardDeal temp = new CardDeal(price, tripType,loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
+                panel.Controls.Add(temp);
+            }
         }
     }
 }
