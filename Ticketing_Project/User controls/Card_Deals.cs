@@ -15,12 +15,12 @@ namespace Ticketing_Project
     {
         public CardDeal(int price, string tripType, string from, string destination, string flightDate, string flightDuration, string boardClass)
         {
-            InitializeComponent();
             lbl_From.Text = from;
             lbl_Destination.Text = destination;
-            lbl_FlightDetails.Text = $"{flightDate} • {flightDuration} • {boardClass}";
+            lbl_Destination.Text = $"{flightDate} • {flightDuration} • {boardClass}";
             lbl_Price.Text = $"Price: ₱{price.ToString()}";
             lbl_TripType.Text = tripType;
+            InitializeComponent();
         }
     }
 }

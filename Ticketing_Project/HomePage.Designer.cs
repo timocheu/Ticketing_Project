@@ -34,10 +34,8 @@
             btn_NavigationHome = new System.Windows.Forms.Button();
             pb_Logo = new System.Windows.Forms.PictureBox();
             pnl = new System.Windows.Forms.Panel();
-            calculatorAndFlightDeals1 = new CalculatorAndFlightDeals();
             pnl_NavigationBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Logo).BeginInit();
-            pnl.SuspendLayout();
             SuspendLayout();
             // 
             // pnl_NavigationBar
@@ -116,19 +114,10 @@
             // pnl
             // 
             pnl.BackgroundImage = Properties.Resources.Content_background;
-            pnl.Controls.Add(calculatorAndFlightDeals1);
             pnl.Location = new System.Drawing.Point(329, 0);
             pnl.Name = "pnl";
             pnl.Size = new System.Drawing.Size(1052, 775);
             pnl.TabIndex = 2;
-            // 
-            // calculatorAndFlightDeals1
-            // 
-            calculatorAndFlightDeals1.BackColor = System.Drawing.Color.Transparent;
-            calculatorAndFlightDeals1.Location = new System.Drawing.Point(0, 90);
-            calculatorAndFlightDeals1.Name = "calculatorAndFlightDeals1";
-            calculatorAndFlightDeals1.Size = new System.Drawing.Size(1050, 683);
-            calculatorAndFlightDeals1.TabIndex = 0;
             // 
             // HomePage
             // 
@@ -143,7 +132,6 @@
             Text = "Cloud Express";
             pnl_NavigationBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pb_Logo).EndInit();
-            pnl.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -154,6 +142,5 @@
         private System.Windows.Forms.Button btn_NavigationBookingHistory;
         private System.Windows.Forms.Button btn_NavigationTicketOwned;
         private System.Windows.Forms.Panel pnl;
-        private CalculatorAndFlightDeals calculatorAndFlightDeals1;
     }
 }

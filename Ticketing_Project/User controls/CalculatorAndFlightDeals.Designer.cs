@@ -28,22 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            uc_Calculator = new Calculator();
+            calculator1 = new Calculator();
             pb_DealsBackground = new System.Windows.Forms.PictureBox();
             flow_Deals = new System.Windows.Forms.FlowLayoutPanel();
-            lbl_FlightDeals = new System.Windows.Forms.Label();
-            button1 = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)pb_DealsBackground).BeginInit();
             SuspendLayout();
             // 
-            // uc_Calculator
+            // calculator1
             // 
-            uc_Calculator.BackColor = System.Drawing.Color.Transparent;
-            uc_Calculator.Location = new System.Drawing.Point(25, 19);
-            uc_Calculator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            uc_Calculator.Name = "uc_Calculator";
-            uc_Calculator.Size = new System.Drawing.Size(1003, 178);
-            uc_Calculator.TabIndex = 0;
+            calculator1.BackColor = System.Drawing.Color.Transparent;
+            calculator1.Location = new System.Drawing.Point(25, 19);
+            calculator1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            calculator1.Name = "calculator1";
+            calculator1.Size = new System.Drawing.Size(1003, 178);
+            calculator1.TabIndex = 0;
             // 
             // pb_DealsBackground
             // 
@@ -56,51 +55,34 @@
             // 
             // flow_Deals
             // 
-            flow_Deals.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom;
             flow_Deals.AutoScroll = true;
             flow_Deals.BackColor = System.Drawing.Color.White;
-            flow_Deals.Location = new System.Drawing.Point(57, 267);
+            flow_Deals.Location = new System.Drawing.Point(72, 280);
             flow_Deals.Name = "flow_Deals";
-            flow_Deals.Size = new System.Drawing.Size(942, 400);
+            flow_Deals.Size = new System.Drawing.Size(916, 400);
             flow_Deals.TabIndex = 2;
             // 
-            // lbl_FlightDeals
+            // label1
             // 
-            lbl_FlightDeals.AutoSize = true;
-            lbl_FlightDeals.BackColor = System.Drawing.Color.White;
-            lbl_FlightDeals.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_FlightDeals.ForeColor = System.Drawing.SystemColors.ControlText;
-            lbl_FlightDeals.Location = new System.Drawing.Point(444, 227);
-            lbl_FlightDeals.Name = "lbl_FlightDeals";
-            lbl_FlightDeals.Size = new System.Drawing.Size(168, 37);
-            lbl_FlightDeals.TabIndex = 3;
-            lbl_FlightDeals.Text = "Flight Deals";
-            // 
-            // button1
-            // 
-            button1.BackColor = System.Drawing.Color.White;
-            button1.BackgroundImage = Properties.Resources.loading_arrow;
-            button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.Location = new System.Drawing.Point(950, 227);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(49, 37);
-            button1.TabIndex = 0;
-            button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.White;
+            label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            label1.Location = new System.Drawing.Point(444, 227);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(168, 37);
+            label1.TabIndex = 3;
+            label1.Text = "Flight Deals";
             // 
             // CalculatorAndFlightDeals
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Transparent;
-            Controls.Add(button1);
-            Controls.Add(lbl_FlightDeals);
+            Controls.Add(label1);
             Controls.Add(flow_Deals);
             Controls.Add(pb_DealsBackground);
-            Controls.Add(uc_Calculator);
+            Controls.Add(calculator1);
             Name = "CalculatorAndFlightDeals";
             Size = new System.Drawing.Size(1050, 656);
             ((System.ComponentModel.ISupportInitialize)pb_DealsBackground).EndInit();
@@ -110,10 +92,9 @@
 
         #endregion
 
-        private Calculator uc_Calculator;
+        private Calculator calculator1;
         private System.Windows.Forms.PictureBox pb_DealsBackground;
         private System.Windows.Forms.FlowLayoutPanel flow_Deals;
-        private System.Windows.Forms.Label lbl_FlightDeals;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
