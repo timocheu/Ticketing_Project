@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,14 @@ namespace Ticketing_Project
 {
     public partial class Card_Deals : UserControl
     {
-        public Card_Deals()
+        public Card_Deals(int price, string tripType, string from, string destination, string flightDate, string flightDuration, string boardClass)
         {
+            lbl_From.Text = from;
+            lbl_Destination.Text = destination;
+            lbl_Destination.Text = $"{flightDate} • {flightDuration} • {boardClass}";
+            lbl_Price.Text = $"Price: ₱{price.ToString()}";
+            lbl_TripType.Text = tripType;
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_From_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

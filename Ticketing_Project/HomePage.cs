@@ -13,9 +13,16 @@ namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
+        Utilities utility = new Utilities();
+        Places places = new Places();
+
+        // List of geocoordinates
+        List<Location> data;
         public HomePage()
         {
             InitializeComponent();
+            // Initialize data
+            data = places.GetLocationList();
         }
     }
 }

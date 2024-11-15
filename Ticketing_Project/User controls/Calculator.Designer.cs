@@ -61,7 +61,6 @@
             cb_BoardClass.Name = "cb_BoardClass";
             cb_BoardClass.Size = new System.Drawing.Size(113, 23);
             cb_BoardClass.TabIndex = 2;
-            cb_BoardClass.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // cbb_NumberOfPassengers
             // 
@@ -98,7 +97,6 @@
             cbb_TripType.Name = "cbb_TripType";
             cbb_TripType.Size = new System.Drawing.Size(98, 23);
             cbb_TripType.TabIndex = 5;
-            cbb_TripType.SelectedIndexChanged += cb_CalculatorWay_SelectedIndexChanged;
             // 
             // pb_CalculatorFromSelection
             // 
@@ -143,7 +141,6 @@
             pb_CalculatorBackground.Size = new System.Drawing.Size(988, 155);
             pb_CalculatorBackground.TabIndex = 10;
             pb_CalculatorBackground.TabStop = false;
-            pb_CalculatorBackground.Click += pb_CalculatorBackground_Click_1;
             // 
             // btn_Calculate
             // 

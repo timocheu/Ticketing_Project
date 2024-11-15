@@ -11,6 +11,9 @@ namespace Ticketing_Project.Classes
 {
     public class Utilities
     {
+        // Randomizer
+        Random random = new Random();
+
         public void Change_Font(Form form)
         {
             if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows))
@@ -59,6 +62,16 @@ namespace Ticketing_Project.Classes
             double distance = Math.Sqrt(x + y);
 
             return distance;
+        }
+
+        public void GenerateFlashDeals (FlowLayoutPanel panel)
+        {
+
+
+            for (int i = 0; i < 10; i++)
+            {
+
+            }
         }
     }
 }
