@@ -61,7 +61,7 @@
             flow_Deals.BackColor = System.Drawing.Color.White;
             flow_Deals.Location = new System.Drawing.Point(54, 280);
             flow_Deals.Name = "flow_Deals";
-            flow_Deals.Size = new System.Drawing.Size(949, 400);
+            flow_Deals.Size = new System.Drawing.Size(949, 376);
             flow_Deals.TabIndex = 2;
             // 
             // label1
