@@ -120,6 +120,14 @@ namespace Ticketing_Project.Classes
             return location;
         }
 
+        private DateTime RandomDate()
+        {
+            DateTime currentTime = DateTime.Now;
+            currentTime = currentTime.AddDays(random.Next(1, 365));
+
+            return currentTime;
+        }
+
         public void GenerateFlashDeals (FlowLayoutPanel panel)
         {
             // Number of flash deals
@@ -129,20 +137,29 @@ namespace Ticketing_Project.Classes
             { 
                 Location loc1 = RandomLocation();
                 Location loc2 = RandomLocation();
+                double distance = CalculateDistance(loc1, loc2);
                 while (loc1 == loc2)
                 {
                     loc2 = RandomLocation();
                 }
 
                 // Flight Details
-                double distance = CalculateDistance(loc1, loc2);
-                string duration = CalculateDuration(distance);
-                string boardClass = RandomBoardClass();
-                string tripType = RandomTripType();
+                Ticket ticket = new Ticket();
+                // From
+                ticket.From = loc1.City;
+                ticket.FromCountryCode = loc1.Country_Code;
+                // Destination
+                ticket.Destination = loc2.City;
+                ticket.DestinationCountryCode = loc2.Country_Code;
+                // Other flight details
+                ticket.FlightDate = RandomDate();
+                ticket.BoardClass = RandomBoardClass();
+                ticket.TripType = RandomTripType();
+                ticket.Duration = CalculateDuration(distance);
+                // Calculate price
+                int price = (int) GeneratePrice(distance, ticket.BoardClass, ticket.TripType, true);
 
-
-                int price = (int) GeneratePrice(distance, boardClass, tripType, true);
-                CardDeal temp = new CardDeal(price, tripType,loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
+                CardDeal temp = new CardDeal(price, ticket);
                 panel.Controls.Add(temp);
             }
         }

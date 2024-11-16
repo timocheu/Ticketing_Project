@@ -8,19 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ticketing_Project.Classes;
 
 namespace Ticketing_Project
 {
     public partial class CardDeal : UserControl
     {
-        public CardDeal(int price, string tripType, string from, string destination, string flightDate, string flightDuration, string boardClass)
+        public CardDeal(int price, Ticket ticket)
         {
             InitializeComponent();
-            lbl_From.Text = from;
-            lbl_Destination.Text = destination;
-            lbl_FlightDetails.Text = $"{flightDate} • {flightDuration} • {boardClass}";
+            lbl_From.Text = $"{ticket.From} ({ticket.FromCountryCode})";
+            lbl_Destination.Text = $"{ticket.Destination} ({ticket.DestinationCountryCode})";
+            lbl_FlightDetails.Text = $"{ticket.FlightDate} • {ticket.Duration} • {ticket.BoardClass}";
             lbl_Price.Text = $"Price: ₱{price.ToString()}";
-            lbl_TripType.Text = tripType;
+            lbl_TripType.Text = ticket.TripType;
         }
     }
 }
