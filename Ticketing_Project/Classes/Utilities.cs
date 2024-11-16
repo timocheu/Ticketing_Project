@@ -163,5 +163,13 @@ namespace Ticketing_Project.Classes
                 panel.Controls.Add(temp);
             }
         }
+
+        public void GenerateCityCountryList(ComboBox box)
+        {
+            foreach (var location in data) 
+            {
+                box.Items.Add($"{location.City} ({location.Country_Code})");
+            }
+        }
     }
 }

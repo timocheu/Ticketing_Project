@@ -15,6 +15,10 @@ namespace Ticketing_Project
         public Calculator()
         {
             InitializeComponent();
+            // Limit the minimum flight date
+            dtp_FlightDate.MinDate = DateTime.Now;
+            // Limit flight reservation for 3years
+            dtp_FlightDate.MaxDate = DateTime.Now.AddDays(1000);
         }
     }
 }

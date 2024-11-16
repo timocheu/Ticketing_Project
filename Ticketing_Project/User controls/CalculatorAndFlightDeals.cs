@@ -18,6 +18,8 @@ namespace Ticketing_Project
         {
             InitializeComponent();
             util.GenerateFlashDeals(flow_Deals);
+            util.GenerateCityCountryList(uc_Calculator.cbb_From);
+            util.GenerateCityCountryList(uc_Calculator.cbb_Destination);
         }
 
         private void btn_RefreshDeals_Click(object sender, EventArgs e)

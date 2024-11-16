@@ -167,6 +167,8 @@
             dtp_FlightDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             dtp_FlightDate.Location = new System.Drawing.Point(714, 113);
             dtp_FlightDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            dtp_FlightDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
+            dtp_FlightDate.MinDate = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
             dtp_FlightDate.Name = "dtp_FlightDate";
             dtp_FlightDate.Size = new System.Drawing.Size(123, 32);
             dtp_FlightDate.TabIndex = 12;
@@ -174,28 +176,35 @@
             // cbb_From
             // 
             cbb_From.BackColor = System.Drawing.Color.White;
+            cbb_From.CausesValidation = false;
             cbb_From.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbb_From.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbb_From.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_From.FormattingEnabled = true;
+            cbb_From.IntegralHeight = false;
+            cbb_From.ItemHeight = 28;
             cbb_From.Location = new System.Drawing.Point(32, 108);
             cbb_From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_From.Name = "cbb_From";
             cbb_From.Size = new System.Drawing.Size(299, 36);
             cbb_From.TabIndex = 15;
+            cbb_From.TabStop = false;
             // 
             // cbb_Destination
             // 
             cbb_Destination.BackColor = System.Drawing.Color.White;
+            cbb_Destination.CausesValidation = false;
             cbb_Destination.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbb_Destination.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbb_Destination.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_Destination.FormattingEnabled = true;
+            cbb_Destination.IntegralHeight = false;
             cbb_Destination.Location = new System.Drawing.Point(407, 108);
             cbb_Destination.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_Destination.Name = "cbb_Destination";
             cbb_Destination.Size = new System.Drawing.Size(289, 36);
             cbb_Destination.TabIndex = 16;
+            cbb_Destination.TabStop = false;
             // 
             // lbl_TripType
             // 
@@ -273,10 +282,10 @@
         private System.Windows.Forms.PictureBox pb_CalculatorBackground;
         private System.Windows.Forms.Button btn_Calculate;
         private System.Windows.Forms.DateTimePicker dtp_FlightDate;
-        private System.Windows.Forms.ComboBox cbb_From;
-        private System.Windows.Forms.ComboBox cbb_Destination;
         private System.Windows.Forms.Label lbl_TripType;
         private System.Windows.Forms.Label lbl_NumberOfPassenger;
         private System.Windows.Forms.Label lbl_BoardClass;
+        public System.Windows.Forms.ComboBox cbb_From;
+        public System.Windows.Forms.ComboBox cbb_Destination;
     }
 }
