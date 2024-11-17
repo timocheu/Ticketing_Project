@@ -33,11 +33,9 @@
             btn_NavigationTicketOwned = new System.Windows.Forms.Button();
             btn_NavigationHome = new System.Windows.Forms.Button();
             pb_Logo = new System.Windows.Forms.PictureBox();
-            pnl = new System.Windows.Forms.Panel();
-            calculatorAndFlightDeals1 = new CalculatorAndFlightDeals();
+            pnl_Content = new System.Windows.Forms.Panel();
             pnl_NavigationBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Logo).BeginInit();
-            pnl.SuspendLayout();
             SuspendLayout();
             // 
             // pnl_NavigationBar
@@ -85,6 +83,7 @@
             btn_NavigationTicketOwned.Text = "Tickets Owned";
             btn_NavigationTicketOwned.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btn_NavigationTicketOwned.UseVisualStyleBackColor = false;
+            btn_NavigationTicketOwned.Click += btn_NavigationTicketOwned_Click;
             // 
             // btn_NavigationHome
             // 
@@ -102,6 +101,7 @@
             btn_NavigationHome.Text = "Home";
             btn_NavigationHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btn_NavigationHome.UseVisualStyleBackColor = false;
+            btn_NavigationHome.Click += btn_NavigationHome_Click;
             // 
             // pb_Logo
             // 
@@ -113,22 +113,13 @@
             pb_Logo.TabIndex = 0;
             pb_Logo.TabStop = false;
             // 
-            // pnl
+            // pnl_Content
             // 
-            pnl.BackgroundImage = Properties.Resources.Content_background;
-            pnl.Controls.Add(calculatorAndFlightDeals1);
-            pnl.Location = new System.Drawing.Point(329, 0);
-            pnl.Name = "pnl";
-            pnl.Size = new System.Drawing.Size(1052, 775);
-            pnl.TabIndex = 2;
-            // 
-            // calculatorAndFlightDeals1
-            // 
-            calculatorAndFlightDeals1.BackColor = System.Drawing.Color.Transparent;
-            calculatorAndFlightDeals1.Location = new System.Drawing.Point(0, 91);
-            calculatorAndFlightDeals1.Name = "calculatorAndFlightDeals1";
-            calculatorAndFlightDeals1.Size = new System.Drawing.Size(1050, 698);
-            calculatorAndFlightDeals1.TabIndex = 0;
+            pnl_Content.BackgroundImage = Properties.Resources.Content_background;
+            pnl_Content.Location = new System.Drawing.Point(329, 0);
+            pnl_Content.Name = "pnl_Content";
+            pnl_Content.Size = new System.Drawing.Size(1052, 775);
+            pnl_Content.TabIndex = 2;
             // 
             // HomePage
             // 
@@ -136,14 +127,13 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1380, 768);
             Controls.Add(pnl_NavigationBar);
-            Controls.Add(pnl);
+            Controls.Add(pnl_Content);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "HomePage";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Cloud Express";
             pnl_NavigationBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pb_Logo).EndInit();
-            pnl.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -153,7 +143,6 @@
         private System.Windows.Forms.Button btn_NavigationHome;
         private System.Windows.Forms.Button btn_NavigationBookingHistory;
         private System.Windows.Forms.Button btn_NavigationTicketOwned;
-        private System.Windows.Forms.Panel pnl;
-        private CalculatorAndFlightDeals calculatorAndFlightDeals1;
+        private System.Windows.Forms.Panel pnl_Content;
     }
 }

@@ -61,7 +61,7 @@
             flow_Deals.BackColor = System.Drawing.Color.White;
             flow_Deals.Location = new System.Drawing.Point(54, 280);
             flow_Deals.Name = "flow_Deals";
-            flow_Deals.Size = new System.Drawing.Size(949, 376);
+            flow_Deals.Size = new System.Drawing.Size(949, 399);
             flow_Deals.TabIndex = 2;
             // 
             // lbl_FlightDeals
@@ -101,7 +101,7 @@
             Controls.Add(pb_DealsBackground);
             Controls.Add(uc_Calculator);
             Name = "CalculatorAndFlightDeals";
-            Size = new System.Drawing.Size(1050, 656);
+            Size = new System.Drawing.Size(1050, 679);
             ((System.ComponentModel.ISupportInitialize)pb_DealsBackground).EndInit();
             ResumeLayout(false);
             PerformLayout();
