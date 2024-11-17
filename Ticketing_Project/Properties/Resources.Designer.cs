@@ -63,6 +63,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BorderBackgroundRemoved {
+            get {
+                object obj = ResourceManager.GetObject("BorderBackgroundRemoved", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Brand_Leftside_Logo {
             get {
                 object obj = ResourceManager.GetObject("Brand Leftside Logo", resourceCulture);
@@ -96,6 +106,26 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap button_for_book_flight1 {
             get {
                 object obj = ResourceManager.GetObject("button for book flight1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ButtonBackgroundBorder {
+            get {
+                object obj = ResourceManager.GetObject("ButtonBackgroundBorder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ButtonBackgroundBorder1 {
+            get {
+                object obj = ResourceManager.GetObject("ButtonBackgroundBorder1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +243,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap InputPassengerBackground {
+            get {
+                object obj = ResourceManager.GetObject("InputPassengerBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap loading_arrow {
             get {
                 object obj = ResourceManager.GetObject("loading-arrow", resourceCulture);
@@ -276,6 +316,16 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap NavigationLogo {
             get {
                 object obj = ResourceManager.GetObject("NavigationLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PaymentBoxRemovedBackground {
+            get {
+                object obj = ResourceManager.GetObject("PaymentBoxRemovedBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

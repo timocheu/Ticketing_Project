@@ -19,10 +19,12 @@ namespace Ticketing_Project
         {
             InitializeComponent();
             // Initialize data
+            utility.Change_Font(this);
         }
 
         private void btn_NavigationHome_Click(object sender, EventArgs e)
         {
+            HidePreviousContent();
             if (homePage == null)
             {
                 homePage = new CalculatorAndFlightDeals();

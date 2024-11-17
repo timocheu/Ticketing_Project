@@ -45,7 +45,7 @@
             pnl_NavigationBar.Controls.Add(btn_NavigationTicketOwned);
             pnl_NavigationBar.Controls.Add(btn_NavigationHome);
             pnl_NavigationBar.Controls.Add(pb_Logo);
-            pnl_NavigationBar.Location = new System.Drawing.Point(-2, 0);
+            pnl_NavigationBar.Location = new System.Drawing.Point(0, 0);
             pnl_NavigationBar.Name = "pnl_NavigationBar";
             pnl_NavigationBar.Size = new System.Drawing.Size(332, 768);
             pnl_NavigationBar.TabIndex = 1;
@@ -123,11 +123,10 @@
             // 
             // HomePage
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             ClientSize = new System.Drawing.Size(1380, 768);
-            Controls.Add(pnl_NavigationBar);
             Controls.Add(pnl_Content);
+            Controls.Add(pnl_NavigationBar);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "HomePage";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

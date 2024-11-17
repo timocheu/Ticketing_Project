@@ -241,8 +241,7 @@
             // 
             // Calculator
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             BackColor = System.Drawing.Color.Transparent;
             Controls.Add(lbl_BoardClass);
             Controls.Add(lbl_NumberOfPassenger);

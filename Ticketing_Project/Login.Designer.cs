@@ -61,6 +61,7 @@
             txt_PasswordLogin.Location = new System.Drawing.Point(134, 525);
             txt_PasswordLogin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txt_PasswordLogin.Name = "txt_PasswordLogin";
+            txt_PasswordLogin.PasswordChar = '*';
             txt_PasswordLogin.PlaceholderText = "at least 8 characters";
             txt_PasswordLogin.Size = new System.Drawing.Size(444, 20);
             txt_PasswordLogin.TabIndex = 2;
