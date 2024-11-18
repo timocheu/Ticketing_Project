@@ -152,7 +152,7 @@
             btn_Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_Calculate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_Calculate.ForeColor = System.Drawing.Color.White;
-            btn_Calculate.Location = new System.Drawing.Point(843, 101);
+            btn_Calculate.Location = new System.Drawing.Point(852, 101);
             btn_Calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             btn_Calculate.Name = "btn_Calculate";
             btn_Calculate.Size = new System.Drawing.Size(125, 50);
@@ -166,7 +166,7 @@
             dtp_FlightDate.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             dtp_FlightDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dtp_FlightDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dtp_FlightDate.Location = new System.Drawing.Point(714, 113);
+            dtp_FlightDate.Location = new System.Drawing.Point(720, 113);
             dtp_FlightDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             dtp_FlightDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
             dtp_FlightDate.MinDate = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
@@ -176,9 +176,10 @@
             // 
             // cbb_From
             // 
+            cbb_From.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cbb_From.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             cbb_From.BackColor = System.Drawing.Color.White;
             cbb_From.CausesValidation = false;
-            cbb_From.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbb_From.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbb_From.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_From.FormattingEnabled = true;
@@ -193,9 +194,10 @@
             // 
             // cbb_Destination
             // 
+            cbb_Destination.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            cbb_Destination.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             cbb_Destination.BackColor = System.Drawing.Color.White;
             cbb_Destination.CausesValidation = false;
-            cbb_Destination.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbb_Destination.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbb_Destination.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_Destination.FormattingEnabled = true;
