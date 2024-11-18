@@ -24,7 +24,9 @@ namespace Ticketing_Project
 
         private void btn_NavigationHome_Click(object sender, EventArgs e)
         {
+            WhitenButtons();
             HidePreviousContent();
+            HighlightButton(btn_NavigationHome);
             if (homePage == null)
             {
                 homePage = new CalculatorAndFlightDeals();
@@ -40,7 +42,15 @@ namespace Ticketing_Project
 
         private void btn_NavigationTicketOwned_Click(object sender, EventArgs e)
         {
+            WhitenButtons();
             HidePreviousContent();
+            HighlightButton(btn_NavigationTicketOwned);
+        }
+        private void btn_NavigationBookingHistory_Click(object sender, EventArgs e)
+        {
+            WhitenButtons();
+            HidePreviousContent();
+            HighlightButton(btn_NavigationBookingHistory);
         }
 
         private void HidePreviousContent()
@@ -53,5 +63,21 @@ namespace Ticketing_Project
                 child.Hide();
             }
         }
+
+        private void WhitenButtons()
+        {
+            var buttons = pnl_NavigationButtons.Controls.OfType<Button>();
+            foreach (var button in buttons)
+            {
+                button.BackColor = Color.White;
+                button.ForeColor = Color.Black;
+            }
+        }
+
+        private void HighlightButton(Button button)
+        {
+            button.BackColor = Color.FromArgb(0, 119, 182);
+        }
+
     }
 }
