@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ticketing_Project.User_controls;
 
 namespace Ticketing_Project.Classes
 {
@@ -170,6 +171,13 @@ namespace Ticketing_Project.Classes
             {
                 box.Items.Add($"{location.City} ({location.Country_Code})");
             }
+        }
+
+        public void ShowCheckout(Form form)
+        {
+            Checkout checkout = new Checkout();
+            form.Controls.Add(checkout);
+            checkout.BringToFront();
         }
     }
 }

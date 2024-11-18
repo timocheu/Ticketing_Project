@@ -36,8 +36,11 @@ namespace Ticketing_Project
 
                 return;
             }
+            if (!homePage.Visible) 
+            {
+                homePage.Show(); 
+            }
 
-            homePage.Show();
         }
 
         private void btn_NavigationTicketOwned_Click(object sender, EventArgs e)
@@ -77,6 +80,7 @@ namespace Ticketing_Project
         private void HighlightButton(Button button)
         {
             button.BackColor = Color.FromArgb(0, 119, 182);
+            button.ForeColor = Color.White;
         }
 
     }

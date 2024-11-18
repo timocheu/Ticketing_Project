@@ -135,7 +135,7 @@
             // 
             pb_CalculatorBackground.BackColor = System.Drawing.Color.Transparent;
             pb_CalculatorBackground.Image = Properties.Resources.Flight_Calculator1;
-            pb_CalculatorBackground.Location = new System.Drawing.Point(8, 12);
+            pb_CalculatorBackground.Location = new System.Drawing.Point(15, 12);
             pb_CalculatorBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorBackground.Name = "pb_CalculatorBackground";
             pb_CalculatorBackground.Size = new System.Drawing.Size(988, 155);
@@ -155,10 +155,11 @@
             btn_Calculate.Location = new System.Drawing.Point(843, 101);
             btn_Calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             btn_Calculate.Name = "btn_Calculate";
-            btn_Calculate.Size = new System.Drawing.Size(127, 49);
+            btn_Calculate.Size = new System.Drawing.Size(125, 50);
             btn_Calculate.TabIndex = 11;
             btn_Calculate.Text = "Calculate";
             btn_Calculate.UseVisualStyleBackColor = false;
+            btn_Calculate.Click += btn_Calculate_Click;
             // 
             // dtp_FlightDate
             // 
