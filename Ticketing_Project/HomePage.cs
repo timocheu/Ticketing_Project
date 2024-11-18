@@ -13,47 +13,39 @@ namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
-        Utilities utility = new Utilities();
-        CalculatorAndFlightDeals homePage;
+        CalculatorAndFlightDeals homePage = new CalculatorAndFlightDeals();
         public HomePage()
         {
             InitializeComponent();
-            // Initialize data
-            utility.Change_Font(this);
+
+            // Initialize Homepage
+            this.Controls.Add(homePage);
+            homePage.Parent = pnl_Content;
+            homePage.Location = new Point(0, 95);
         }
 
         private void btn_NavigationHome_Click(object sender, EventArgs e)
         {
-            WhitenButtons();
-            HidePreviousContent();
-            HighlightButton(btn_NavigationHome);
-            if (homePage == null)
-            {
-                homePage = new CalculatorAndFlightDeals();
-                this.Controls.Add(homePage);
-                homePage.Parent = this.pnl_Content;
-                homePage.Location = new Point(0, 95);
+            if (homePage.Visible) return;
 
-                return;
-            }
-            if (!homePage.Visible) 
-            {
-                homePage.Show(); 
-            }
+            WhitenNavigationButtons();
+            HighlightNavigationButton(btn_NavigationHome);
+            HidePreviousContent();
+            homePage.Show();
 
         }
 
         private void btn_NavigationTicketOwned_Click(object sender, EventArgs e)
         {
-            WhitenButtons();
+            WhitenNavigationButtons();
             HidePreviousContent();
-            HighlightButton(btn_NavigationTicketOwned);
+            HighlightNavigationButton(btn_NavigationTicketOwned);
         }
         private void btn_NavigationBookingHistory_Click(object sender, EventArgs e)
         {
-            WhitenButtons();
+            WhitenNavigationButtons();
             HidePreviousContent();
-            HighlightButton(btn_NavigationBookingHistory);
+            HighlightNavigationButton(btn_NavigationBookingHistory);
         }
 
         private void HidePreviousContent()
@@ -67,7 +59,7 @@ namespace Ticketing_Project
             }
         }
 
-        private void WhitenButtons()
+        private void WhitenNavigationButtons()
         {
             var buttons = pnl_NavigationButtons.Controls.OfType<Button>();
             foreach (var button in buttons)
@@ -77,7 +69,7 @@ namespace Ticketing_Project
             }
         }
 
-        private void HighlightButton(Button button)
+        private void HighlightNavigationButton(Button button)
         {
             button.BackColor = Color.FromArgb(0, 119, 182);
             button.ForeColor = Color.White;
