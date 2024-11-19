@@ -78,7 +78,7 @@
             // 
             pb_CalculatorPeopleIcon.BackColor = System.Drawing.Color.White;
             pb_CalculatorPeopleIcon.Image = Properties.Resources.ic_baseline_people;
-            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(131, 75);
+            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(131, 79);
             pb_CalculatorPeopleIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorPeopleIcon.Name = "pb_CalculatorPeopleIcon";
             pb_CalculatorPeopleIcon.Size = new System.Drawing.Size(15, 13);

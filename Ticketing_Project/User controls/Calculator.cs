@@ -26,8 +26,21 @@ namespace Ticketing_Project
 
         private void btn_Calculate_Click(object sender, EventArgs e)
         {
-            var form = Application.OpenForms.Cast<Form>().Last();
+            // Restrictions
+            // Check if every combo box is filled
+             var comboBox = this.Controls.OfType<ComboBox>();
+            // Hide everything
+            foreach (var field in comboBox)
+            {
+                if (String.IsNullOrEmpty(field.Text))
+                {
+                    MessageBox.Show("Please complete the following fields to continue.");
+                    return;
+                }
+            }
 
+
+            var form = Application.OpenForms.Cast<Form>().Last();
             // Store the details in the calculator in object
             Ticket ticket = new Ticket();
 
