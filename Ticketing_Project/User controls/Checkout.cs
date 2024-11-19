@@ -37,8 +37,8 @@ namespace Ticketing_Project.User_controls
                 lbl_ReturnDateDisplay.Text = ticket.FlightDate.AddDays(365).ToString();
             }
 
-            lbl_TripPriceDisplay.Text = price.ToString();
-            lbl_TaxDisplay.Text = ((int) tax).ToString();
+            lbl_TripPriceDisplay.Text = $"₱{price}";
+            lbl_TaxDisplay.Text = $"₱{(int) tax}";
             // Show discount for flash deals
             if (ticket.isDeal)
             {
@@ -46,7 +46,7 @@ namespace Ticketing_Project.User_controls
             }
 
             // Display total amout with Tax
-            lbl_TotalDisplay.Text = price.ToString();
+            lbl_TotalDisplay.Text = $"₱{price * passengers}";
         }
 
         private void btn_AddPassenger_Click(object sender, EventArgs e)
