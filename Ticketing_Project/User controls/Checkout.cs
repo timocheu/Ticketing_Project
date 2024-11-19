@@ -57,6 +57,19 @@ namespace Ticketing_Project.User_controls
             lbl_TotalTicketDisplay.Text = passengers.ToString();
             lbl_TotalDisplay.Text = (passengers * priceEachPerson).ToString();
         }
+        private void btn_RemovePassenger_Click(object sender, EventArgs e)
+        {
+            if (passengers == 1)
+            {
+                MessageBox.Show("Passenger should be at least 1.");
+                return;
+            }
+
+            passengers--;
+            lbl_TotalTicketDisplay.Text = passengers.ToString();
+            lbl_TotalDisplay.Text = (passengers * priceEachPerson).ToString();
+            flow_Passengers.Controls.RemoveAt(0);
+        }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
@@ -86,6 +99,21 @@ namespace Ticketing_Project.User_controls
             button.ForeColor = Color.White;
         }
 
+        private void btn_Proceed_Click(object sender, EventArgs e)
+        {
+            foreach (Control control in flow_Passengers.Controls)
+            {
+                if (control is UserControl userControl)
+                {
+                    TextBox PassengerInput = userControl.Controls.OfType<TextBox>().FirstOrDefault();
+                    if (String.IsNullOrEmpty(PassengerInput.Text))
+                    {
+                        MessageBox.Show("Please Complete the missing fields.");
+                        return;
+                    }
+                }
+            }
+        }
     }
 }
 

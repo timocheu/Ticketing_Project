@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             pb_InputPassengerBackground = new System.Windows.Forms.PictureBox();
-            lbl_Passenger = new System.Windows.Forms.TextBox();
+            txt_Passenger = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)pb_InputPassengerBackground).BeginInit();
             SuspendLayout();
             // 
@@ -42,21 +42,23 @@
             pb_InputPassengerBackground.TabIndex = 0;
             pb_InputPassengerBackground.TabStop = false;
             // 
-            // lbl_Passenger
+            // txt_Passenger
             // 
-            lbl_Passenger.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            lbl_Passenger.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Passenger.Location = new System.Drawing.Point(11, 19);
-            lbl_Passenger.Name = "lbl_Passenger";
-            lbl_Passenger.PlaceholderText = " Passenger";
-            lbl_Passenger.Size = new System.Drawing.Size(420, 25);
-            lbl_Passenger.TabIndex = 5;
+            txt_Passenger.BackColor = System.Drawing.Color.White;
+            txt_Passenger.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            txt_Passenger.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            txt_Passenger.Location = new System.Drawing.Point(11, 19);
+            txt_Passenger.MaxLength = 20;
+            txt_Passenger.Name = "txt_Passenger";
+            txt_Passenger.PlaceholderText = " Passenger";
+            txt_Passenger.Size = new System.Drawing.Size(420, 25);
+            txt_Passenger.TabIndex = 5;
             // 
             // PassengerTextBox
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             BackColor = System.Drawing.Color.Transparent;
-            Controls.Add(lbl_Passenger);
+            Controls.Add(txt_Passenger);
             Controls.Add(pb_InputPassengerBackground);
             Name = "PassengerTextBox";
             Size = new System.Drawing.Size(442, 65);
@@ -68,6 +70,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pb_InputPassengerBackground;
-        private System.Windows.Forms.TextBox lbl_Passenger;
+        public System.Windows.Forms.TextBox txt_Passenger;
     }
 }

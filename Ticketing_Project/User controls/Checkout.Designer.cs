@@ -35,7 +35,9 @@
             flow_Checkout = new System.Windows.Forms.FlowLayoutPanel();
             flow_Passengers = new System.Windows.Forms.FlowLayoutPanel();
             uc_PassengerInput = new PassengerTextBox();
+            pnl_PassengerOption = new System.Windows.Forms.Panel();
             btn_AddPassenger = new System.Windows.Forms.Button();
+            btn_RemovePassenger = new System.Windows.Forms.Button();
             pnl_BookingSummary = new System.Windows.Forms.Panel();
             table_BookingSummary = new System.Windows.Forms.TableLayoutPanel();
             lbl_ReturnDateDisplay = new System.Windows.Forms.Label();
@@ -67,6 +69,7 @@
             pnl_CheckoutSection.SuspendLayout();
             flow_Checkout.SuspendLayout();
             flow_Passengers.SuspendLayout();
+            pnl_PassengerOption.SuspendLayout();
             pnl_BookingSummary.SuspendLayout();
             table_BookingSummary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Line).BeginInit();
@@ -107,6 +110,7 @@
             btn_Proceed.TabIndex = 14;
             btn_Proceed.Text = "Proceed";
             btn_Proceed.UseVisualStyleBackColor = false;
+            btn_Proceed.Click += btn_Proceed_Click;
             // 
             // btn_Cancel
             // 
@@ -148,7 +152,7 @@
             flow_Checkout.AutoScroll = true;
             flow_Checkout.BackColor = System.Drawing.Color.White;
             flow_Checkout.Controls.Add(flow_Passengers);
-            flow_Checkout.Controls.Add(btn_AddPassenger);
+            flow_Checkout.Controls.Add(pnl_PassengerOption);
             flow_Checkout.Controls.Add(pnl_BookingSummary);
             flow_Checkout.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             flow_Checkout.Location = new System.Drawing.Point(111, 220);
@@ -179,12 +183,22 @@
             uc_PassengerInput.Size = new System.Drawing.Size(477, 61);
             uc_PassengerInput.TabIndex = 0;
             // 
+            // pnl_PassengerOption
+            // 
+            pnl_PassengerOption.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pnl_PassengerOption.Controls.Add(btn_AddPassenger);
+            pnl_PassengerOption.Controls.Add(btn_RemovePassenger);
+            pnl_PassengerOption.Location = new System.Drawing.Point(92, 76);
+            pnl_PassengerOption.Name = "pnl_PassengerOption";
+            pnl_PassengerOption.Size = new System.Drawing.Size(304, 68);
+            pnl_PassengerOption.TabIndex = 8;
+            // 
             // btn_AddPassenger
             // 
             btn_AddPassenger.Anchor = System.Windows.Forms.AnchorStyles.None;
             btn_AddPassenger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_AddPassenger.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            btn_AddPassenger.Location = new System.Drawing.Point(182, 76);
+            btn_AddPassenger.Location = new System.Drawing.Point(26, 3);
             btn_AddPassenger.Name = "btn_AddPassenger";
             btn_AddPassenger.Size = new System.Drawing.Size(125, 35);
             btn_AddPassenger.TabIndex = 6;
@@ -192,6 +206,21 @@
             btn_AddPassenger.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btn_AddPassenger.UseVisualStyleBackColor = true;
             btn_AddPassenger.Click += btn_AddPassenger_Click;
+            // 
+            // btn_RemovePassenger
+            // 
+            btn_RemovePassenger.Anchor = System.Windows.Forms.AnchorStyles.None;
+            btn_RemovePassenger.BackColor = System.Drawing.Color.Red;
+            btn_RemovePassenger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_RemovePassenger.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_RemovePassenger.Location = new System.Drawing.Point(161, 3);
+            btn_RemovePassenger.Name = "btn_RemovePassenger";
+            btn_RemovePassenger.Size = new System.Drawing.Size(109, 35);
+            btn_RemovePassenger.TabIndex = 7;
+            btn_RemovePassenger.Text = "- Remove";
+            btn_RemovePassenger.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btn_RemovePassenger.UseVisualStyleBackColor = false;
+            btn_RemovePassenger.Click += btn_RemovePassenger_Click;
             // 
             // pnl_BookingSummary
             // 
@@ -204,7 +233,7 @@
             pnl_BookingSummary.Controls.Add(pb_Line3);
             pnl_BookingSummary.Controls.Add(tlp_PriceTable);
             pnl_BookingSummary.Controls.Add(lbl_PriceDetails);
-            pnl_BookingSummary.Location = new System.Drawing.Point(7, 117);
+            pnl_BookingSummary.Location = new System.Drawing.Point(7, 150);
             pnl_BookingSummary.Name = "pnl_BookingSummary";
             pnl_BookingSummary.Size = new System.Drawing.Size(475, 363);
             pnl_BookingSummary.TabIndex = 15;
@@ -557,6 +586,7 @@
             flow_Checkout.ResumeLayout(false);
             flow_Checkout.PerformLayout();
             flow_Passengers.ResumeLayout(false);
+            pnl_PassengerOption.ResumeLayout(false);
             pnl_BookingSummary.ResumeLayout(false);
             pnl_BookingSummary.PerformLayout();
             table_BookingSummary.ResumeLayout(false);
@@ -609,5 +639,7 @@
         private System.Windows.Forms.FlowLayoutPanel flow_Passengers;
         private PassengerTextBox uc_PassengerInput;
         private System.Windows.Forms.Panel pnl_BookingSummary;
+        private System.Windows.Forms.Panel pnl_PassengerOption;
+        private System.Windows.Forms.Button btn_RemovePassenger;
     }
 }
