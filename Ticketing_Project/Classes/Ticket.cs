@@ -9,6 +9,7 @@ namespace Ticketing_Project.Classes
     public class Ticket : Utilities
     {
         //CardDeal temp = new CardDeal(price, tripType,loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
+        public string Owner { get; set; }
         public string From { get; set; }
         public string FromCountryCode { get; set; }
         public string Destination { get; set; }
@@ -20,6 +21,5 @@ namespace Ticketing_Project.Classes
         public bool isDeal { get; set; }
         public int Passengers { get; set; }
 
-        
     }
 }

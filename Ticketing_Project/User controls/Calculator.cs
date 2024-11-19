@@ -40,15 +40,18 @@ namespace Ticketing_Project
             }
 
 
-            var form = Application.OpenForms.Cast<Form>().Last();
-            // Store the details in the calculator in object
-            Ticket ticket = new Ticket();
-
-            ticket.From = cbb_From.Text;
-            ticket.Destination = cbb_Destination.Text;
             // Get the index and use it to get the location object
             int indexFrom = cbb_From.Items.IndexOf(cbb_From.Text);
             int indexDestination = cbb_Destination.Items.IndexOf(cbb_Destination.Text);
+            // Store the details in the calculator in object
+            Ticket ticket = new Ticket();
+            Location loc1 = ticket.GetLocation(indexFrom);
+            Location loc2 = ticket.GetLocation(indexDestination);
+
+            ticket.From = loc1.City;
+            ticket.FromCountryCode = loc1.Country;
+            ticket.Destination = loc2.City;
+            ticket.DestinationCountryCode = loc2.Country;
 
             // Flight Details
             ticket.FlightDate = dtp_FlightDate.Value;
@@ -56,11 +59,13 @@ namespace Ticketing_Project
             ticket.TripType = cbb_TripType.Text;
             ticket.Passengers = int.Parse(cbb_NumberOfPassengers.Text);
 
-            double distance = ticket.CalculateDistance(ticket.GetLocation(indexFrom), ticket.GetLocation(indexDestination));
+            double distance = ticket.CalculateDistance(loc1, loc2);
             ticket.Duration = ticket.CalculateDuration(distance);
 
             Checkout checkout = new Checkout(ticket, (int) ticket.GeneratePrice(distance, ticket.BoardClass, ticket.TripType));
-            util.ShowCheckout(form, checkout);
+
+            var form = Application.OpenForms.Cast<Form>().Last();
+           util.ShowCheckout(form, checkout);
         }
     }
 }

@@ -183,5 +183,16 @@ namespace Ticketing_Project.Classes
         {
             return data[index];
         }
+
+        public string RandomGate()
+        {
+            string[] gates = { "A", "B", "C", "D", "E", "F", };
+            return $"{random.Next(1, 100)}-{gates[random.Next(0, 5)]}";
+        }
+
+        public string RandomTerminal()
+        {
+            return $"Terminal-{random.Next(1, 10)}";
+        }
     }
 }
