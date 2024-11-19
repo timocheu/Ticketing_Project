@@ -14,16 +14,24 @@ namespace Ticketing_Project.User_controls
     public partial class Checkout : UserControl
     {
         int passengers;
+        int priceEachPerson;
+
         public Checkout(Ticket ticket, int price)
         {
             InitializeComponent();
             passengers = ticket.Passengers;
+            priceEachPerson = price;
             double tax = price * .2;
+
+            for (int i = 0; i < passengers - 1; i++)
+            {
+                PassengerTextBox passengerNew = new PassengerTextBox();
+                flow_Passengers.Controls.Add(passengerNew);
+            }
             // Ticket Details
             lbl_TotalTicketDisplay.Text = passengers.ToString();
             lbl_LocationDisplay.Text = ticket.From;
             lbl_PickUpDateDisplay.Text = ticket.FlightDate.ToString();
-
             if (ticket.TripType == "Round Trip")
             {
                 lbl_ReturnDateDisplay.Text = ticket.FlightDate.AddDays(365).ToString();
@@ -45,6 +53,9 @@ namespace Ticketing_Project.User_controls
         {
             PassengerTextBox passengerNew = new PassengerTextBox();
             flow_Passengers.Controls.Add(passengerNew);
+            passengers++;
+            lbl_TotalTicketDisplay.Text = passengers.ToString();
+            lbl_TotalDisplay.Text = (passengers * priceEachPerson).ToString();
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)

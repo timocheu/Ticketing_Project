@@ -469,9 +469,9 @@
             lbl_TripPrice.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
             lbl_TripPrice.Location = new System.Drawing.Point(3, 4);
             lbl_TripPrice.Name = "lbl_TripPrice";
-            lbl_TripPrice.Size = new System.Drawing.Size(64, 19);
+            lbl_TripPrice.Size = new System.Drawing.Size(149, 19);
             lbl_TripPrice.TabIndex = 0;
-            lbl_TripPrice.Text = "Trip Price";
+            lbl_TripPrice.Text = "Trip Price (Each Person)";
             // 
             // lbl_Discount
             // 
