@@ -38,7 +38,7 @@ namespace Ticketing_Project.User_controls
             }
 
             lbl_TripPriceDisplay.Text = $"₱{price}";
-            lbl_TaxDisplay.Text = $"₱{(int) tax}";
+            lbl_TaxDisplay.Text = $"₱{(int)tax}";
             // Show discount for flash deals
             if (ticket.isDeal)
             {
@@ -62,5 +62,30 @@ namespace Ticketing_Project.User_controls
         {
             this.Hide();
         }
+
+        private void btn_CardPayment_Click(object sender, EventArgs e)
+        {
+            WhitenNavigationButtons(btn_MobilePayment);
+            HighlightNavigationButton(btn_CardPayment);
+        }
+        private void btn_MobilePayment_Click(object sender, EventArgs e)
+        {
+            WhitenNavigationButtons(btn_CardPayment);
+            HighlightNavigationButton(btn_MobilePayment);
+        }
+
+        private void WhitenNavigationButtons(Button button)
+        {
+            button.BackColor = Color.White;
+            button.ForeColor = Color.Black;
+        }
+
+        private void HighlightNavigationButton(Button button)
+        {
+            button.BackColor = Color.FromArgb(0, 119, 182);
+            button.ForeColor = Color.White;
+        }
+
     }
 }
+

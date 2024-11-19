@@ -140,6 +140,7 @@
             btn_MobilePayment.TabIndex = 3;
             btn_MobilePayment.Text = "Mobile Payment";
             btn_MobilePayment.UseVisualStyleBackColor = false;
+            btn_MobilePayment.Click += btn_MobilePayment_Click;
             // 
             // flow_Checkout
             // 
@@ -521,6 +522,7 @@
             btn_CardPayment.TabIndex = 2;
             btn_CardPayment.Text = "Card Payment\r\n";
             btn_CardPayment.UseVisualStyleBackColor = false;
+            btn_CardPayment.Click += btn_CardPayment_Click;
             // 
             // lbl_Payment
             // 
