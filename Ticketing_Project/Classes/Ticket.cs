@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ticketing_Project.Classes
 {
-    public class Ticket
+    public class Ticket : Utilities
     {
         //CardDeal temp = new CardDeal(price, tripType,loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
         public string From { get; set; }
@@ -17,5 +17,9 @@ namespace Ticketing_Project.Classes
         public string BoardClass { get; set; }
         public string TripType { get; set; }
         public string Duration { get; set; }
+        public bool isDeal { get; set; }
+        public int Passengers { get; set; }
+
+        
     }
 }

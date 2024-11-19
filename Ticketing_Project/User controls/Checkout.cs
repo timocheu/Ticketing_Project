@@ -13,10 +13,32 @@ namespace Ticketing_Project.User_controls
 {
     public partial class Checkout : UserControl
     {
-        public Checkout()
+        int passengers;
+        public Checkout(Ticket ticket, int price)
         {
             InitializeComponent();
-            this.BackColor = Color.FromArgb(20, Color.Black);
+            passengers = ticket.Passengers;
+            double tax = price * .2;
+            // Ticket Details
+            lbl_TotalTicketDisplay.Text = passengers.ToString();
+            lbl_LocationDisplay.Text = ticket.From;
+            lbl_PickUpDateDisplay.Text = ticket.FlightDate.ToString();
+
+            if (ticket.TripType == "Round Trip")
+            {
+                lbl_ReturnDateDisplay.Text = ticket.FlightDate.AddDays(365).ToString();
+            }
+
+            lbl_TripPriceDisplay.Text = price.ToString();
+            lbl_TaxDisplay.Text = ((int) tax).ToString();
+            // Show discount for flash deals
+            if (ticket.isDeal)
+            {
+                lbl_DiscountDisplay.Text = "20%";
+            }
+
+            // Display total amout with Tax
+            lbl_TotalDisplay.Text = price.ToString();
         }
 
         private void btn_AddPassenger_Click(object sender, EventArgs e)

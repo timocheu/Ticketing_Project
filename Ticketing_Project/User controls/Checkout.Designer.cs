@@ -493,9 +493,9 @@
             lbl_Tax.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
             lbl_Tax.Location = new System.Drawing.Point(3, 60);
             lbl_Tax.Name = "lbl_Tax";
-            lbl_Tax.Size = new System.Drawing.Size(27, 19);
+            lbl_Tax.Size = new System.Drawing.Size(62, 19);
             lbl_Tax.TabIndex = 2;
-            lbl_Tax.Text = "Tax";
+            lbl_Tax.Text = "Tax (VAT)";
             // 
             // lbl_PriceDetails
             // 

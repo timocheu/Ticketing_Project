@@ -69,7 +69,7 @@ namespace Ticketing_Project.Classes
                 Math.Truncate(price - (price * .2));
             }
 
-            return Math.Truncate(price);
+            return Math.Truncate(price * .2);
         }
 
         public double CalculateDistance(Location loc1, Location loc2)
@@ -84,7 +84,7 @@ namespace Ticketing_Project.Classes
             return distance * 111;
         }
 
-        private string CalculateDuration(double distance)
+        internal string CalculateDuration(double distance)
         {
             // Average plane speed km/h
             double hours = distance / 880;
@@ -95,7 +95,7 @@ namespace Ticketing_Project.Classes
             return duration;
         }
 
-        private string RandomTripType()
+        protected string RandomTripType()
         {
             if (random.Next(1, 2) == 1)
             {
@@ -105,7 +105,7 @@ namespace Ticketing_Project.Classes
             return "One way";
         }
 
-        private string RandomBoardClass()
+        protected string RandomBoardClass()
         {
             if (random.Next(1, 2) == 1)
             {
@@ -115,13 +115,13 @@ namespace Ticketing_Project.Classes
             return "Business Class";
         }
 
-        private Location RandomLocation() 
+        protected Location RandomLocation() 
         {
             Location location = data[random.Next(0, 1046)];
             return location;
         }
 
-        private DateTime RandomDate()
+        protected DateTime RandomDate()
         {
             DateTime currentTime = DateTime.Now;
             currentTime = currentTime.AddDays(random.Next(1, 365));
@@ -173,11 +173,15 @@ namespace Ticketing_Project.Classes
             }
         }
 
-        public void ShowCheckout(Form form)
+        public void ShowCheckout(Form form, Checkout checkout)
         {
-            Checkout checkout = new Checkout();
             form.Controls.Add(checkout);
             checkout.BringToFront();
+        }
+
+        public Location GetLocation(int index)
+        {
+            return data[index];
         }
     }
 }

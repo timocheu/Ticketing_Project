@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cb_BoardClass = new System.Windows.Forms.ComboBox();
+            cbb_BoardClass = new System.Windows.Forms.ComboBox();
             cbb_NumberOfPassengers = new System.Windows.Forms.ComboBox();
             pb_CalculatorPeopleIcon = new System.Windows.Forms.PictureBox();
             cbb_TripType = new System.Windows.Forms.ComboBox();
@@ -50,17 +50,17 @@
             ((System.ComponentModel.ISupportInitialize)pb_CalculatorBackground).BeginInit();
             SuspendLayout();
             // 
-            // cb_BoardClass
+            // cbb_BoardClass
             // 
-            cb_BoardClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cb_BoardClass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            cb_BoardClass.FormattingEnabled = true;
-            cb_BoardClass.Items.AddRange(new object[] { "Economy", "Business Class" });
-            cb_BoardClass.Location = new System.Drawing.Point(291, 74);
-            cb_BoardClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            cb_BoardClass.Name = "cb_BoardClass";
-            cb_BoardClass.Size = new System.Drawing.Size(113, 23);
-            cb_BoardClass.TabIndex = 2;
+            cbb_BoardClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbb_BoardClass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cbb_BoardClass.FormattingEnabled = true;
+            cbb_BoardClass.Items.AddRange(new object[] { "Economy", "Business Class" });
+            cbb_BoardClass.Location = new System.Drawing.Point(291, 74);
+            cbb_BoardClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            cbb_BoardClass.Name = "cbb_BoardClass";
+            cbb_BoardClass.Size = new System.Drawing.Size(113, 23);
+            cbb_BoardClass.TabIndex = 2;
             // 
             // cbb_NumberOfPassengers
             // 
@@ -259,7 +259,7 @@
             Controls.Add(cbb_TripType);
             Controls.Add(pb_CalculatorPeopleIcon);
             Controls.Add(cbb_NumberOfPassengers);
-            Controls.Add(cb_BoardClass);
+            Controls.Add(cbb_BoardClass);
             Controls.Add(pb_CalculatorBackground);
             Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Name = "Calculator";
@@ -274,7 +274,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox cb_BoardClass;
+        private System.Windows.Forms.ComboBox cbb_BoardClass;
         private System.Windows.Forms.ComboBox cbb_NumberOfPassengers;
         private System.Windows.Forms.PictureBox pb_CalculatorPeopleIcon;
         private System.Windows.Forms.ComboBox cbb_TripType;
