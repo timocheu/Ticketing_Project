@@ -343,6 +343,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Ticket_Template_Background {
+            get {
+                object obj = ResourceManager.GetObject("Ticket Template Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap typcn_arrow_up_outline {
             get {
                 object obj = ResourceManager.GetObject("typcn_arrow-up-outline", resourceCulture);
@@ -362,17 +372,18 @@ namespace Ticketing_Project.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to name_en,country,country_code,latitude,longitude
-        ///Tirana,Albania,AL,41.327499,19.81889
-        ///Algiers,Algeria,DZ,36.752499,3.04197
-        ///Oran,Algeria,DZ,35.691109,-0.64167
-        ///Buenos Aires,Argentina,AR,-34.613152,-58.377232
-        ///San Carlos de Bariloche,Argentina,AR,-41.145569,-71.30822
-        ///Mendoza,Argentina,AR,-32.890839,-68.827171
-        ///Salta,Argentina,AR,-24.7859,-65.411659
-        ///Córdoba,Argentina,AR,-31.4135,-64.181053
-        ///Ushuaia,Argentina,AR,-54.799999,-68.300003
-        ///Rosario,Argentina,AR,-32.946819,-60.63932
-        ///Mar del Plata,Argentina,AR,-38 [rest of string was truncated]&quot;;.
+        ///Āgra,India,IN,27.183331,78.01667
+        ///İstanbul,Turkey,TR,41.01384,28.949659
+        ///İzmir,Turkey,TR,38.412731,27.13838
+        ///Århus,Denmark,DK,56.156738,10.21076
+        ///Łódź,Poland,PL,51.75,19.466669
+        ///Ágios Nikólaos,Greece,GR,35.191059,25.71524
+        ///Aachen,Germany,DE,50.776642,6.08342
+        ///Abano Terme,Italy,IT,45.360989,11.79141
+        ///Aberdeen,United Kingdom,GB,57.143688,-2.09814
+        ///Abilene,United States,US,32.448738,-99.733139
+        ///Abu Dhabi,United Arab Emirates,AE,24.466669,54.366669
+        ///Abuja,Nigeria [rest of string was truncated]&quot;;.
         /// </summary>
         public static string world_cities_geoname {
             get {

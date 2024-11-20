@@ -133,6 +133,9 @@
   <data name="button for book flight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button for book flight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BorderBackgroundRemoved" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BorderBackgroundRemoved.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="InputPassengerBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\InputPassengerBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,6 +184,9 @@
   <data name="Brand Leftside Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Brand Leftside Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ButtonBackgroundBorder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonBackgroundBorder1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ButtonBackgroundBorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonBackgroundBorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -205,10 +211,7 @@
   <data name="Comfortable flights, turns into happy travel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Comfortable flights, turns into happy travel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonBackgroundBorder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonBackgroundBorder1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BorderBackgroundRemoved" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BorderBackgroundRemoved.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ticket Template Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ticket Template Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
