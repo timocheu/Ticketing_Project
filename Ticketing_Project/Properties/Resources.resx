@@ -199,6 +199,9 @@
   <data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Ticket Template Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ticket Template Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CardDealsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardDealsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,7 +214,7 @@
   <data name="Comfortable flights, turns into happy travel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Comfortable flights, turns into happy travel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ticket Template Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ticket Template Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TicketTemplateBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TicketTemplateBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

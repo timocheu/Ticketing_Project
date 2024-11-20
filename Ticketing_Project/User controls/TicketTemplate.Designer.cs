@@ -28,164 +28,173 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbl_BrandName = new System.Windows.Forms.Label();
-            lbl_BoardingPass = new System.Windows.Forms.Label();
-            lbl_BoardingClassBig = new System.Windows.Forms.Label();
-            tbl_BoardingPassBig = new System.Windows.Forms.TableLayoutPanel();
-            tbl_BoardingPassSmall = new System.Windows.Forms.TableLayoutPanel();
-            lbl_BoardingPassSmall = new System.Windows.Forms.Label();
-            lbl_BoardingClassSmall = new System.Windows.Forms.Label();
-            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            tbl_BoardingPassBig.SuspendLayout();
-            tbl_BoardingPassSmall.SuspendLayout();
+            lbl_NameOfPassenger = new System.Windows.Forms.Label();
+            lbl_From = new System.Windows.Forms.Label();
+            lbl_Destination = new System.Windows.Forms.Label();
+            lbl_Seat = new System.Windows.Forms.Label();
+            lbl_Date = new System.Windows.Forms.Label();
+            lbl_Gate = new System.Windows.Forms.Label();
+            lbl_FlightDate = new System.Windows.Forms.Label();
+            lbl_FlightDuration = new System.Windows.Forms.Label();
+            lbl_TripType = new System.Windows.Forms.Label();
+            lbl_BoardingClass = new System.Windows.Forms.Label();
             SuspendLayout();
             // 
-            // lbl_BrandName
+            // lbl_NameOfPassenger
             // 
-            lbl_BrandName.AutoSize = true;
-            lbl_BrandName.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            lbl_BrandName.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_BrandName.ForeColor = System.Drawing.Color.White;
-            lbl_BrandName.Location = new System.Drawing.Point(23, 18);
-            lbl_BrandName.Name = "lbl_BrandName";
-            lbl_BrandName.Size = new System.Drawing.Size(219, 37);
-            lbl_BrandName.TabIndex = 0;
-            lbl_BrandName.Text = "CLOUD EXPRESS";
+            lbl_NameOfPassenger.AutoSize = true;
+            lbl_NameOfPassenger.BackColor = System.Drawing.Color.Transparent;
+            lbl_NameOfPassenger.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_NameOfPassenger.Location = new System.Drawing.Point(22, 139);
+            lbl_NameOfPassenger.Name = "lbl_NameOfPassenger";
+            lbl_NameOfPassenger.Size = new System.Drawing.Size(179, 29);
+            lbl_NameOfPassenger.TabIndex = 0;
+            lbl_NameOfPassenger.Text = "Timotheo Che Padilla";
+            lbl_NameOfPassenger.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_BoardingPass
+            // lbl_From
             // 
-            lbl_BoardingPass.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
-            lbl_BoardingPass.AutoSize = true;
-            lbl_BoardingPass.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            lbl_BoardingPass.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_BoardingPass.ForeColor = System.Drawing.Color.White;
-            lbl_BoardingPass.Location = new System.Drawing.Point(6, 0);
-            lbl_BoardingPass.Name = "lbl_BoardingPass";
-            lbl_BoardingPass.Size = new System.Drawing.Size(142, 30);
-            lbl_BoardingPass.TabIndex = 1;
-            lbl_BoardingPass.Text = "Boarding Pass";
+            lbl_From.AutoSize = true;
+            lbl_From.BackColor = System.Drawing.Color.Transparent;
+            lbl_From.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_From.Location = new System.Drawing.Point(22, 216);
+            lbl_From.Name = "lbl_From";
+            lbl_From.Size = new System.Drawing.Size(179, 29);
+            lbl_From.TabIndex = 1;
+            lbl_From.Text = "Timotheo Che Padilla";
+            lbl_From.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_BoardingClassBig
+            // lbl_Destination
             // 
-            lbl_BoardingClassBig.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
-            lbl_BoardingClassBig.AutoSize = true;
-            lbl_BoardingClassBig.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            lbl_BoardingClassBig.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_BoardingClassBig.ForeColor = System.Drawing.Color.White;
-            lbl_BoardingClassBig.Location = new System.Drawing.Point(36, 39);
-            lbl_BoardingClassBig.Name = "lbl_BoardingClassBig";
-            lbl_BoardingClassBig.Size = new System.Drawing.Size(112, 21);
-            lbl_BoardingClassBig.TabIndex = 2;
-            lbl_BoardingClassBig.Text = "<BoardClass>";
+            lbl_Destination.AutoSize = true;
+            lbl_Destination.BackColor = System.Drawing.Color.Transparent;
+            lbl_Destination.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Destination.Location = new System.Drawing.Point(22, 286);
+            lbl_Destination.Name = "lbl_Destination";
+            lbl_Destination.Size = new System.Drawing.Size(179, 29);
+            lbl_Destination.TabIndex = 2;
+            lbl_Destination.Text = "Timotheo Che Padilla";
+            lbl_Destination.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tbl_BoardingPassBig
+            // lbl_Seat
             // 
-            tbl_BoardingPassBig.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            tbl_BoardingPassBig.ColumnCount = 1;
-            tbl_BoardingPassBig.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tbl_BoardingPassBig.Controls.Add(lbl_BoardingPass, 0, 0);
-            tbl_BoardingPassBig.Controls.Add(lbl_BoardingClassBig, 0, 1);
-            tbl_BoardingPassBig.Location = new System.Drawing.Point(362, 10);
-            tbl_BoardingPassBig.Name = "tbl_BoardingPassBig";
-            tbl_BoardingPassBig.RowCount = 2;
-            tbl_BoardingPassBig.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tbl_BoardingPassBig.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tbl_BoardingPassBig.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tbl_BoardingPassBig.Size = new System.Drawing.Size(151, 60);
-            tbl_BoardingPassBig.TabIndex = 3;
+            lbl_Seat.AutoSize = true;
+            lbl_Seat.BackColor = System.Drawing.Color.Transparent;
+            lbl_Seat.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Seat.Location = new System.Drawing.Point(285, 225);
+            lbl_Seat.Name = "lbl_Seat";
+            lbl_Seat.Size = new System.Drawing.Size(50, 29);
+            lbl_Seat.TabIndex = 4;
+            lbl_Seat.Text = "DATE";
+            lbl_Seat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tbl_BoardingPassSmall
+            // lbl_Date
             // 
-            tbl_BoardingPassSmall.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            tbl_BoardingPassSmall.ColumnCount = 1;
-            tbl_BoardingPassSmall.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tbl_BoardingPassSmall.Controls.Add(lbl_BoardingPassSmall, 0, 0);
-            tbl_BoardingPassSmall.Controls.Add(lbl_BoardingClassSmall, 0, 1);
-            tbl_BoardingPassSmall.Location = new System.Drawing.Point(559, 10);
-            tbl_BoardingPassSmall.Name = "tbl_BoardingPassSmall";
-            tbl_BoardingPassSmall.RowCount = 2;
-            tbl_BoardingPassSmall.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tbl_BoardingPassSmall.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tbl_BoardingPassSmall.Size = new System.Drawing.Size(170, 59);
-            tbl_BoardingPassSmall.TabIndex = 4;
+            lbl_Date.AutoSize = true;
+            lbl_Date.BackColor = System.Drawing.Color.Transparent;
+            lbl_Date.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Date.Location = new System.Drawing.Point(285, 148);
+            lbl_Date.Name = "lbl_Date";
+            lbl_Date.Size = new System.Drawing.Size(50, 29);
+            lbl_Date.TabIndex = 3;
+            lbl_Date.Text = "DATE";
+            lbl_Date.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_BoardingPassSmall
+            // lbl_Gate
             // 
-            lbl_BoardingPassSmall.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
-            lbl_BoardingPassSmall.AutoSize = true;
-            lbl_BoardingPassSmall.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            lbl_BoardingPassSmall.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_BoardingPassSmall.ForeColor = System.Drawing.Color.White;
-            lbl_BoardingPassSmall.Location = new System.Drawing.Point(25, 0);
-            lbl_BoardingPassSmall.Name = "lbl_BoardingPassSmall";
-            lbl_BoardingPassSmall.Size = new System.Drawing.Size(142, 29);
-            lbl_BoardingPassSmall.TabIndex = 1;
-            lbl_BoardingPassSmall.Text = "Boarding Pass";
+            lbl_Gate.AutoSize = true;
+            lbl_Gate.BackColor = System.Drawing.Color.Transparent;
+            lbl_Gate.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Gate.Location = new System.Drawing.Point(419, 225);
+            lbl_Gate.Name = "lbl_Gate";
+            lbl_Gate.Size = new System.Drawing.Size(63, 29);
+            lbl_Gate.TabIndex = 6;
+            lbl_Gate.Text = "Lorem";
+            lbl_Gate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_BoardingClassSmall
+            // lbl_FlightDate
             // 
-            lbl_BoardingClassSmall.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
-            lbl_BoardingClassSmall.AutoSize = true;
-            lbl_BoardingClassSmall.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            lbl_BoardingClassSmall.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_BoardingClassSmall.ForeColor = System.Drawing.Color.White;
-            lbl_BoardingClassSmall.Location = new System.Drawing.Point(55, 38);
-            lbl_BoardingClassSmall.Name = "lbl_BoardingClassSmall";
-            lbl_BoardingClassSmall.Size = new System.Drawing.Size(112, 21);
-            lbl_BoardingClassSmall.TabIndex = 2;
-            lbl_BoardingClassSmall.Text = "<BoardClass>";
+            lbl_FlightDate.AutoSize = true;
+            lbl_FlightDate.BackColor = System.Drawing.Color.Transparent;
+            lbl_FlightDate.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_FlightDate.Location = new System.Drawing.Point(419, 148);
+            lbl_FlightDate.Name = "lbl_FlightDate";
+            lbl_FlightDate.Size = new System.Drawing.Size(63, 29);
+            lbl_FlightDate.TabIndex = 5;
+            lbl_FlightDate.Text = "Lorem";
+            lbl_FlightDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel1
+            // lbl_FlightDuration
             // 
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.94801F));
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.0519886F));
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            tableLayoutPanel1.Location = new System.Drawing.Point(23, 87);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 8;
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.935482F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.064518F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(477, 190);
-            tableLayoutPanel1.TabIndex = 5;
+            lbl_FlightDuration.AutoSize = true;
+            lbl_FlightDuration.BackColor = System.Drawing.Color.Transparent;
+            lbl_FlightDuration.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_FlightDuration.Location = new System.Drawing.Point(536, 225);
+            lbl_FlightDuration.Name = "lbl_FlightDuration";
+            lbl_FlightDuration.Size = new System.Drawing.Size(62, 29);
+            lbl_FlightDuration.TabIndex = 8;
+            lbl_FlightDuration.Text = "Ipsum";
+            lbl_FlightDuration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TripType
+            // 
+            lbl_TripType.AutoSize = true;
+            lbl_TripType.BackColor = System.Drawing.Color.Transparent;
+            lbl_TripType.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TripType.Location = new System.Drawing.Point(537, 148);
+            lbl_TripType.Name = "lbl_TripType";
+            lbl_TripType.Size = new System.Drawing.Size(62, 29);
+            lbl_TripType.TabIndex = 7;
+            lbl_TripType.Text = "Ipsum";
+            lbl_TripType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_BoardingClass
+            // 
+            lbl_BoardingClass.AutoSize = true;
+            lbl_BoardingClass.BackColor = System.Drawing.Color.Transparent;
+            lbl_BoardingClass.Font = new System.Drawing.Font("Bahnschrift Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_BoardingClass.ForeColor = System.Drawing.Color.White;
+            lbl_BoardingClass.Location = new System.Drawing.Point(459, 43);
+            lbl_BoardingClass.Name = "lbl_BoardingClass";
+            lbl_BoardingClass.Size = new System.Drawing.Size(100, 35);
+            lbl_BoardingClass.TabIndex = 9;
+            lbl_BoardingClass.Text = "Economy";
+            lbl_BoardingClass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TicketTemplate
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.Color.White;
-            BackgroundImage = Properties.Resources.Ticket_Template_Background;
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            BackColor = System.Drawing.Color.Transparent;
+            BackgroundImage = Properties.Resources.TicketTemplateBackground;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            Controls.Add(tableLayoutPanel1);
-            Controls.Add(tbl_BoardingPassSmall);
-            Controls.Add(tbl_BoardingPassBig);
-            Controls.Add(lbl_BrandName);
+            Controls.Add(lbl_BoardingClass);
+            Controls.Add(lbl_FlightDuration);
+            Controls.Add(lbl_TripType);
+            Controls.Add(lbl_Gate);
+            Controls.Add(lbl_FlightDate);
+            Controls.Add(lbl_Seat);
+            Controls.Add(lbl_Date);
+            Controls.Add(lbl_Destination);
+            Controls.Add(lbl_From);
+            Controls.Add(lbl_NameOfPassenger);
             DoubleBuffered = true;
             Name = "TicketTemplate";
-            Size = new System.Drawing.Size(737, 309);
-            tbl_BoardingPassBig.ResumeLayout(false);
-            tbl_BoardingPassBig.PerformLayout();
-            tbl_BoardingPassSmall.ResumeLayout(false);
-            tbl_BoardingPassSmall.PerformLayout();
+            Size = new System.Drawing.Size(700, 387);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_BrandName;
-        private System.Windows.Forms.Label lbl_BoardingPass;
-        private System.Windows.Forms.Label lbl_BoardingClassBig;
-        private System.Windows.Forms.TableLayoutPanel tbl_BoardingPassBig;
-        private System.Windows.Forms.TableLayoutPanel tbl_BoardingPassSmall;
-        private System.Windows.Forms.Label lbl_BoardingPassSmall;
-        private System.Windows.Forms.Label lbl_BoardingClassSmall;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label lbl_NameOfPassenger;
+        private System.Windows.Forms.Label lbl_From;
+        private System.Windows.Forms.Label lbl_Destination;
+        private System.Windows.Forms.Label lbl_Seat;
+        private System.Windows.Forms.Label lbl_Date;
+        private System.Windows.Forms.Label lbl_Gate;
+        private System.Windows.Forms.Label lbl_FlightDate;
+        private System.Windows.Forms.Label lbl_FlightDuration;
+        private System.Windows.Forms.Label lbl_TripType;
+        private System.Windows.Forms.Label lbl_BoardingClass;
     }
 }
