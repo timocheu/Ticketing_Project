@@ -55,14 +55,13 @@ namespace Ticketing_Project
 
             // Flight Details
             ticket.FlightDate = dtp_FlightDate.Value;
-            ticket.BoardClass = cbb_BoardClass.Text;
+            ticket.BoardClass = cb_BoardClass.Text;
             ticket.TripType = cbb_TripType.Text;
-            ticket.Passengers = int.Parse(cbb_NumberOfPassengers.Text);
 
             double distance = ticket.CalculateDistance(loc1, loc2);
             ticket.Duration = ticket.CalculateDuration(distance);
 
-            Checkout checkout = new Checkout(ticket, (int) ticket.GeneratePrice(distance, ticket.BoardClass, ticket.TripType));
+            Checkout checkout = new Checkout(int.Parse(cbb_NumberOfPassengers.Text), ticket, (int) ticket.GeneratePrice(distance, ticket.BoardClass, ticket.TripType));
 
             var form = Application.OpenForms.Cast<Form>().Last();
            util.ShowCheckout(form, checkout);

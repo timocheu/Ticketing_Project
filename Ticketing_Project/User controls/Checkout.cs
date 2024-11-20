@@ -16,10 +16,10 @@ namespace Ticketing_Project.User_controls
         int passengers;
         int priceEachPerson;
 
-        public Checkout(Ticket ticket, int price)
+        public Checkout(int Passengers, Ticket ticket, int price)
         {
             InitializeComponent();
-            passengers = ticket.Passengers;
+            passengers = Passengers;
             priceEachPerson = price;
             double tax = price * .2;
 
