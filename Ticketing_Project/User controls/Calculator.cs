@@ -55,7 +55,7 @@ namespace Ticketing_Project
 
             // Flight Details
             ticket.FlightDate = dtp_FlightDate.Value;
-            ticket.BoardClass = cb_BoardClass.Text;
+            ticket.BoardClass = cbb_BoardClass.Text;
             ticket.TripType = cbb_TripType.Text;
 
             double distance = ticket.CalculateDistance(loc1, loc2);

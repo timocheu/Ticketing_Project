@@ -51,6 +51,13 @@ namespace Ticketing_Project.User_controls
 
         private void btn_AddPassenger_Click(object sender, EventArgs e)
         {
+            // Limit passengers to 5
+            if (passengers == 5)
+            {
+                MessageBox.Show("Passenger booking shouldn't exceed 5 people");
+                return;
+            }
+
             PassengerTextBox passengerNew = new PassengerTextBox();
             flow_Passengers.Controls.Add(passengerNew);
             passengers++;
