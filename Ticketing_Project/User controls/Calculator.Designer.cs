@@ -53,35 +53,36 @@
             // cbb_BoardClass
             // 
             cbb_BoardClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cbb_BoardClass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cbb_BoardClass.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_BoardClass.FormattingEnabled = true;
             cbb_BoardClass.Items.AddRange(new object[] { "Economy", "Business Class" });
-            cbb_BoardClass.Location = new System.Drawing.Point(302, 74);
+            cbb_BoardClass.Location = new System.Drawing.Point(320, 57);
             cbb_BoardClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_BoardClass.Name = "cbb_BoardClass";
-            cbb_BoardClass.Size = new System.Drawing.Size(113, 23);
+            cbb_BoardClass.Size = new System.Drawing.Size(113, 30);
             cbb_BoardClass.TabIndex = 2;
             // 
             // cbb_NumberOfPassengers
             // 
             cbb_NumberOfPassengers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cbb_NumberOfPassengers.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cbb_NumberOfPassengers.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_NumberOfPassengers.FormattingEnabled = true;
             cbb_NumberOfPassengers.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cbb_NumberOfPassengers.Location = new System.Drawing.Point(160, 74);
+            cbb_NumberOfPassengers.Location = new System.Drawing.Point(178, 57);
             cbb_NumberOfPassengers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_NumberOfPassengers.Name = "cbb_NumberOfPassengers";
-            cbb_NumberOfPassengers.Size = new System.Drawing.Size(133, 23);
+            cbb_NumberOfPassengers.Size = new System.Drawing.Size(133, 30);
             cbb_NumberOfPassengers.TabIndex = 3;
             // 
             // pb_CalculatorPeopleIcon
             // 
             pb_CalculatorPeopleIcon.BackColor = System.Drawing.Color.White;
             pb_CalculatorPeopleIcon.Image = Properties.Resources.ic_baseline_people;
-            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(142, 79);
+            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(146, 60);
             pb_CalculatorPeopleIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorPeopleIcon.Name = "pb_CalculatorPeopleIcon";
-            pb_CalculatorPeopleIcon.Size = new System.Drawing.Size(15, 13);
+            pb_CalculatorPeopleIcon.Size = new System.Drawing.Size(30, 26);
+            pb_CalculatorPeopleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pb_CalculatorPeopleIcon.TabIndex = 4;
             pb_CalculatorPeopleIcon.TabStop = false;
             // 
@@ -89,13 +90,13 @@
             // 
             cbb_TripType.BackColor = System.Drawing.Color.White;
             cbb_TripType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cbb_TripType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cbb_TripType.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_TripType.FormattingEnabled = true;
             cbb_TripType.Items.AddRange(new object[] { "One Way", "Round Trip" });
-            cbb_TripType.Location = new System.Drawing.Point(38, 74);
+            cbb_TripType.Location = new System.Drawing.Point(41, 57);
             cbb_TripType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_TripType.Name = "cbb_TripType";
-            cbb_TripType.Size = new System.Drawing.Size(98, 23);
+            cbb_TripType.Size = new System.Drawing.Size(98, 30);
             cbb_TripType.TabIndex = 5;
             // 
             // pb_CalculatorFromSelection
@@ -124,10 +125,11 @@
             // 
             pb_CalculatorArrow.BackColor = System.Drawing.SystemColors.Window;
             pb_CalculatorArrow.Image = Properties.Resources.typcn_arrow_up_outline;
-            pb_CalculatorArrow.Location = new System.Drawing.Point(355, 113);
+            pb_CalculatorArrow.Location = new System.Drawing.Point(353, 111);
             pb_CalculatorArrow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorArrow.Name = "pb_CalculatorArrow";
-            pb_CalculatorArrow.Size = new System.Drawing.Size(24, 26);
+            pb_CalculatorArrow.Size = new System.Drawing.Size(33, 30);
+            pb_CalculatorArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pb_CalculatorArrow.TabIndex = 8;
             pb_CalculatorArrow.TabStop = false;
             // 
@@ -150,7 +152,7 @@
             btn_Calculate.FlatAppearance.BorderSize = 0;
             btn_Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(0, 93, 142);
             btn_Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_Calculate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_Calculate.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_Calculate.ForeColor = System.Drawing.Color.White;
             btn_Calculate.Location = new System.Drawing.Point(852, 101);
             btn_Calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -164,14 +166,14 @@
             // dtp_FlightDate
             // 
             dtp_FlightDate.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dtp_FlightDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dtp_FlightDate.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dtp_FlightDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dtp_FlightDate.Location = new System.Drawing.Point(720, 113);
+            dtp_FlightDate.Location = new System.Drawing.Point(723, 109);
             dtp_FlightDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             dtp_FlightDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
             dtp_FlightDate.MinDate = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
             dtp_FlightDate.Name = "dtp_FlightDate";
-            dtp_FlightDate.Size = new System.Drawing.Size(123, 32);
+            dtp_FlightDate.Size = new System.Drawing.Size(120, 35);
             dtp_FlightDate.TabIndex = 12;
             // 
             // cbb_From
@@ -181,14 +183,14 @@
             cbb_From.BackColor = System.Drawing.Color.White;
             cbb_From.CausesValidation = false;
             cbb_From.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            cbb_From.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            cbb_From.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_From.FormattingEnabled = true;
             cbb_From.IntegralHeight = false;
-            cbb_From.ItemHeight = 28;
-            cbb_From.Location = new System.Drawing.Point(43, 108);
+            cbb_From.ItemHeight = 34;
+            cbb_From.Location = new System.Drawing.Point(42, 105);
             cbb_From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_From.Name = "cbb_From";
-            cbb_From.Size = new System.Drawing.Size(299, 36);
+            cbb_From.Size = new System.Drawing.Size(300, 42);
             cbb_From.TabIndex = 15;
             cbb_From.TabStop = false;
             // 
@@ -199,13 +201,13 @@
             cbb_Destination.BackColor = System.Drawing.Color.White;
             cbb_Destination.CausesValidation = false;
             cbb_Destination.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            cbb_Destination.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            cbb_Destination.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_Destination.FormattingEnabled = true;
             cbb_Destination.IntegralHeight = false;
-            cbb_Destination.Location = new System.Drawing.Point(407, 108);
+            cbb_Destination.Location = new System.Drawing.Point(404, 105);
             cbb_Destination.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_Destination.Name = "cbb_Destination";
-            cbb_Destination.Size = new System.Drawing.Size(289, 36);
+            cbb_Destination.Size = new System.Drawing.Size(290, 42);
             cbb_Destination.TabIndex = 16;
             cbb_Destination.TabStop = false;
             // 
@@ -213,10 +215,10 @@
             // 
             lbl_TripType.AutoSize = true;
             lbl_TripType.BackColor = System.Drawing.Color.White;
-            lbl_TripType.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_TripType.Location = new System.Drawing.Point(41, 53);
+            lbl_TripType.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TripType.Location = new System.Drawing.Point(41, 33);
             lbl_TripType.Name = "lbl_TripType";
-            lbl_TripType.Size = new System.Drawing.Size(69, 20);
+            lbl_TripType.Size = new System.Drawing.Size(79, 26);
             lbl_TripType.TabIndex = 17;
             lbl_TripType.Text = "Trip Type";
             // 
@@ -224,10 +226,10 @@
             // 
             lbl_NumberOfPassenger.AutoSize = true;
             lbl_NumberOfPassenger.BackColor = System.Drawing.Color.White;
-            lbl_NumberOfPassenger.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_NumberOfPassenger.Location = new System.Drawing.Point(160, 53);
+            lbl_NumberOfPassenger.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_NumberOfPassenger.Location = new System.Drawing.Point(175, 33);
             lbl_NumberOfPassenger.Name = "lbl_NumberOfPassenger";
-            lbl_NumberOfPassenger.Size = new System.Drawing.Size(93, 20);
+            lbl_NumberOfPassenger.Size = new System.Drawing.Size(116, 26);
             lbl_NumberOfPassenger.TabIndex = 18;
             lbl_NumberOfPassenger.Text = "# Passengers";
             // 
@@ -235,10 +237,10 @@
             // 
             lbl_BoardClass.AutoSize = true;
             lbl_BoardClass.BackColor = System.Drawing.Color.White;
-            lbl_BoardClass.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_BoardClass.Location = new System.Drawing.Point(302, 53);
+            lbl_BoardClass.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_BoardClass.Location = new System.Drawing.Point(317, 33);
             lbl_BoardClass.Name = "lbl_BoardClass";
-            lbl_BoardClass.Size = new System.Drawing.Size(86, 20);
+            lbl_BoardClass.Size = new System.Drawing.Size(103, 26);
             lbl_BoardClass.TabIndex = 19;
             lbl_BoardClass.Text = "Board Class";
             // 
@@ -246,6 +248,9 @@
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             BackColor = System.Drawing.Color.Transparent;
+            Controls.Add(cbb_TripType);
+            Controls.Add(cbb_NumberOfPassengers);
+            Controls.Add(cbb_BoardClass);
             Controls.Add(lbl_BoardClass);
             Controls.Add(lbl_NumberOfPassenger);
             Controls.Add(lbl_TripType);
@@ -256,10 +261,7 @@
             Controls.Add(pb_CalculatorArrow);
             Controls.Add(pb_CalculatorDestination);
             Controls.Add(pb_CalculatorFromSelection);
-            Controls.Add(cbb_TripType);
             Controls.Add(pb_CalculatorPeopleIcon);
-            Controls.Add(cbb_NumberOfPassengers);
-            Controls.Add(cbb_BoardClass);
             Controls.Add(pb_CalculatorBackground);
             Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Name = "Calculator";

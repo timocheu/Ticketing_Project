@@ -97,7 +97,6 @@
 
         #endregion
 
-        private Calculator uc_Calculator;
         private System.Windows.Forms.PictureBox pb_DealsBackground;
         private System.Windows.Forms.FlowLayoutPanel flow_Deals;
         private System.Windows.Forms.Label lbl_FlightDeals;

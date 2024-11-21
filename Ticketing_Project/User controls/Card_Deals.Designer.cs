@@ -123,7 +123,6 @@
             lbl_From.TabIndex = 1;
             lbl_From.Text = "<From>";
             lbl_From.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            lbl_From.Click += this.lbl_From_Click;
             // 
             // lbl_Destination
             // 
