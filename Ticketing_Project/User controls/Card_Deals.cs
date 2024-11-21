@@ -23,5 +23,10 @@ namespace Ticketing_Project
             lbl_Price.Text = $"Price: ₱{price.ToString()}";
             lbl_TripType.Text = ticket.TripType;
         }
+
+        private void lbl_Destination_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

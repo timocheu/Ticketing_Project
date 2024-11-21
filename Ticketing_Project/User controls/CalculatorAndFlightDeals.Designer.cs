@@ -28,22 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            uc_Calculator = new Calculator();
             pb_DealsBackground = new System.Windows.Forms.PictureBox();
             flow_Deals = new System.Windows.Forms.FlowLayoutPanel();
             lbl_FlightDeals = new System.Windows.Forms.Label();
             btn_RefreshDeals = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)pb_DealsBackground).BeginInit();
             SuspendLayout();
-            // 
-            // uc_Calculator
-            // 
-            uc_Calculator.BackColor = System.Drawing.Color.Transparent;
-            uc_Calculator.Location = new System.Drawing.Point(25, 19);
-            uc_Calculator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            uc_Calculator.Name = "uc_Calculator";
-            uc_Calculator.Size = new System.Drawing.Size(1003, 178);
-            uc_Calculator.TabIndex = 0;
             // 
             // pb_DealsBackground
             // 
@@ -68,11 +58,11 @@
             // 
             lbl_FlightDeals.AutoSize = true;
             lbl_FlightDeals.BackColor = System.Drawing.Color.White;
-            lbl_FlightDeals.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_FlightDeals.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lbl_FlightDeals.ForeColor = System.Drawing.SystemColors.ControlText;
             lbl_FlightDeals.Location = new System.Drawing.Point(444, 227);
             lbl_FlightDeals.Name = "lbl_FlightDeals";
-            lbl_FlightDeals.Size = new System.Drawing.Size(168, 37);
+            lbl_FlightDeals.Size = new System.Drawing.Size(182, 48);
             lbl_FlightDeals.TabIndex = 3;
             lbl_FlightDeals.Text = "Flight Deals";
             // 
@@ -98,7 +88,6 @@
             Controls.Add(lbl_FlightDeals);
             Controls.Add(flow_Deals);
             Controls.Add(pb_DealsBackground);
-            Controls.Add(uc_Calculator);
             Name = "CalculatorAndFlightDeals";
             Size = new System.Drawing.Size(1050, 679);
             ((System.ComponentModel.ISupportInitialize)pb_DealsBackground).EndInit();

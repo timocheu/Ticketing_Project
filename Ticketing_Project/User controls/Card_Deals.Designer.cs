@@ -85,11 +85,11 @@
             lbl_FlightDetails.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom;
             lbl_FlightDetails.AutoSize = true;
             lbl_FlightDetails.BackColor = System.Drawing.Color.Transparent;
-            lbl_FlightDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_FlightDetails.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_FlightDetails.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_FlightDetails.Location = new System.Drawing.Point(28, 0);
+            lbl_FlightDetails.Location = new System.Drawing.Point(23, 0);
             lbl_FlightDetails.Name = "lbl_FlightDetails";
-            lbl_FlightDetails.Size = new System.Drawing.Size(361, 30);
+            lbl_FlightDetails.Size = new System.Drawing.Size(371, 30);
             lbl_FlightDetails.TabIndex = 4;
             lbl_FlightDetails.Text = "(Day), Month • (Estimated Flight Time) • Class Type";
             lbl_FlightDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,7 +104,7 @@
             table_FromToDestination.Controls.Add(lbl_From, 0, 0);
             table_FromToDestination.Controls.Add(lbl_Destination, 2, 0);
             table_FromToDestination.Controls.Add(pnl_Arrow, 1, 0);
-            table_FromToDestination.Location = new System.Drawing.Point(17, 14);
+            table_FromToDestination.Location = new System.Drawing.Point(17, 23);
             table_FromToDestination.Name = "table_FromToDestination";
             table_FromToDestination.RowCount = 1;
             table_FromToDestination.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -116,26 +116,28 @@
             lbl_From.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_From.AutoSize = true;
             lbl_From.BackColor = System.Drawing.Color.Transparent;
-            lbl_From.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_From.Location = new System.Drawing.Point(107, 0);
+            lbl_From.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_From.Location = new System.Drawing.Point(103, 0);
             lbl_From.Name = "lbl_From";
-            lbl_From.Size = new System.Drawing.Size(83, 33);
+            lbl_From.Size = new System.Drawing.Size(87, 33);
             lbl_From.TabIndex = 1;
             lbl_From.Text = "<From>";
             lbl_From.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lbl_From.Click += this.lbl_From_Click;
             // 
             // lbl_Destination
             // 
             lbl_Destination.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_Destination.AutoSize = true;
             lbl_Destination.BackColor = System.Drawing.Color.Transparent;
-            lbl_Destination.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_Destination.Location = new System.Drawing.Point(227, 4);
+            lbl_Destination.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_Destination.Location = new System.Drawing.Point(227, 0);
             lbl_Destination.Name = "lbl_Destination";
-            lbl_Destination.Size = new System.Drawing.Size(137, 25);
+            lbl_Destination.Size = new System.Drawing.Size(148, 33);
             lbl_Destination.TabIndex = 2;
             lbl_Destination.Text = "<Destination>";
             lbl_Destination.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lbl_Destination.Click += lbl_Destination_Click;
             // 
             // pnl_Arrow
             // 
@@ -152,11 +154,11 @@
             // 
             lbl_TripType.AutoSize = true;
             lbl_TripType.BackColor = System.Drawing.Color.Transparent;
-            lbl_TripType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TripType.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_TripType.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
             lbl_TripType.Location = new System.Drawing.Point(18, 139);
             lbl_TripType.Name = "lbl_TripType";
-            lbl_TripType.Size = new System.Drawing.Size(74, 16);
+            lbl_TripType.Size = new System.Drawing.Size(78, 23);
             lbl_TripType.TabIndex = 2;
             lbl_TripType.Text = "Round Trip";
             // 
@@ -164,11 +166,11 @@
             // 
             lbl_Price.AutoSize = true;
             lbl_Price.BackColor = System.Drawing.Color.Transparent;
-            lbl_Price.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_Price.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lbl_Price.ForeColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            lbl_Price.Location = new System.Drawing.Point(17, 116);
+            lbl_Price.Location = new System.Drawing.Point(17, 113);
             lbl_Price.Name = "lbl_Price";
-            lbl_Price.Size = new System.Drawing.Size(138, 25);
+            lbl_Price.Size = new System.Drawing.Size(147, 34);
             lbl_Price.TabIndex = 6;
             lbl_Price.Text = "Price: ₱10,230";
             // 
@@ -179,7 +181,7 @@
             btn_BookFlight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             btn_BookFlight.FlatAppearance.BorderSize = 0;
             btn_BookFlight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_BookFlight.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_BookFlight.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_BookFlight.ForeColor = System.Drawing.Color.White;
             btn_BookFlight.Location = new System.Drawing.Point(309, 109);
             btn_BookFlight.Name = "btn_BookFlight";

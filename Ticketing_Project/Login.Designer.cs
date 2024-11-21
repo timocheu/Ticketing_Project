@@ -43,39 +43,39 @@
             // txt_LoginEmail
             // 
             txt_LoginEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            txt_LoginEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            txt_LoginEmail.Font = new System.Drawing.Font("Poppins", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             txt_LoginEmail.ForeColor = System.Drawing.Color.Black;
-            txt_LoginEmail.Location = new System.Drawing.Point(134, 437);
+            txt_LoginEmail.Location = new System.Drawing.Point(131, 436);
             txt_LoginEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txt_LoginEmail.Name = "txt_LoginEmail";
             txt_LoginEmail.PlaceholderText = "timzoiechandy@gmail.com";
-            txt_LoginEmail.Size = new System.Drawing.Size(444, 20);
+            txt_LoginEmail.Size = new System.Drawing.Size(444, 27);
             txt_LoginEmail.TabIndex = 1;
             // 
             // txt_PasswordLogin
             // 
             txt_PasswordLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             txt_PasswordLogin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txt_PasswordLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            txt_PasswordLogin.Font = new System.Drawing.Font("Poppins", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             txt_PasswordLogin.ForeColor = System.Drawing.Color.Black;
-            txt_PasswordLogin.Location = new System.Drawing.Point(134, 525);
+            txt_PasswordLogin.Location = new System.Drawing.Point(131, 524);
             txt_PasswordLogin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txt_PasswordLogin.Name = "txt_PasswordLogin";
             txt_PasswordLogin.PasswordChar = '*';
             txt_PasswordLogin.PlaceholderText = "at least 8 characters";
-            txt_PasswordLogin.Size = new System.Drawing.Size(444, 20);
+            txt_PasswordLogin.Size = new System.Drawing.Size(444, 27);
             txt_PasswordLogin.TabIndex = 2;
             // 
             // lbl_ForgotPassword
             // 
             lbl_ForgotPassword.AutoSize = true;
             lbl_ForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            lbl_ForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_ForgotPassword.Font = new System.Drawing.Font("Poppins", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_ForgotPassword.ForeColor = System.Drawing.Color.FromArgb(6, 90, 216);
-            lbl_ForgotPassword.Location = new System.Drawing.Point(431, 567);
+            lbl_ForgotPassword.Location = new System.Drawing.Point(418, 567);
             lbl_ForgotPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             lbl_ForgotPassword.Name = "lbl_ForgotPassword";
-            lbl_ForgotPassword.Size = new System.Drawing.Size(156, 22);
+            lbl_ForgotPassword.Size = new System.Drawing.Size(173, 31);
             lbl_ForgotPassword.TabIndex = 4;
             lbl_ForgotPassword.Text = "Forgot Password?";
             // 
@@ -83,11 +83,11 @@
             // 
             cb_ShowPassword.AutoSize = true;
             cb_ShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            cb_ShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            cb_ShowPassword.Font = new System.Drawing.Font("Poppins", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cb_ShowPassword.Location = new System.Drawing.Point(121, 563);
             cb_ShowPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             cb_ShowPassword.Name = "cb_ShowPassword";
-            cb_ShowPassword.Size = new System.Drawing.Size(155, 26);
+            cb_ShowPassword.Size = new System.Drawing.Size(171, 35);
             cb_ShowPassword.TabIndex = 3;
             cb_ShowPassword.Text = "Show Password";
             cb_ShowPassword.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             btn_Login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             btn_Login.FlatAppearance.BorderSize = 0;
             btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_Login.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_Login.ForeColor = System.Drawing.Color.White;
             btn_Login.Location = new System.Drawing.Point(121, 622);
             btn_Login.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

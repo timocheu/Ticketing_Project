@@ -82,13 +82,13 @@
             // pnl_CheckoutSection
             // 
             pnl_CheckoutSection.BackColor = System.Drawing.Color.White;
+            pnl_CheckoutSection.Controls.Add(lbl_SubDescription);
             pnl_CheckoutSection.Controls.Add(btn_Proceed);
             pnl_CheckoutSection.Controls.Add(btn_Cancel);
             pnl_CheckoutSection.Controls.Add(btn_MobilePayment);
             pnl_CheckoutSection.Controls.Add(flow_Checkout);
             pnl_CheckoutSection.Controls.Add(btn_CardPayment);
             pnl_CheckoutSection.Controls.Add(lbl_Payment);
-            pnl_CheckoutSection.Controls.Add(lbl_SubDescription);
             pnl_CheckoutSection.Location = new System.Drawing.Point(359, 0);
             pnl_CheckoutSection.Name = "pnl_CheckoutSection";
             pnl_CheckoutSection.Size = new System.Drawing.Size(683, 768);
@@ -101,7 +101,7 @@
             btn_Proceed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             btn_Proceed.FlatAppearance.BorderSize = 0;
             btn_Proceed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_Proceed.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_Proceed.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_Proceed.ForeColor = System.Drawing.Color.White;
             btn_Proceed.Image = Properties.Resources.PaymentBoxRemovedBackground;
             btn_Proceed.Location = new System.Drawing.Point(360, 706);
@@ -119,7 +119,7 @@
             btn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             btn_Cancel.FlatAppearance.BorderSize = 0;
             btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_Cancel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_Cancel.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_Cancel.Image = Properties.Resources.PaymentBoxRemovedBackground;
             btn_Cancel.Location = new System.Drawing.Point(184, 706);
             btn_Cancel.Name = "btn_Cancel";
@@ -136,9 +136,9 @@
             btn_MobilePayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_MobilePayment.FlatAppearance.BorderSize = 0;
             btn_MobilePayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_MobilePayment.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_MobilePayment.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_MobilePayment.ForeColor = System.Drawing.Color.Snow;
-            btn_MobilePayment.Location = new System.Drawing.Point(360, 124);
+            btn_MobilePayment.Location = new System.Drawing.Point(360, 111);
             btn_MobilePayment.Name = "btn_MobilePayment";
             btn_MobilePayment.Size = new System.Drawing.Size(204, 90);
             btn_MobilePayment.TabIndex = 3;
@@ -155,7 +155,7 @@
             flow_Checkout.Controls.Add(pnl_PassengerOption);
             flow_Checkout.Controls.Add(pnl_BookingSummary);
             flow_Checkout.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            flow_Checkout.Location = new System.Drawing.Point(111, 220);
+            flow_Checkout.Location = new System.Drawing.Point(111, 207);
             flow_Checkout.Name = "flow_Checkout";
             flow_Checkout.Size = new System.Drawing.Size(510, 489);
             flow_Checkout.TabIndex = 1;
@@ -197,13 +197,12 @@
             // 
             btn_AddPassenger.Anchor = System.Windows.Forms.AnchorStyles.None;
             btn_AddPassenger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_AddPassenger.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_AddPassenger.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_AddPassenger.Location = new System.Drawing.Point(26, 3);
             btn_AddPassenger.Name = "btn_AddPassenger";
             btn_AddPassenger.Size = new System.Drawing.Size(125, 35);
             btn_AddPassenger.TabIndex = 6;
             btn_AddPassenger.Text = "+ Add More";
-            btn_AddPassenger.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btn_AddPassenger.UseVisualStyleBackColor = true;
             btn_AddPassenger.Click += btn_AddPassenger_Click;
             // 
@@ -212,13 +211,12 @@
             btn_RemovePassenger.Anchor = System.Windows.Forms.AnchorStyles.None;
             btn_RemovePassenger.BackColor = System.Drawing.Color.Red;
             btn_RemovePassenger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_RemovePassenger.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_RemovePassenger.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_RemovePassenger.Location = new System.Drawing.Point(161, 3);
             btn_RemovePassenger.Name = "btn_RemovePassenger";
             btn_RemovePassenger.Size = new System.Drawing.Size(109, 35);
             btn_RemovePassenger.TabIndex = 7;
             btn_RemovePassenger.Text = "- Remove";
-            btn_RemovePassenger.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btn_RemovePassenger.UseVisualStyleBackColor = false;
             btn_RemovePassenger.Click += btn_RemovePassenger_Click;
             // 
@@ -266,11 +264,11 @@
             // 
             lbl_ReturnDateDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_ReturnDateDisplay.AutoSize = true;
-            lbl_ReturnDateDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_ReturnDateDisplay.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_ReturnDateDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_ReturnDateDisplay.Location = new System.Drawing.Point(243, 102);
+            lbl_ReturnDateDisplay.Location = new System.Drawing.Point(243, 99);
             lbl_ReturnDateDisplay.Name = "lbl_ReturnDateDisplay";
-            lbl_ReturnDateDisplay.Size = new System.Drawing.Size(33, 19);
+            lbl_ReturnDateDisplay.Size = new System.Drawing.Size(38, 25);
             lbl_ReturnDateDisplay.TabIndex = 7;
             lbl_ReturnDateDisplay.Text = "N/A";
             // 
@@ -278,11 +276,11 @@
             // 
             lbl_PickUpDateDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_PickUpDateDisplay.AutoSize = true;
-            lbl_PickUpDateDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_PickUpDateDisplay.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_PickUpDateDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_PickUpDateDisplay.Location = new System.Drawing.Point(243, 70);
+            lbl_PickUpDateDisplay.Location = new System.Drawing.Point(243, 67);
             lbl_PickUpDateDisplay.Name = "lbl_PickUpDateDisplay";
-            lbl_PickUpDateDisplay.Size = new System.Drawing.Size(33, 19);
+            lbl_PickUpDateDisplay.Size = new System.Drawing.Size(38, 25);
             lbl_PickUpDateDisplay.TabIndex = 6;
             lbl_PickUpDateDisplay.Text = "N/A";
             // 
@@ -290,11 +288,11 @@
             // 
             lbl_LocationDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_LocationDisplay.AutoSize = true;
-            lbl_LocationDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_LocationDisplay.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_LocationDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_LocationDisplay.Location = new System.Drawing.Point(243, 38);
+            lbl_LocationDisplay.Location = new System.Drawing.Point(243, 35);
             lbl_LocationDisplay.Name = "lbl_LocationDisplay";
-            lbl_LocationDisplay.Size = new System.Drawing.Size(33, 19);
+            lbl_LocationDisplay.Size = new System.Drawing.Size(38, 25);
             lbl_LocationDisplay.TabIndex = 5;
             lbl_LocationDisplay.Text = "N/A";
             // 
@@ -302,11 +300,11 @@
             // 
             lbl_TotalTicketDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_TotalTicketDisplay.AutoSize = true;
-            lbl_TotalTicketDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TotalTicketDisplay.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_TotalTicketDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_TotalTicketDisplay.Location = new System.Drawing.Point(243, 6);
+            lbl_TotalTicketDisplay.Location = new System.Drawing.Point(243, 3);
             lbl_TotalTicketDisplay.Name = "lbl_TotalTicketDisplay";
-            lbl_TotalTicketDisplay.Size = new System.Drawing.Size(33, 19);
+            lbl_TotalTicketDisplay.Size = new System.Drawing.Size(38, 25);
             lbl_TotalTicketDisplay.TabIndex = 4;
             lbl_TotalTicketDisplay.Text = "N/A";
             // 
@@ -314,11 +312,11 @@
             // 
             lbl_TotalTicket.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_TotalTicket.AutoSize = true;
-            lbl_TotalTicket.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TotalTicket.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_TotalTicket.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_TotalTicket.Location = new System.Drawing.Point(3, 6);
+            lbl_TotalTicket.Location = new System.Drawing.Point(3, 3);
             lbl_TotalTicket.Name = "lbl_TotalTicket";
-            lbl_TotalTicket.Size = new System.Drawing.Size(83, 19);
+            lbl_TotalTicket.Size = new System.Drawing.Size(98, 25);
             lbl_TotalTicket.TabIndex = 0;
             lbl_TotalTicket.Text = "Total Tickets";
             // 
@@ -326,11 +324,11 @@
             // 
             lbl_Location.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_Location.AutoSize = true;
-            lbl_Location.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Location.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_Location.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_Location.Location = new System.Drawing.Point(3, 38);
+            lbl_Location.Location = new System.Drawing.Point(3, 35);
             lbl_Location.Name = "lbl_Location";
-            lbl_Location.Size = new System.Drawing.Size(111, 19);
+            lbl_Location.Size = new System.Drawing.Size(124, 25);
             lbl_Location.TabIndex = 1;
             lbl_Location.Text = "Pick Up Location";
             // 
@@ -338,11 +336,11 @@
             // 
             lbl_PickUpDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_PickUpDate.AutoSize = true;
-            lbl_PickUpDate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_PickUpDate.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_PickUpDate.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_PickUpDate.Location = new System.Drawing.Point(3, 70);
+            lbl_PickUpDate.Location = new System.Drawing.Point(3, 67);
             lbl_PickUpDate.Name = "lbl_PickUpDate";
-            lbl_PickUpDate.Size = new System.Drawing.Size(88, 19);
+            lbl_PickUpDate.Size = new System.Drawing.Size(98, 25);
             lbl_PickUpDate.TabIndex = 2;
             lbl_PickUpDate.Text = "Pick Up Date";
             // 
@@ -350,21 +348,21 @@
             // 
             lbl_ReturnDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_ReturnDate.AutoSize = true;
-            lbl_ReturnDate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_ReturnDate.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_ReturnDate.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_ReturnDate.Location = new System.Drawing.Point(3, 102);
+            lbl_ReturnDate.Location = new System.Drawing.Point(3, 99);
             lbl_ReturnDate.Name = "lbl_ReturnDate";
-            lbl_ReturnDate.Size = new System.Drawing.Size(83, 19);
+            lbl_ReturnDate.Size = new System.Drawing.Size(95, 25);
             lbl_ReturnDate.TabIndex = 3;
             lbl_ReturnDate.Text = "Return Date";
             // 
             // lbl_BookingSummary
             // 
             lbl_BookingSummary.AutoSize = true;
-            lbl_BookingSummary.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_BookingSummary.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lbl_BookingSummary.Location = new System.Drawing.Point(23, 7);
             lbl_BookingSummary.Name = "lbl_BookingSummary";
-            lbl_BookingSummary.Size = new System.Drawing.Size(152, 21);
+            lbl_BookingSummary.Size = new System.Drawing.Size(166, 28);
             lbl_BookingSummary.TabIndex = 7;
             lbl_BookingSummary.Text = "Booking Summary";
             // 
@@ -397,11 +395,11 @@
             // 
             lbl_TotalDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_TotalDisplay.AutoSize = true;
-            lbl_TotalDisplay.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_TotalDisplay.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lbl_TotalDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_TotalDisplay.Location = new System.Drawing.Point(241, 5);
+            lbl_TotalDisplay.Location = new System.Drawing.Point(241, 1);
             lbl_TotalDisplay.Name = "lbl_TotalDisplay";
-            lbl_TotalDisplay.Size = new System.Drawing.Size(40, 21);
+            lbl_TotalDisplay.Size = new System.Drawing.Size(43, 28);
             lbl_TotalDisplay.TabIndex = 4;
             lbl_TotalDisplay.Text = "N/A";
             // 
@@ -409,10 +407,10 @@
             // 
             lbl_Total.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_Total.AutoSize = true;
-            lbl_Total.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_Total.Location = new System.Drawing.Point(3, 5);
+            lbl_Total.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_Total.Location = new System.Drawing.Point(3, 1);
             lbl_Total.Name = "lbl_Total";
-            lbl_Total.Size = new System.Drawing.Size(48, 21);
+            lbl_Total.Size = new System.Drawing.Size(53, 28);
             lbl_Total.TabIndex = 13;
             lbl_Total.Text = "Total";
             // 
@@ -459,11 +457,11 @@
             // 
             lbl_TaxDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_TaxDisplay.AutoSize = true;
-            lbl_TaxDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TaxDisplay.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_TaxDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_TaxDisplay.Location = new System.Drawing.Point(241, 60);
+            lbl_TaxDisplay.Location = new System.Drawing.Point(241, 57);
             lbl_TaxDisplay.Name = "lbl_TaxDisplay";
-            lbl_TaxDisplay.Size = new System.Drawing.Size(33, 19);
+            lbl_TaxDisplay.Size = new System.Drawing.Size(38, 25);
             lbl_TaxDisplay.TabIndex = 6;
             lbl_TaxDisplay.Text = "N/A";
             // 
@@ -471,11 +469,11 @@
             // 
             lbl_DiscountDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_DiscountDisplay.AutoSize = true;
-            lbl_DiscountDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_DiscountDisplay.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_DiscountDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_DiscountDisplay.Location = new System.Drawing.Point(241, 32);
+            lbl_DiscountDisplay.Location = new System.Drawing.Point(241, 29);
             lbl_DiscountDisplay.Name = "lbl_DiscountDisplay";
-            lbl_DiscountDisplay.Size = new System.Drawing.Size(33, 19);
+            lbl_DiscountDisplay.Size = new System.Drawing.Size(38, 25);
             lbl_DiscountDisplay.TabIndex = 5;
             lbl_DiscountDisplay.Text = "N/A";
             // 
@@ -483,11 +481,11 @@
             // 
             lbl_TripPriceDisplay.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_TripPriceDisplay.AutoSize = true;
-            lbl_TripPriceDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TripPriceDisplay.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_TripPriceDisplay.ForeColor = System.Drawing.Color.Black;
-            lbl_TripPriceDisplay.Location = new System.Drawing.Point(241, 4);
+            lbl_TripPriceDisplay.Location = new System.Drawing.Point(241, 1);
             lbl_TripPriceDisplay.Name = "lbl_TripPriceDisplay";
-            lbl_TripPriceDisplay.Size = new System.Drawing.Size(33, 19);
+            lbl_TripPriceDisplay.Size = new System.Drawing.Size(38, 25);
             lbl_TripPriceDisplay.TabIndex = 4;
             lbl_TripPriceDisplay.Text = "N/A";
             // 
@@ -495,11 +493,11 @@
             // 
             lbl_TripPrice.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_TripPrice.AutoSize = true;
-            lbl_TripPrice.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_TripPrice.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_TripPrice.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_TripPrice.Location = new System.Drawing.Point(3, 4);
+            lbl_TripPrice.Location = new System.Drawing.Point(3, 1);
             lbl_TripPrice.Name = "lbl_TripPrice";
-            lbl_TripPrice.Size = new System.Drawing.Size(149, 19);
+            lbl_TripPrice.Size = new System.Drawing.Size(176, 25);
             lbl_TripPrice.TabIndex = 0;
             lbl_TripPrice.Text = "Trip Price (Each Person)";
             // 
@@ -507,11 +505,11 @@
             // 
             lbl_Discount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_Discount.AutoSize = true;
-            lbl_Discount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Discount.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_Discount.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_Discount.Location = new System.Drawing.Point(3, 32);
+            lbl_Discount.Location = new System.Drawing.Point(3, 29);
             lbl_Discount.Name = "lbl_Discount";
-            lbl_Discount.Size = new System.Drawing.Size(63, 19);
+            lbl_Discount.Size = new System.Drawing.Size(73, 25);
             lbl_Discount.TabIndex = 1;
             lbl_Discount.Text = "Discount";
             // 
@@ -519,21 +517,21 @@
             // 
             lbl_Tax.Anchor = System.Windows.Forms.AnchorStyles.Left;
             lbl_Tax.AutoSize = true;
-            lbl_Tax.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Tax.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_Tax.ForeColor = System.Drawing.Color.FromArgb(176, 176, 176);
-            lbl_Tax.Location = new System.Drawing.Point(3, 60);
+            lbl_Tax.Location = new System.Drawing.Point(3, 57);
             lbl_Tax.Name = "lbl_Tax";
-            lbl_Tax.Size = new System.Drawing.Size(62, 19);
+            lbl_Tax.Size = new System.Drawing.Size(78, 25);
             lbl_Tax.TabIndex = 2;
             lbl_Tax.Text = "Tax (VAT)";
             // 
             // lbl_PriceDetails
             // 
             lbl_PriceDetails.AutoSize = true;
-            lbl_PriceDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_PriceDetails.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lbl_PriceDetails.Location = new System.Drawing.Point(26, 187);
             lbl_PriceDetails.Name = "lbl_PriceDetails";
-            lbl_PriceDetails.Size = new System.Drawing.Size(105, 21);
+            lbl_PriceDetails.Size = new System.Drawing.Size(115, 28);
             lbl_PriceDetails.TabIndex = 11;
             lbl_PriceDetails.Text = "Price Details";
             // 
@@ -544,8 +542,8 @@
             btn_CardPayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_CardPayment.FlatAppearance.BorderSize = 0;
             btn_CardPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_CardPayment.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            btn_CardPayment.Location = new System.Drawing.Point(132, 124);
+            btn_CardPayment.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_CardPayment.Location = new System.Drawing.Point(132, 111);
             btn_CardPayment.Name = "btn_CardPayment";
             btn_CardPayment.Size = new System.Drawing.Size(204, 90);
             btn_CardPayment.TabIndex = 2;
@@ -556,10 +554,10 @@
             // lbl_Payment
             // 
             lbl_Payment.AutoSize = true;
-            lbl_Payment.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            lbl_Payment.Location = new System.Drawing.Point(124, 55);
+            lbl_Payment.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_Payment.Location = new System.Drawing.Point(124, 42);
             lbl_Payment.Name = "lbl_Payment";
-            lbl_Payment.Size = new System.Drawing.Size(150, 45);
+            lbl_Payment.Size = new System.Drawing.Size(175, 56);
             lbl_Payment.TabIndex = 0;
             lbl_Payment.Text = "Payment";
             lbl_Payment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -567,10 +565,10 @@
             // lbl_SubDescription
             // 
             lbl_SubDescription.AutoSize = true;
-            lbl_SubDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_SubDescription.Location = new System.Drawing.Point(129, 94);
+            lbl_SubDescription.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_SubDescription.Location = new System.Drawing.Point(129, 81);
             lbl_SubDescription.Name = "lbl_SubDescription";
-            lbl_SubDescription.Size = new System.Drawing.Size(231, 21);
+            lbl_SubDescription.Size = new System.Drawing.Size(268, 28);
             lbl_SubDescription.TabIndex = 1;
             lbl_SubDescription.Text = "Choose payment method below";
             // 

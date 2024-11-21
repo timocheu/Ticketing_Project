@@ -67,7 +67,7 @@
             btn_NavigationTicketOwned.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_NavigationTicketOwned.FlatAppearance.BorderSize = 0;
             btn_NavigationTicketOwned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationTicketOwned.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_NavigationTicketOwned.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_NavigationTicketOwned.ForeColor = System.Drawing.Color.Black;
             btn_NavigationTicketOwned.Location = new System.Drawing.Point(6, 79);
             btn_NavigationTicketOwned.Name = "btn_NavigationTicketOwned";
@@ -85,7 +85,7 @@
             btn_NavigationBookingHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_NavigationBookingHistory.FlatAppearance.BorderSize = 0;
             btn_NavigationBookingHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationBookingHistory.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_NavigationBookingHistory.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_NavigationBookingHistory.ForeColor = System.Drawing.Color.Black;
             btn_NavigationBookingHistory.Location = new System.Drawing.Point(6, 147);
             btn_NavigationBookingHistory.Name = "btn_NavigationBookingHistory";
@@ -103,7 +103,7 @@
             btn_NavigationHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_NavigationHome.FlatAppearance.BorderSize = 0;
             btn_NavigationHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationHome.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_NavigationHome.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_NavigationHome.ForeColor = System.Drawing.Color.White;
             btn_NavigationHome.Location = new System.Drawing.Point(6, 3);
             btn_NavigationHome.Name = "btn_NavigationHome";
