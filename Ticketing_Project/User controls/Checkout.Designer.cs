@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnl_CheckoutSection = new System.Windows.Forms.Panel();
+            lbl_SubDescription = new System.Windows.Forms.Label();
             btn_Proceed = new System.Windows.Forms.Button();
             btn_Cancel = new System.Windows.Forms.Button();
             btn_MobilePayment = new System.Windows.Forms.Button();
@@ -65,7 +66,6 @@
             lbl_PriceDetails = new System.Windows.Forms.Label();
             btn_CardPayment = new System.Windows.Forms.Button();
             lbl_Payment = new System.Windows.Forms.Label();
-            lbl_SubDescription = new System.Windows.Forms.Label();
             pnl_CheckoutSection.SuspendLayout();
             flow_Checkout.SuspendLayout();
             flow_Passengers.SuspendLayout();
@@ -93,6 +93,16 @@
             pnl_CheckoutSection.Name = "pnl_CheckoutSection";
             pnl_CheckoutSection.Size = new System.Drawing.Size(683, 768);
             pnl_CheckoutSection.TabIndex = 0;
+            // 
+            // lbl_SubDescription
+            // 
+            lbl_SubDescription.AutoSize = true;
+            lbl_SubDescription.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_SubDescription.Location = new System.Drawing.Point(129, 81);
+            lbl_SubDescription.Name = "lbl_SubDescription";
+            lbl_SubDescription.Size = new System.Drawing.Size(268, 28);
+            lbl_SubDescription.TabIndex = 1;
+            lbl_SubDescription.Text = "Choose payment method below";
             // 
             // btn_Proceed
             // 
@@ -561,16 +571,6 @@
             lbl_Payment.TabIndex = 0;
             lbl_Payment.Text = "Payment";
             lbl_Payment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_SubDescription
-            // 
-            lbl_SubDescription.AutoSize = true;
-            lbl_SubDescription.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_SubDescription.Location = new System.Drawing.Point(129, 81);
-            lbl_SubDescription.Name = "lbl_SubDescription";
-            lbl_SubDescription.Size = new System.Drawing.Size(268, 28);
-            lbl_SubDescription.TabIndex = 1;
-            lbl_SubDescription.Text = "Choose payment method below";
             // 
             // Checkout
             // 
