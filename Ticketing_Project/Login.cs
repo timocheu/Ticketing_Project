@@ -18,7 +18,6 @@ namespace Ticketing_Project
         public Form_Login()
         {
             InitializeComponent();
-            utility.Change_Font(this);
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
