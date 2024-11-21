@@ -18,7 +18,7 @@ namespace Ticketing_Project.Classes
         Places place = new Places();
         List<Location> data;
 
-        public Utilities()
+        public void LinkData()
         {
             data = place.GetLocationList();
         }

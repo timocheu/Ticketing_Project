@@ -14,10 +14,12 @@ namespace Ticketing_Project
 {
     public partial class Calculator : UserControl
     {
+        bool isListGenerated = false;
         Utilities util = new();
         public Calculator()
         {
             InitializeComponent();
+
             // Limit the minimum flight date
             dtp_FlightDate.MinDate = DateTime.Now;
             // Limit flight reservation for 3years
@@ -65,6 +67,24 @@ namespace Ticketing_Project
 
             var form = Application.OpenForms.Cast<Form>().Last();
             util.ShowCheckout(form, checkout);
+        }
+
+        private void cbb_From_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (!isListGenerated)
+            {
+                // Add the data to the utility
+                util.LinkData();
+                // Generate all the list
+                util.GenerateCityCountryList(cbb_From);
+                util.GenerateCityCountryList(cbb_Destination);
+                isListGenerated = true;
+            }
+        }
+
+        private void cbb_Destination_MouseClick(object sender, MouseEventArgs e)
+        {
+            cbb_From_MouseClick(sender, e);
         }
     }
 }

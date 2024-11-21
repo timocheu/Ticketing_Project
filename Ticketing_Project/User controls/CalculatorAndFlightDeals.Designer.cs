@@ -32,6 +32,7 @@
             flow_Deals = new System.Windows.Forms.FlowLayoutPanel();
             lbl_FlightDeals = new System.Windows.Forms.Label();
             btn_RefreshDeals = new System.Windows.Forms.Button();
+            calculator1 = new Calculator();
             ((System.ComponentModel.ISupportInitialize)pb_DealsBackground).BeginInit();
             SuspendLayout();
             // 
@@ -73,17 +74,27 @@
             btn_RefreshDeals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             btn_RefreshDeals.FlatAppearance.BorderSize = 0;
             btn_RefreshDeals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_RefreshDeals.Location = new System.Drawing.Point(953, 235);
+            btn_RefreshDeals.Location = new System.Drawing.Point(953, 230);
             btn_RefreshDeals.Name = "btn_RefreshDeals";
             btn_RefreshDeals.Size = new System.Drawing.Size(35, 35);
             btn_RefreshDeals.TabIndex = 4;
             btn_RefreshDeals.UseVisualStyleBackColor = false;
             btn_RefreshDeals.Click += btn_RefreshDeals_Click;
             // 
+            // calculator1
+            // 
+            calculator1.BackColor = System.Drawing.Color.Transparent;
+            calculator1.Location = new System.Drawing.Point(18, 9);
+            calculator1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            calculator1.Name = "calculator1";
+            calculator1.Size = new System.Drawing.Size(1003, 169);
+            calculator1.TabIndex = 5;
+            // 
             // CalculatorAndFlightDeals
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             BackColor = System.Drawing.Color.Transparent;
+            Controls.Add(calculator1);
             Controls.Add(btn_RefreshDeals);
             Controls.Add(lbl_FlightDeals);
             Controls.Add(flow_Deals);
@@ -101,5 +112,6 @@
         private System.Windows.Forms.FlowLayoutPanel flow_Deals;
         private System.Windows.Forms.Label lbl_FlightDeals;
         private System.Windows.Forms.Button btn_RefreshDeals;
+        private Calculator calculator1;
     }
 }

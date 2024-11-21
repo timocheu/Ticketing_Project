@@ -168,12 +168,14 @@
             dtp_FlightDate.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             dtp_FlightDate.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dtp_FlightDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dtp_FlightDate.Location = new System.Drawing.Point(723, 109);
+            dtp_FlightDate.Location = new System.Drawing.Point(725, 109);
             dtp_FlightDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             dtp_FlightDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
             dtp_FlightDate.MinDate = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
             dtp_FlightDate.Name = "dtp_FlightDate";
-            dtp_FlightDate.Size = new System.Drawing.Size(120, 35);
+            dtp_FlightDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            dtp_FlightDate.RightToLeftLayout = true;
+            dtp_FlightDate.Size = new System.Drawing.Size(118, 35);
             dtp_FlightDate.TabIndex = 12;
             // 
             // cbb_From
@@ -193,6 +195,7 @@
             cbb_From.Size = new System.Drawing.Size(300, 42);
             cbb_From.TabIndex = 15;
             cbb_From.TabStop = false;
+            cbb_From.MouseClick += cbb_From_MouseClick;
             // 
             // cbb_Destination
             // 
@@ -210,6 +213,7 @@
             cbb_Destination.Size = new System.Drawing.Size(290, 42);
             cbb_Destination.TabIndex = 16;
             cbb_Destination.TabStop = false;
+            cbb_Destination.MouseClick += cbb_Destination_MouseClick;
             // 
             // lbl_TripType
             // 
