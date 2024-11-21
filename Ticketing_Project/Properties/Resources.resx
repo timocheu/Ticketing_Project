@@ -175,6 +175,9 @@
   <data name="Flight Calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flight Calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TicketTemplateBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TicketTemplateBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Login Background Photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login Background Photo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,7 +217,7 @@
   <data name="Comfortable flights, turns into happy travel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Comfortable flights, turns into happy travel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TicketTemplateBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TicketTemplateBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FlightDealsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlightDealsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

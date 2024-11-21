@@ -165,6 +165,15 @@ namespace Ticketing_Project.Classes
             }
         }
 
+        public void ShowTicketsOwned(FlowLayoutPanel panel, List<Ticket> ownedTicket)
+        {
+            foreach (Ticket ticket in ownedTicket)
+            {
+                TicketTemplate template = new TicketTemplate(ticket);
+                panel.Controls.Add(template);
+            }
+        }
+
         public void GenerateCityCountryList(ComboBox box)
         {
             foreach (var location in data) 

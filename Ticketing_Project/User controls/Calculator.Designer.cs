@@ -56,7 +56,7 @@
             cbb_BoardClass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_BoardClass.FormattingEnabled = true;
             cbb_BoardClass.Items.AddRange(new object[] { "Economy", "Business Class" });
-            cbb_BoardClass.Location = new System.Drawing.Point(291, 74);
+            cbb_BoardClass.Location = new System.Drawing.Point(302, 74);
             cbb_BoardClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_BoardClass.Name = "cbb_BoardClass";
             cbb_BoardClass.Size = new System.Drawing.Size(113, 23);
@@ -68,7 +68,7 @@
             cbb_NumberOfPassengers.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_NumberOfPassengers.FormattingEnabled = true;
             cbb_NumberOfPassengers.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            cbb_NumberOfPassengers.Location = new System.Drawing.Point(149, 74);
+            cbb_NumberOfPassengers.Location = new System.Drawing.Point(160, 74);
             cbb_NumberOfPassengers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_NumberOfPassengers.Name = "cbb_NumberOfPassengers";
             cbb_NumberOfPassengers.Size = new System.Drawing.Size(133, 23);
@@ -78,7 +78,7 @@
             // 
             pb_CalculatorPeopleIcon.BackColor = System.Drawing.Color.White;
             pb_CalculatorPeopleIcon.Image = Properties.Resources.ic_baseline_people;
-            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(131, 79);
+            pb_CalculatorPeopleIcon.Location = new System.Drawing.Point(142, 79);
             pb_CalculatorPeopleIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorPeopleIcon.Name = "pb_CalculatorPeopleIcon";
             pb_CalculatorPeopleIcon.Size = new System.Drawing.Size(15, 13);
@@ -92,7 +92,7 @@
             cbb_TripType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             cbb_TripType.FormattingEnabled = true;
             cbb_TripType.Items.AddRange(new object[] { "One Way", "Round Trip" });
-            cbb_TripType.Location = new System.Drawing.Point(27, 74);
+            cbb_TripType.Location = new System.Drawing.Point(38, 74);
             cbb_TripType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_TripType.Name = "cbb_TripType";
             cbb_TripType.Size = new System.Drawing.Size(98, 23);
@@ -102,7 +102,7 @@
             // 
             pb_CalculatorFromSelection.BackColor = System.Drawing.SystemColors.Window;
             pb_CalculatorFromSelection.Image = Properties.Resources.from_box;
-            pb_CalculatorFromSelection.Location = new System.Drawing.Point(25, 101);
+            pb_CalculatorFromSelection.Location = new System.Drawing.Point(36, 101);
             pb_CalculatorFromSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_CalculatorFromSelection.Name = "pb_CalculatorFromSelection";
             pb_CalculatorFromSelection.Size = new System.Drawing.Size(310, 52);
@@ -185,7 +185,7 @@
             cbb_From.FormattingEnabled = true;
             cbb_From.IntegralHeight = false;
             cbb_From.ItemHeight = 28;
-            cbb_From.Location = new System.Drawing.Point(32, 108);
+            cbb_From.Location = new System.Drawing.Point(43, 108);
             cbb_From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_From.Name = "cbb_From";
             cbb_From.Size = new System.Drawing.Size(299, 36);
@@ -214,7 +214,7 @@
             lbl_TripType.AutoSize = true;
             lbl_TripType.BackColor = System.Drawing.Color.White;
             lbl_TripType.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_TripType.Location = new System.Drawing.Point(30, 53);
+            lbl_TripType.Location = new System.Drawing.Point(41, 53);
             lbl_TripType.Name = "lbl_TripType";
             lbl_TripType.Size = new System.Drawing.Size(69, 20);
             lbl_TripType.TabIndex = 17;
@@ -225,7 +225,7 @@
             lbl_NumberOfPassenger.AutoSize = true;
             lbl_NumberOfPassenger.BackColor = System.Drawing.Color.White;
             lbl_NumberOfPassenger.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_NumberOfPassenger.Location = new System.Drawing.Point(149, 53);
+            lbl_NumberOfPassenger.Location = new System.Drawing.Point(160, 53);
             lbl_NumberOfPassenger.Name = "lbl_NumberOfPassenger";
             lbl_NumberOfPassenger.Size = new System.Drawing.Size(93, 20);
             lbl_NumberOfPassenger.TabIndex = 18;
@@ -236,7 +236,7 @@
             lbl_BoardClass.AutoSize = true;
             lbl_BoardClass.BackColor = System.Drawing.Color.White;
             lbl_BoardClass.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_BoardClass.Location = new System.Drawing.Point(291, 53);
+            lbl_BoardClass.Location = new System.Drawing.Point(302, 53);
             lbl_BoardClass.Name = "lbl_BoardClass";
             lbl_BoardClass.Size = new System.Drawing.Size(86, 20);
             lbl_BoardClass.TabIndex = 19;

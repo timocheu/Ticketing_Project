@@ -28,7 +28,7 @@ namespace Ticketing_Project
         {
             // Restrictions
             // Check if every combo box is filled
-             var comboBox = this.Controls.OfType<ComboBox>();
+            var comboBox = this.Controls.OfType<ComboBox>();
             // Hide everything
             foreach (var field in comboBox)
             {
@@ -61,10 +61,10 @@ namespace Ticketing_Project
             double distance = ticket.CalculateDistance(loc1, loc2);
             ticket.Duration = ticket.CalculateDuration(distance);
 
-            Checkout checkout = new Checkout(int.Parse(cbb_NumberOfPassengers.Text), ticket, (int) ticket.GeneratePrice(distance, ticket.BoardClass, ticket.TripType));
+            Checkout checkout = new Checkout(int.Parse(cbb_NumberOfPassengers.Text), ticket, (int)ticket.GeneratePrice(distance, ticket.BoardClass, ticket.TripType));
 
             var form = Application.OpenForms.Cast<Form>().Last();
-           util.ShowCheckout(form, checkout);
+            util.ShowCheckout(form, checkout);
         }
     }
 }
