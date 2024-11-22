@@ -59,7 +59,7 @@
             cbb_BoardClass.Location = new System.Drawing.Point(320, 57);
             cbb_BoardClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_BoardClass.Name = "cbb_BoardClass";
-            cbb_BoardClass.Size = new System.Drawing.Size(113, 30);
+            cbb_BoardClass.Size = new System.Drawing.Size(131, 30);
             cbb_BoardClass.TabIndex = 2;
             // 
             // cbb_NumberOfPassengers
