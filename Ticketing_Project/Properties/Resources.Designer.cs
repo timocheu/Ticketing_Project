@@ -63,6 +63,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BackgroundForCheckout {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundForCheckout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap BorderBackgroundRemoved {
             get {
                 object obj = ResourceManager.GetObject("BorderBackgroundRemoved", resourceCulture);

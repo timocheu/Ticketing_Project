@@ -82,6 +82,7 @@
             // pnl_CheckoutSection
             // 
             pnl_CheckoutSection.BackColor = System.Drawing.Color.White;
+            pnl_CheckoutSection.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             pnl_CheckoutSection.Controls.Add(lbl_SubDescription);
             pnl_CheckoutSection.Controls.Add(btn_Proceed);
             pnl_CheckoutSection.Controls.Add(btn_Cancel);
@@ -89,7 +90,7 @@
             pnl_CheckoutSection.Controls.Add(flow_Checkout);
             pnl_CheckoutSection.Controls.Add(btn_CardPayment);
             pnl_CheckoutSection.Controls.Add(lbl_Payment);
-            pnl_CheckoutSection.Location = new System.Drawing.Point(359, 0);
+            pnl_CheckoutSection.Location = new System.Drawing.Point(356, 0);
             pnl_CheckoutSection.Name = "pnl_CheckoutSection";
             pnl_CheckoutSection.Size = new System.Drawing.Size(683, 768);
             pnl_CheckoutSection.TabIndex = 0;
@@ -233,6 +234,7 @@
             // pnl_BookingSummary
             // 
             pnl_BookingSummary.Anchor = System.Windows.Forms.AnchorStyles.None;
+            pnl_BookingSummary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             pnl_BookingSummary.Controls.Add(table_BookingSummary);
             pnl_BookingSummary.Controls.Add(lbl_BookingSummary);
             pnl_BookingSummary.Controls.Add(pb_Line);
@@ -575,8 +577,11 @@
             // Checkout
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            BackColor = System.Drawing.Color.DimGray;
+            BackgroundImage = Properties.Resources.BackgroundForCheckout;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Controls.Add(pnl_CheckoutSection);
+            DoubleBuffered = true;
             Name = "Checkout";
             Size = new System.Drawing.Size(1396, 768);
             pnl_CheckoutSection.ResumeLayout(false);

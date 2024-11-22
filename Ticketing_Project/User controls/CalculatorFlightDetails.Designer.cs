@@ -60,7 +60,7 @@
             pnl_FlightDetails.Controls.Add(tbl_PriceDetails);
             pnl_FlightDetails.Controls.Add(tbl_Summary);
             pnl_FlightDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            pnl_FlightDetails.Location = new System.Drawing.Point(430, 0);
+            pnl_FlightDetails.Location = new System.Drawing.Point(356, 0);
             pnl_FlightDetails.Name = "pnl_FlightDetails";
             pnl_FlightDetails.Size = new System.Drawing.Size(683, 768);
             pnl_FlightDetails.TabIndex = 0;
@@ -301,8 +301,11 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            BackColor = System.Drawing.Color.DimGray;
+            BackgroundImage = Properties.Resources.BackgroundForCheckout;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Controls.Add(pnl_FlightDetails);
+            DoubleBuffered = true;
             Name = "CalculatorFlightDetails";
             Size = new System.Drawing.Size(1396, 768);
             pnl_FlightDetails.ResumeLayout(false);
