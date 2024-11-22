@@ -64,7 +64,6 @@
             pnl_FlightDetails.Name = "pnl_FlightDetails";
             pnl_FlightDetails.Size = new System.Drawing.Size(683, 768);
             pnl_FlightDetails.TabIndex = 0;
-            pnl_FlightDetails.Paint += pnl_FlightDetails_Paint;
             // 
             // btn_Proceed
             // 
@@ -82,6 +81,7 @@
             btn_Proceed.TabIndex = 16;
             btn_Proceed.Text = "Proceed";
             btn_Proceed.UseVisualStyleBackColor = false;
+            btn_Proceed.Click += btn_Proceed_Click;
             // 
             // btn_Cancel
             // 
@@ -206,7 +206,6 @@
             tbl_Summary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.2816334F));
             tbl_Summary.Size = new System.Drawing.Size(218, 208);
             tbl_Summary.TabIndex = 0;
-            tbl_Summary.Paint += tableLayoutPanel1_Paint;
             // 
             // lbl_ReturnDate
             // 

@@ -32,13 +32,16 @@ namespace Ticketing_Project.User_controls
             lbl_TotalTicketDisplay.Text = passengers.ToString();
             lbl_LocationDisplay.Text = ticket.From;
             lbl_PickUpDateDisplay.Text = ticket.FlightDate.ToString();
+
+            // BALANCE
+            lbl_TripPriceDisplay.Text = "₱" + price.ToString("N");
+            lbl_TaxDisplay.Text = "₱" + ((int)tax).ToString("N");
+
+            // CHECK IF TRIPTYPE
             if (ticket.TripType == "Round Trip")
             {
                 lbl_ReturnDateDisplay.Text = ticket.FlightDate.AddDays(365).ToString();
             }
-
-            lbl_TripPriceDisplay.Text = $"₱{price}";
-            lbl_TaxDisplay.Text = $"₱{(int)tax}";
             // Show discount for flash deals
             if (ticket.isDeal)
             {
@@ -46,7 +49,7 @@ namespace Ticketing_Project.User_controls
             }
 
             // Display total amout with Tax
-            lbl_TotalDisplay.Text = $"₱{price * passengers}";
+            reCalculateTotal();
         }
 
         private void btn_AddPassenger_Click(object sender, EventArgs e)
@@ -61,8 +64,7 @@ namespace Ticketing_Project.User_controls
             PassengerTextBox passengerNew = new PassengerTextBox();
             flow_Passengers.Controls.Add(passengerNew);
             passengers++;
-            lbl_TotalTicketDisplay.Text = passengers.ToString();
-            lbl_TotalDisplay.Text = (passengers * priceEachPerson).ToString();
+            reCalculateTotal();
         }
         private void btn_RemovePassenger_Click(object sender, EventArgs e)
         {
@@ -71,11 +73,9 @@ namespace Ticketing_Project.User_controls
                 MessageBox.Show("Passenger should be at least 1.");
                 return;
             }
-
             passengers--;
-            lbl_TotalTicketDisplay.Text = passengers.ToString();
-            lbl_TotalDisplay.Text = (passengers * priceEachPerson).ToString();
             flow_Passengers.Controls.RemoveAt(0);
+            reCalculateTotal();
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
@@ -120,6 +120,12 @@ namespace Ticketing_Project.User_controls
                     }
                 }
             }
+        }
+
+        private void reCalculateTotal()
+        {
+            lbl_TotalTicketDisplay.Text = passengers.ToString();
+            lbl_TotalDisplay.Text = "₱" + (passengers * priceEachPerson).ToString("N");
         }
     }
 }

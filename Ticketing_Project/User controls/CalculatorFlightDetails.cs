@@ -13,9 +13,15 @@ namespace Ticketing_Project.User_controls
 {
     public partial class CalculatorFlightDetails : UserControl
     {
+        Ticket _ticket;
+        double _price;
         public CalculatorFlightDetails(Ticket ticket, int passengers, double price)
         {
             InitializeComponent();
+
+            _ticket = ticket;
+            _price = price;
+
             double tax = price * .2;
             lbl_TotalTickets.Text = passengers.ToString();
 
@@ -30,7 +36,7 @@ namespace Ticketing_Project.User_controls
 
             // BALANCE
             lbl_TripPrice.Text = "₱" + price.ToString("N");
-            lbl_Tax.Text = "₱" + ((int) tax).ToString("N");
+            lbl_Tax.Text = "₱" + ((int)tax).ToString("N");
 
             // If round trip display 
             if (ticket.TripType == "Round Trip")
@@ -48,19 +54,16 @@ namespace Ticketing_Project.User_controls
             lbl_Total.Text = "₱" + (price * passengers).ToString("N");
         }
 
-        private void pnl_FlightDetails_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btn_Proceed_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Checkout checkout = new Checkout(int.Parse(lbl_TotalTickets.Text), _ticket, (int)_price);
+            _ticket.ShowCheckout(FindForm(), checkout);
         }
     }
 }
