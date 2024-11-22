@@ -13,9 +13,12 @@ namespace Ticketing_Project
 {
     public partial class CalculatorAndFlightDeals : UserControl
     {
+        Utilities util = new Utilities();
         public CalculatorAndFlightDeals()
         {
             InitializeComponent();
+            util.LinkData();
+            util.GenerateFlashDeals(this.flow_Deals);
         }
 
         private void btn_RefreshDeals_Click(object sender, EventArgs e)
