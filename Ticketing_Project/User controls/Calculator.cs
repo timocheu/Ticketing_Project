@@ -28,6 +28,12 @@ namespace Ticketing_Project
 
         private void btn_Calculate_Click(object sender, EventArgs e)
         {
+            // Check if FROM and DESTINATION is the same
+            if (cbb_From.Text == cbb_Destination.Text)
+            {
+                MessageBox.Show("Invalid: Please choose different destination");
+                return;
+            }
             // Restrictions
             // Check if every combo box is filled
             var comboBox = this.Controls.OfType<ComboBox>();
@@ -47,26 +53,32 @@ namespace Ticketing_Project
             int indexDestination = cbb_Destination.Items.IndexOf(cbb_Destination.Text);
             // Store the details in the calculator in object
             Ticket ticket = new Ticket();
-            Location loc1 = ticket.GetLocation(indexFrom);
-            Location loc2 = ticket.GetLocation(indexDestination);
+            Location loc1 = util.GetLocation(indexFrom);
+            Location loc2 = util.GetLocation(indexDestination);
 
+            // LOCATION (FROM)
             ticket.From = loc1.City;
+            ticket.FromCountry = loc1.Country;
             ticket.FromCountryCode = loc1.Country;
+            // LOCATION (DESTINATION)
             ticket.Destination = loc2.City;
+            ticket.DestinationCountry = loc2.Country;
             ticket.DestinationCountryCode = loc2.Country;
 
             // Flight Details
+            int passengers = int.Parse(cbb_NumberOfPassengers.Text);
             ticket.FlightDate = dtp_FlightDate.Value;
             ticket.BoardClass = cbb_BoardClass.Text;
             ticket.TripType = cbb_TripType.Text;
 
-            double distance = ticket.CalculateDistance(loc1, loc2);
-            ticket.Duration = ticket.CalculateDuration(distance);
+            ticket.Distance = ticket.CalculateDistance(loc1, loc2);
+            ticket.Duration = ticket.CalculateDuration(ticket.Distance);
+            double price = ticket.GeneratePrice(ticket.Distance, ticket.BoardClass, ticket.TripType);
 
-            Checkout checkout = new Checkout(int.Parse(cbb_NumberOfPassengers.Text), ticket, (int)ticket.GeneratePrice(distance, ticket.BoardClass, ticket.TripType));
+            CalculatorFlightDetails details = new CalculatorFlightDetails(ticket, passengers, (int) price);
 
             var form = Application.OpenForms.Cast<Form>().Last();
-            util.ShowCheckout(form, checkout);
+            util.ShowFlightDetails(form, details);
         }
 
         private void cbb_From_MouseClick(object sender, MouseEventArgs e)

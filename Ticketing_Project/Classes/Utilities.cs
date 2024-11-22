@@ -172,6 +172,12 @@ namespace Ticketing_Project.Classes
             checkout.BringToFront();
         }
 
+        public void ShowFlightDetails(Form form, CalculatorFlightDetails FlightDetails)
+        {
+            form.Controls.Add(FlightDetails);
+            FlightDetails.BringToFront();
+        }
+
         public Location GetLocation(int index)
         {
             return data[index];

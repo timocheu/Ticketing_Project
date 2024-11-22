@@ -12,14 +12,18 @@ namespace Ticketing_Project.Classes
         public string Owner { get; set; }
         // FROM -> DESTINATION
         public string From { get; set; }
+        public string FromCountry { get; set; }
         public string FromCountryCode { get; set; }
         public string Destination { get; set; }
+        public string DestinationCountry { get; set; }
         public string DestinationCountryCode { get; set; }
         // FLIGHT DETAILS
         public DateTime FlightDate { get; set; }
         public string BoardClass { get; set; }
         public string TripType { get; set; }
         public string Duration { get; set; }
+        //Distance in Kilometer
+        public double Distance { get; set; }
         // FLIGHT ACCOMDATION
         public string Gate { get; set; }
         public string Seat { get; set; }
