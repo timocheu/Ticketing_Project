@@ -142,8 +142,8 @@
             // 
             // btn_MobilePayment
             // 
-            btn_MobilePayment.BackColor = System.Drawing.Color.FromArgb(0, 113, 188);
-            btn_MobilePayment.BackgroundImage = Properties.Resources.PaymentBoxRemovedBackground;
+            btn_MobilePayment.BackColor = System.Drawing.Color.Transparent;
+            btn_MobilePayment.BackgroundImage = Properties.Resources.Mobile_Payment_Highlight;
             btn_MobilePayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_MobilePayment.FlatAppearance.BorderSize = 0;
             btn_MobilePayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -151,9 +151,8 @@
             btn_MobilePayment.ForeColor = System.Drawing.Color.Snow;
             btn_MobilePayment.Location = new System.Drawing.Point(360, 111);
             btn_MobilePayment.Name = "btn_MobilePayment";
-            btn_MobilePayment.Size = new System.Drawing.Size(204, 90);
+            btn_MobilePayment.Size = new System.Drawing.Size(200, 90);
             btn_MobilePayment.TabIndex = 3;
-            btn_MobilePayment.Text = "Mobile Payment";
             btn_MobilePayment.UseVisualStyleBackColor = false;
             btn_MobilePayment.Click += btn_MobilePayment_Click;
             // 
@@ -549,17 +548,16 @@
             // 
             // btn_CardPayment
             // 
-            btn_CardPayment.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
-            btn_CardPayment.BackgroundImage = Properties.Resources.PaymentBoxRemovedBackground;
+            btn_CardPayment.BackColor = System.Drawing.Color.Transparent;
+            btn_CardPayment.BackgroundImage = Properties.Resources.Card_Payment_Lowlight;
             btn_CardPayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_CardPayment.FlatAppearance.BorderSize = 0;
             btn_CardPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_CardPayment.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            btn_CardPayment.Location = new System.Drawing.Point(132, 111);
+            btn_CardPayment.Location = new System.Drawing.Point(142, 111);
             btn_CardPayment.Name = "btn_CardPayment";
-            btn_CardPayment.Size = new System.Drawing.Size(204, 90);
+            btn_CardPayment.Size = new System.Drawing.Size(200, 90);
             btn_CardPayment.TabIndex = 2;
-            btn_CardPayment.Text = "Card Payment\r\n";
             btn_CardPayment.UseVisualStyleBackColor = false;
             btn_CardPayment.Click += btn_CardPayment_Click;
             // 

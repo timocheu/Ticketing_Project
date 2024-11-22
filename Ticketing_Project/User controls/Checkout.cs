@@ -15,6 +15,8 @@ namespace Ticketing_Project.User_controls
     {
         int passengers;
         int priceEachPerson;
+        // FALSE = MOBILE PAYMENT, TRUE = CARD PAYMENT
+        bool paymentMethod = false;
 
         public Checkout(int Passengers, Ticket ticket, int price)
         {
@@ -85,25 +87,15 @@ namespace Ticketing_Project.User_controls
 
         private void btn_CardPayment_Click(object sender, EventArgs e)
         {
-            WhitenNavigationButtons(btn_MobilePayment);
-            HighlightNavigationButton(btn_CardPayment);
+            paymentMethod = true;
+            btn_CardPayment.BackgroundImage = Properties.Resources.Card_Payment_Highlight;
+            btn_MobilePayment.BackgroundImage = Properties.Resources.Mobile_Payment_Lowlight;
         }
         private void btn_MobilePayment_Click(object sender, EventArgs e)
         {
-            WhitenNavigationButtons(btn_CardPayment);
-            HighlightNavigationButton(btn_MobilePayment);
-        }
-
-        private void WhitenNavigationButtons(Button button)
-        {
-            button.BackColor = Color.White;
-            button.ForeColor = Color.Black;
-        }
-
-        private void HighlightNavigationButton(Button button)
-        {
-            button.BackColor = Color.FromArgb(0, 119, 182);
-            button.ForeColor = Color.White;
+            paymentMethod = false;
+            btn_MobilePayment.BackgroundImage = Properties.Resources.Mobile_Payment_Highlight;
+            btn_CardPayment.BackgroundImage = Properties.Resources.Card_Payment_Lowlight;
         }
 
         private void btn_Proceed_Click(object sender, EventArgs e)

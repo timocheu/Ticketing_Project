@@ -153,6 +153,26 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Card_Payment_Highlight {
+            get {
+                object obj = ResourceManager.GetObject("Card_Payment_Highlight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Card_Payment_Lowlight {
+            get {
+                object obj = ResourceManager.GetObject("Card_Payment_Lowlight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap CardDealsBackground {
             get {
                 object obj = ResourceManager.GetObject("CardDealsBackground", resourceCulture);
@@ -326,6 +346,26 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap LoginBarRemovedBackground {
             get {
                 object obj = ResourceManager.GetObject("LoginBarRemovedBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Mobile_Payment_Highlight {
+            get {
+                object obj = ResourceManager.GetObject("Mobile_Payment_Highlight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Mobile_Payment_Lowlight {
+            get {
+                object obj = ResourceManager.GetObject("Mobile_Payment_Lowlight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
