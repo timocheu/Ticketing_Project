@@ -36,6 +36,7 @@
             btn_Login = new System.Windows.Forms.Button();
             pb_LoginSection = new System.Windows.Forms.PictureBox();
             pb_LoginBackgroundPhoto = new System.Windows.Forms.PictureBox();
+            lbl_Incorrect = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)pb_LoginSection).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb_LoginBackgroundPhoto).BeginInit();
             SuspendLayout();
@@ -91,6 +92,7 @@
             cb_ShowPassword.TabIndex = 3;
             cb_ShowPassword.Text = "Show Password";
             cb_ShowPassword.UseVisualStyleBackColor = true;
+            cb_ShowPassword.CheckedChanged += cb_ShowPassword_CheckedChanged;
             // 
             // btn_Login
             // 
@@ -131,12 +133,26 @@
             pb_LoginBackgroundPhoto.TabIndex = 0;
             pb_LoginBackgroundPhoto.TabStop = false;
             // 
+            // lbl_Incorrect
+            // 
+            lbl_Incorrect.AutoSize = true;
+            lbl_Incorrect.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_Incorrect.ForeColor = System.Drawing.Color.Red;
+            lbl_Incorrect.Location = new System.Drawing.Point(232, 396);
+            lbl_Incorrect.Name = "lbl_Incorrect";
+            lbl_Incorrect.Size = new System.Drawing.Size(231, 28);
+            lbl_Incorrect.TabIndex = 6;
+            lbl_Incorrect.Text = "Incorrect Email or Password";
+            lbl_Incorrect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            lbl_Incorrect.Visible = false;
+            // 
             // Form_Login
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
             ClientSize = new System.Drawing.Size(1380, 768);
+            Controls.Add(lbl_Incorrect);
             Controls.Add(cb_ShowPassword);
             Controls.Add(lbl_ForgotPassword);
             Controls.Add(btn_Login);
@@ -164,6 +180,7 @@
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Label lbl_ForgotPassword;
         private System.Windows.Forms.CheckBox cb_ShowPassword;
+        private System.Windows.Forms.Label lbl_Incorrect;
     }
 }
 

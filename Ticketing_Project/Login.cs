@@ -15,6 +15,7 @@ namespace Ticketing_Project
     {
         readonly public Utilities utility = new Utilities();
         readonly Account dummyAcc = new Account("Timotheo", "tim@gmail.com", "1234");
+        
         public Form_Login()
         {
             InitializeComponent();
@@ -31,8 +32,19 @@ namespace Ticketing_Project
             }
             else
             {
-                MessageBox.Show("Incorrect credentials");
+                lbl_Incorrect.Show();
             }
+        }
+
+        private void cb_ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_ShowPassword.Checked)
+            {
+                txt_PasswordLogin.PasswordChar = '\0';
+                return;
+            }
+
+            txt_PasswordLogin.PasswordChar = '*';
         }
     }
 } 
