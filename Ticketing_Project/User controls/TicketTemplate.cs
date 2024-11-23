@@ -16,7 +16,6 @@ namespace Ticketing_Project.User_controls
         public TicketTemplate(Ticket ticket)
         {
             InitializeComponent();
-
         }
     }
 }

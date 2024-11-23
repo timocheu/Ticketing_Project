@@ -55,7 +55,7 @@
             pnl_NavigationButtons.Controls.Add(btn_NavigationTicketOwned);
             pnl_NavigationButtons.Controls.Add(btn_NavigationBookingHistory);
             pnl_NavigationButtons.Controls.Add(btn_NavigationHome);
-            pnl_NavigationButtons.Location = new System.Drawing.Point(33, 116);
+            pnl_NavigationButtons.Location = new System.Drawing.Point(33, 125);
             pnl_NavigationButtons.Name = "pnl_NavigationButtons";
             pnl_NavigationButtons.Size = new System.Drawing.Size(266, 217);
             pnl_NavigationButtons.TabIndex = 4;

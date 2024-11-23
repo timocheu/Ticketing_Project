@@ -8,15 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ticketing_Project.Classes;
+using Ticketing_Project.User_controls;
 
 namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
         CalculatorAndFlightDeals homePage = new CalculatorAndFlightDeals();
+        TicketsOwnedControl ticketsOwnedControl = new TicketsOwnedControl();
+        bool isTicketAdded = false;
+
         public HomePage()
         {
             InitializeComponent();
+            ticketsOwnedControl.Hide();
 
             // Initialize Homepage
             this.Controls.Add(homePage);
@@ -37,9 +42,18 @@ namespace Ticketing_Project
 
         private void btn_NavigationTicketOwned_Click(object sender, EventArgs e)
         {
+            if (ticketsOwnedControl.Visible) return;
+
             WhitenNavigationButtons();
             HidePreviousContent();
             HighlightNavigationButton(btn_NavigationTicketOwned);
+            if (!isTicketAdded)
+            {
+                pnl_Content.Controls.Add(ticketsOwnedControl);
+                ticketsOwnedControl.Location = new Point(30, 125);
+            }
+
+            ticketsOwnedControl.Show();
         }
         private void btn_NavigationBookingHistory_Click(object sender, EventArgs e)
         {

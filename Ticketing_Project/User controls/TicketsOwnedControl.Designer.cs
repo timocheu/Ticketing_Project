@@ -37,17 +37,18 @@
             flow_TicketsOwned.BackColor = System.Drawing.Color.White;
             flow_TicketsOwned.Location = new System.Drawing.Point(135, 83);
             flow_TicketsOwned.Name = "flow_TicketsOwned";
-            flow_TicketsOwned.Size = new System.Drawing.Size(738, 530);
+            flow_TicketsOwned.Size = new System.Drawing.Size(738, 566);
             flow_TicketsOwned.TabIndex = 0;
             // 
             // TicketsOwnedControl
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.Transparent;
             BackgroundImage = Properties.Resources.FlightDealsBackground;
             Controls.Add(flow_TicketsOwned);
             Name = "TicketsOwnedControl";
-            Size = new System.Drawing.Size(989, 613);
+            Size = new System.Drawing.Size(989, 649);
             ResumeLayout(false);
         }
 
