@@ -14,9 +14,13 @@ namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
+        // Controls
         CalculatorAndFlightDeals homePage = new CalculatorAndFlightDeals();
         TicketsOwnedControl ticketsOwnedControl = new TicketsOwnedControl();
         bool isTicketAdded = false;
+
+        // Data for tickets owned
+        public List<Ticket> ticketsOwned = new List<Ticket>();
 
         public HomePage()
         {
@@ -27,6 +31,11 @@ namespace Ticketing_Project
             this.Controls.Add(homePage);
             homePage.Parent = pnl_Content;
             homePage.Location = new Point(0, 95);
+        }
+        
+        public void ReceiveTickets(Ticket ticket)
+        {
+            ticketsOwned.Add(ticket);
         }
 
         private void btn_NavigationHome_Click(object sender, EventArgs e)
@@ -54,6 +63,12 @@ namespace Ticketing_Project
             }
 
             ticketsOwnedControl.Show();
+            ticketsOwnedControl.flow_TicketsOwned.Controls.Clear();
+            foreach (Ticket ticket in ticketsOwned)
+            {
+                TicketTemplate ticketToAdd = new TicketTemplate(ticket);
+                ticketsOwnedControl.flow_TicketsOwned.Controls.Add(ticketToAdd);
+            }
         }
         private void btn_NavigationBookingHistory_Click(object sender, EventArgs e)
         {

@@ -13,14 +13,18 @@ namespace Ticketing_Project.User_controls
 {
     public partial class Checkout : UserControl
     {
-        int passengers;
-        int priceEachPerson;
+        // Data of flight details
+        public Ticket ticket;
+        public int passengers;
+        public int priceEachPerson;
         // FALSE = MOBILE PAYMENT, TRUE = CARD PAYMENT
         bool paymentMethod = false;
 
-        public Checkout(int Passengers, Ticket ticket, int price)
+        public Checkout(int Passengers, Ticket _ticket, int price)
         {
             InitializeComponent();
+            // Pass the data
+            ticket = _ticket;
             passengers = Passengers;
             priceEachPerson = price;
             double tax = price * .2;
@@ -32,20 +36,20 @@ namespace Ticketing_Project.User_controls
             }
             // Ticket Details
             lbl_TotalTicketDisplay.Text = passengers.ToString();
-            lbl_LocationDisplay.Text = ticket.From;
-            lbl_PickUpDateDisplay.Text = ticket.FlightDate.ToString();
+            lbl_LocationDisplay.Text = _ticket.From;
+            lbl_PickUpDateDisplay.Text = _ticket.FlightDate.ToString();
 
             // BALANCE
             lbl_TripPriceDisplay.Text = "₱" + price.ToString("N");
             lbl_TaxDisplay.Text = "₱" + ((int)tax).ToString("N");
 
             // CHECK IF TRIPTYPE
-            if (ticket.TripType == "Round Trip")
+            if (_ticket.TripType == "Round Trip")
             {
-                lbl_ReturnDateDisplay.Text = ticket.FlightDate.AddDays(365).ToString();
+                lbl_ReturnDateDisplay.Text = _ticket.FlightDate.AddDays(365).ToString();
             }
             // Show discount for flash deals
-            if (ticket.isDeal)
+            if (_ticket.isDeal)
             {
                 lbl_DiscountDisplay.Text = "20%";
             }
@@ -100,8 +104,10 @@ namespace Ticketing_Project.User_controls
 
         private void btn_Proceed_Click(object sender, EventArgs e)
         {
+            List<string> Names = new List<string>();
             foreach (Control control in flow_Passengers.Controls)
             {
+                // Check if something a textbox missing
                 if (control is UserControl userControl)
                 {
                     TextBox PassengerInput = userControl.Controls.OfType<TextBox>().FirstOrDefault();
@@ -110,8 +116,22 @@ namespace Ticketing_Project.User_controls
                         MessageBox.Show("Please Complete the missing fields.");
                         return;
                     }
+                    Names.Add(PassengerInput.Text);
                 }
             }
+
+            HomePage form = (HomePage) this.Parent;
+            foreach (string name in Names)
+            {
+                form.ticketsOwned.Add(createTicket(name));
+            }
+        }
+
+        private Ticket createTicket(string name)
+        {
+            Ticket newTicket = ticket;
+            newTicket.Owner = name;
+            return newTicket;
         }
 
         private void reCalculateTotal()

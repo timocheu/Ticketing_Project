@@ -75,7 +75,7 @@ namespace Ticketing_Project
             ticket.Duration = ticket.CalculateDuration(ticket.Distance);
             double price = ticket.GeneratePrice(ticket.Distance, ticket.BoardClass, ticket.TripType);
 
-            CalculatorFlightDetails details = new CalculatorFlightDetails(ticket, passengers, (int) price);
+            CalculatorFlightDetails details = new CalculatorFlightDetails(ticket, passengers, (int)price);
 
             var form = Application.OpenForms.Cast<Form>().Last();
             util.ShowFlightDetails(form, details);

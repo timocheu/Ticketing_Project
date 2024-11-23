@@ -35,10 +35,12 @@
             // 
             flow_TicketsOwned.AutoScroll = true;
             flow_TicketsOwned.BackColor = System.Drawing.Color.White;
+            flow_TicketsOwned.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             flow_TicketsOwned.Location = new System.Drawing.Point(135, 83);
             flow_TicketsOwned.Name = "flow_TicketsOwned";
             flow_TicketsOwned.Size = new System.Drawing.Size(738, 566);
             flow_TicketsOwned.TabIndex = 0;
+            flow_TicketsOwned.WrapContents = false;
             // 
             // TicketsOwnedControl
             // 
@@ -54,6 +56,6 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flow_TicketsOwned;
+        public System.Windows.Forms.FlowLayoutPanel flow_TicketsOwned;
     }
 }

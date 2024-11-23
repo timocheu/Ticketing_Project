@@ -166,17 +166,17 @@
             // dtp_FlightDate
             // 
             dtp_FlightDate.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dtp_FlightDate.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dtp_FlightDate.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dtp_FlightDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             dtp_FlightDate.Location = new System.Drawing.Point(725, 109);
             dtp_FlightDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             dtp_FlightDate.MaxDate = new System.DateTime(2027, 12, 31, 0, 0, 0, 0);
             dtp_FlightDate.MinDate = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
             dtp_FlightDate.Name = "dtp_FlightDate";
-            dtp_FlightDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dtp_FlightDate.RightToLeftLayout = true;
-            dtp_FlightDate.Size = new System.Drawing.Size(118, 35);
+            dtp_FlightDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            dtp_FlightDate.Size = new System.Drawing.Size(121, 31);
             dtp_FlightDate.TabIndex = 12;
+            dtp_FlightDate.Value = new System.DateTime(2024, 11, 23, 21, 20, 48, 0);
             // 
             // cbb_From
             // 
