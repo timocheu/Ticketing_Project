@@ -34,7 +34,7 @@
             lbl_Seat = new System.Windows.Forms.Label();
             lbl_Date = new System.Windows.Forms.Label();
             lbl_Gate = new System.Windows.Forms.Label();
-            lbl_FlightDate = new System.Windows.Forms.Label();
+            lbl_FlightNumber = new System.Windows.Forms.Label();
             lbl_FlightDuration = new System.Windows.Forms.Label();
             lbl_TripType = new System.Windows.Forms.Label();
             lbl_BoardingClass = new System.Windows.Forms.Label();
@@ -116,17 +116,17 @@
             lbl_Gate.Text = "Lorem";
             lbl_Gate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_FlightDate
+            // lbl_FlightNumber
             // 
-            lbl_FlightDate.AutoSize = true;
-            lbl_FlightDate.BackColor = System.Drawing.Color.Transparent;
-            lbl_FlightDate.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_FlightDate.Location = new System.Drawing.Point(417, 134);
-            lbl_FlightDate.Name = "lbl_FlightDate";
-            lbl_FlightDate.Size = new System.Drawing.Size(86, 39);
-            lbl_FlightDate.TabIndex = 5;
-            lbl_FlightDate.Text = "Lorem";
-            lbl_FlightDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lbl_FlightNumber.AutoSize = true;
+            lbl_FlightNumber.BackColor = System.Drawing.Color.Transparent;
+            lbl_FlightNumber.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_FlightNumber.Location = new System.Drawing.Point(417, 134);
+            lbl_FlightNumber.Name = "lbl_FlightNumber";
+            lbl_FlightNumber.Size = new System.Drawing.Size(86, 39);
+            lbl_FlightNumber.TabIndex = 5;
+            lbl_FlightNumber.Text = "Lorem";
+            lbl_FlightNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_FlightDuration
             // 
@@ -224,7 +224,7 @@
             Controls.Add(lbl_FlightDuration);
             Controls.Add(lbl_TripType);
             Controls.Add(lbl_Gate);
-            Controls.Add(lbl_FlightDate);
+            Controls.Add(lbl_FlightNumber);
             Controls.Add(lbl_Seat);
             Controls.Add(lbl_Date);
             Controls.Add(lbl_Destination);
@@ -247,7 +247,7 @@
         private System.Windows.Forms.Label lbl_Seat;
         private System.Windows.Forms.Label lbl_Date;
         private System.Windows.Forms.Label lbl_Gate;
-        private System.Windows.Forms.Label lbl_FlightDate;
+        private System.Windows.Forms.Label lbl_FlightNumber;
         private System.Windows.Forms.Label lbl_FlightDuration;
         private System.Windows.Forms.Label lbl_TripType;
         private System.Windows.Forms.Label lbl_BoardingClass;

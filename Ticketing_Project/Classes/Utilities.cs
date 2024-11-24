@@ -191,7 +191,7 @@ namespace Ticketing_Project.Classes
 
         public string RandomTerminal()
         {
-            return $"Terminal-{random.Next(1, 10)}";
+            return $"T-{random.Next(1, 10)}";
         }
         
         public string RandomSeat()

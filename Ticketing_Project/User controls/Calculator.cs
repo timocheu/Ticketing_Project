@@ -70,6 +70,11 @@ namespace Ticketing_Project
             ticket.FlightDate = dtp_FlightDate.Value;
             ticket.BoardClass = cbb_BoardClass.Text;
             ticket.TripType = cbb_TripType.Text;
+            ticket.Seat = ticket.RandomSeat();
+            ticket.Gate = ticket.RandomGate();
+            ticket.FlightNumber = ticket.RandomTerminal();
+
+
 
             ticket.Distance = ticket.CalculateDistance(loc1, loc2);
             ticket.Duration = ticket.CalculateDuration(ticket.Distance);

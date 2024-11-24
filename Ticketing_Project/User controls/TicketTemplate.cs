@@ -23,8 +23,8 @@ namespace Ticketing_Project.User_controls
             lbl_Destination.Text = $"{ticket.Destination} ({ticket.DestinationCountry})";
             lbl_Date.Text = ticket.FlightDate.ToShortDateString();
             lbl_Seat.Text = ticket.Seat;
-            lbl_FlightDate.Text = "F12";
             lbl_Gate.Text = ticket.Gate;
+            lbl_FlightNumber.Text = ticket.FlightNumber;
             lbl_TripType.Text = ticket.TripType;
             lbl_FlightDuration.Text = ticket.Duration;
         }
