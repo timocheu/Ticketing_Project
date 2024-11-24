@@ -132,17 +132,21 @@ namespace Ticketing_Project.Classes
                 Ticket ticket = new Ticket();
                 // From
                 ticket.From = loc1.City;
+                ticket.FromCountry = loc1.Country;
                 ticket.FromCountryCode = loc1.Country_Code;
                 // Destination
                 ticket.Destination = loc2.City;
+                ticket.DestinationCountry = loc2.Country;
                 ticket.DestinationCountryCode = loc2.Country_Code;
                 // Other flight details
                 ticket.FlightDate = RandomDate();
                 ticket.BoardClass = RandomBoardClass();
                 ticket.TripType = RandomTripType();
+                ticket.Distance = distance;
                 ticket.Duration = CalculateDuration(distance);
+                ticket.isDeal = true;
                 // Calculate price
-                int price = (int) GeneratePrice(distance, ticket.BoardClass, ticket.TripType, true);
+                int price = (int) GeneratePrice(distance, ticket.BoardClass, ticket.TripType, ticket.isDeal);
 
                 CardDeal temp = new CardDeal(price, ticket);
                 panel.Controls.Add(temp);

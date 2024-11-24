@@ -188,6 +188,7 @@
             btn_BookFlight.TabIndex = 0;
             btn_BookFlight.Text = " Book Flight";
             btn_BookFlight.UseVisualStyleBackColor = false;
+            btn_BookFlight.Click += btn_BookFlight_Click;
             // 
             // CardDeal
             // 

@@ -19,7 +19,9 @@ namespace Ticketing_Project
         TicketsOwnedControl ticketsOwnedControl = new TicketsOwnedControl();
         bool isTicketAdded = false;
 
+        // Data for informations
         List<TicketTemplate> data = new List<TicketTemplate>();
+        //For indexing only
 
         public HomePage()
         {

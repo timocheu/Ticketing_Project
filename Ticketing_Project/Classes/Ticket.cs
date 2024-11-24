@@ -11,6 +11,8 @@ namespace Ticketing_Project.Classes
         //CardDeal temp = new CardDeal(price, tripType,loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
         public string Owner { get; set; }
         // FROM -> DESTINATION
+        public Location loc1 { get; set; }
+        public Location loc2 { get; set; }
         public string From { get; set; }
         public string FromCountry { get; set; }
         public string FromCountryCode { get; set; }
