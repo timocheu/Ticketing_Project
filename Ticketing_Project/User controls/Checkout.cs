@@ -125,6 +125,7 @@ namespace Ticketing_Project.User_controls
             {
                 form.ticketsOwned.Add(createTicket(name));
             }
+            this.Hide();
         }
 
         private Ticket createTicket(string name)

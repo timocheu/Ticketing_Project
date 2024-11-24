@@ -19,9 +19,6 @@ namespace Ticketing_Project
         TicketsOwnedControl ticketsOwnedControl = new TicketsOwnedControl();
         bool isTicketAdded = false;
 
-        // Data for tickets owned
-        public List<Ticket> ticketsOwned = new List<Ticket>();
-
         public HomePage()
         {
             InitializeComponent();
@@ -31,11 +28,6 @@ namespace Ticketing_Project
             this.Controls.Add(homePage);
             homePage.Parent = pnl_Content;
             homePage.Location = new Point(0, 95);
-        }
-        
-        public void ReceiveTickets(Ticket ticket)
-        {
-            ticketsOwned.Add(ticket);
         }
 
         private void btn_NavigationHome_Click(object sender, EventArgs e)

@@ -39,6 +39,8 @@
             lbl_TripType = new System.Windows.Forms.Label();
             lbl_BoardingClass = new System.Windows.Forms.Label();
             tbl_BoardingPassStablizer = new System.Windows.Forms.TableLayoutPanel();
+            btn_Cancel = new System.Windows.Forms.Button();
+            btn_Print = new System.Windows.Forms.Button();
             tbl_BoardingPassStablizer.SuspendLayout();
             SuspendLayout();
             // 
@@ -176,12 +178,48 @@
             tbl_BoardingPassStablizer.Size = new System.Drawing.Size(257, 38);
             tbl_BoardingPassStablizer.TabIndex = 10;
             // 
+            // btn_Cancel
+            // 
+            btn_Cancel.BackgroundImage = Properties.Resources.RedCurvedButton;
+            btn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            btn_Cancel.FlatAppearance.BorderSize = 0;
+            btn_Cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_Cancel.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_Cancel.ForeColor = System.Drawing.Color.White;
+            btn_Cancel.Location = new System.Drawing.Point(465, 308);
+            btn_Cancel.Name = "btn_Cancel";
+            btn_Cancel.Size = new System.Drawing.Size(100, 40);
+            btn_Cancel.TabIndex = 11;
+            btn_Cancel.Text = "Cancel";
+            btn_Cancel.UseVisualStyleBackColor = true;
+            btn_Cancel.Click += btn_Cancel_Click;
+            // 
+            // btn_Print
+            // 
+            btn_Print.BackgroundImage = Properties.Resources.BlueCurvedButton;
+            btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            btn_Print.FlatAppearance.BorderSize = 0;
+            btn_Print.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            btn_Print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_Print.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_Print.ForeColor = System.Drawing.Color.White;
+            btn_Print.Location = new System.Drawing.Point(571, 308);
+            btn_Print.Name = "btn_Print";
+            btn_Print.Size = new System.Drawing.Size(100, 40);
+            btn_Print.TabIndex = 12;
+            btn_Print.Text = "Print";
+            btn_Print.UseVisualStyleBackColor = true;
+            btn_Print.Click += btn_Print_Click;
+            // 
             // TicketTemplate
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             BackColor = System.Drawing.Color.Transparent;
             BackgroundImage = Properties.Resources.TicketTemplateBackground;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            Controls.Add(btn_Print);
+            Controls.Add(btn_Cancel);
             Controls.Add(tbl_BoardingPassStablizer);
             Controls.Add(lbl_FlightDuration);
             Controls.Add(lbl_TripType);
@@ -214,5 +252,7 @@
         private System.Windows.Forms.Label lbl_TripType;
         private System.Windows.Forms.Label lbl_BoardingClass;
         private System.Windows.Forms.TableLayoutPanel tbl_BoardingPassStablizer;
+        private System.Windows.Forms.Button btn_Cancel;
+        private System.Windows.Forms.Button btn_Print;
     }
 }

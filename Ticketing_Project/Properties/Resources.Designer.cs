@@ -73,6 +73,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BlueCurvedButton {
+            get {
+                object obj = ResourceManager.GetObject("BlueCurvedButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap BorderBackgroundRemoved {
             get {
                 object obj = ResourceManager.GetObject("BorderBackgroundRemoved", resourceCulture);
@@ -407,6 +417,16 @@ namespace Ticketing_Project.Properties {
             get {
                 object obj = ResourceManager.GetObject("Poppins_Regular", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap RedCurvedButton {
+            get {
+                object obj = ResourceManager.GetObject("RedCurvedButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
