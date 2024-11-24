@@ -24,18 +24,24 @@ namespace Ticketing_Project
         // Data for informations
         List<TicketTemplate> data = new List<TicketTemplate>();
         List<Receipt> receipts = new List<Receipt>();
+        string accEmail;
 
         public HomePage(string Email = "Timotheo@gmail.com")
         {
             InitializeComponent();
             ticketsOwnedControl.Hide();
             receiptControl.Hide();
+            accEmail = Email;
             lbl_AccountEmail.Text = Email;
 
             // Initialize Homepage
             this.Controls.Add(homePage);
             homePage.Parent = pnl_Content;
             homePage.Location = new Point(0, 95);
+        }
+        public void addReceipt(Receipt _receipt)
+        {
+            receipts.Add(_receipt);
         }
 
         public void addTicket(TicketTemplate ticket)
@@ -102,12 +108,13 @@ namespace Ticketing_Project
             {
                 // Add in rows
                 receiptControl.dgv_Receipts.Rows.Add(
-                    receipt.ReceiptID, 
-                    receipt.CreationDate.ToString(), 
-                    receipt.PaymentMethod, 
-                    receipt.TripType, 
-                    receipt.Passengers, 
-                    receipt.Total
+                    receipt.ReceiptID,
+                    receipt.CreationDate.ToString(),
+                    accEmail,
+                    receipt.PaymentMethod,
+                    receipt.TripType,
+                    receipt.Passengers,
+                    receipt.Total.ToString()
                 );
             }
         }

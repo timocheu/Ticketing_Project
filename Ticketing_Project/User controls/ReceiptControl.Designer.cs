@@ -34,6 +34,8 @@
             dgv_Receipts = new System.Windows.Forms.DataGridView();
             ReceiptID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             CreationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             PaymentMethod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             TripType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Passengers = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,13 +66,13 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             dgv_Receipts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgv_Receipts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_Receipts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ReceiptID, CreationDate, PaymentMethod, TripType, Passengers, Total });
+            dgv_Receipts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ReceiptID, CreationDate, Email, Column1, PaymentMethod, TripType, Passengers, Total });
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             dgv_Receipts.DefaultCellStyle = dataGridViewCellStyle3;
             dgv_Receipts.GridColor = System.Drawing.Color.Black;
@@ -95,6 +97,18 @@
             CreationDate.HeaderText = "Creation Date";
             CreationDate.Name = "CreationDate";
             CreationDate.ReadOnly = true;
+            // 
+            // Email
+            // 
+            Email.HeaderText = "Email";
+            Email.Name = "Email";
+            Email.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Column1";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
             // 
             // PaymentMethod
             // 
@@ -134,12 +148,14 @@
         }
 
         #endregion
+        public System.Windows.Forms.DataGridView dgv_Receipts;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReceiptID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CreationDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentMethod;
         private System.Windows.Forms.DataGridViewTextBoxColumn TripType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Passengers;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-        public System.Windows.Forms.DataGridView dgv_Receipts;
     }
 }
