@@ -30,19 +30,19 @@
         {
             pnl_NavigationBar = new System.Windows.Forms.Panel();
             pnl_NavigationButtons = new System.Windows.Forms.Panel();
-            btn_NavigationTicketOwned = new System.Windows.Forms.Button();
-            btn_NavigationBookingHistory = new System.Windows.Forms.Button();
-            btn_NavigationHome = new System.Windows.Forms.Button();
+            lbl_btnBookingHistory = new System.Windows.Forms.Label();
+            lbl_btnNavTicketsOwned = new System.Windows.Forms.Label();
+            lbl_btnNavHome = new System.Windows.Forms.Label();
             pb_Logo = new System.Windows.Forms.PictureBox();
             pnl_Content = new System.Windows.Forms.Panel();
-            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            tbl_Account = new System.Windows.Forms.TableLayoutPanel();
             pb_Account = new System.Windows.Forms.PictureBox();
             lbl_AccountEmail = new System.Windows.Forms.Label();
             pnl_NavigationBar.SuspendLayout();
             pnl_NavigationButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Logo).BeginInit();
             pnl_Content.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            tbl_Account.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Account).BeginInit();
             SuspendLayout();
             // 
@@ -58,67 +58,45 @@
             // 
             // pnl_NavigationButtons
             // 
-            pnl_NavigationButtons.Controls.Add(btn_NavigationTicketOwned);
-            pnl_NavigationButtons.Controls.Add(btn_NavigationBookingHistory);
-            pnl_NavigationButtons.Controls.Add(btn_NavigationHome);
+            pnl_NavigationButtons.BackgroundImage = Properties.Resources.HomePageHighlighted;
+            pnl_NavigationButtons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            pnl_NavigationButtons.Controls.Add(lbl_btnBookingHistory);
+            pnl_NavigationButtons.Controls.Add(lbl_btnNavTicketsOwned);
+            pnl_NavigationButtons.Controls.Add(lbl_btnNavHome);
             pnl_NavigationButtons.Location = new System.Drawing.Point(33, 125);
             pnl_NavigationButtons.Name = "pnl_NavigationButtons";
-            pnl_NavigationButtons.Size = new System.Drawing.Size(266, 217);
+            pnl_NavigationButtons.Size = new System.Drawing.Size(261, 195);
             pnl_NavigationButtons.TabIndex = 4;
             // 
-            // btn_NavigationTicketOwned
+            // lbl_btnBookingHistory
             // 
-            btn_NavigationTicketOwned.BackColor = System.Drawing.Color.White;
-            btn_NavigationTicketOwned.BackgroundImage = Properties.Resources.NavigationButtonRem_Background;
-            btn_NavigationTicketOwned.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            btn_NavigationTicketOwned.FlatAppearance.BorderSize = 0;
-            btn_NavigationTicketOwned.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationTicketOwned.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            btn_NavigationTicketOwned.ForeColor = System.Drawing.Color.Black;
-            btn_NavigationTicketOwned.Location = new System.Drawing.Point(6, 79);
-            btn_NavigationTicketOwned.Name = "btn_NavigationTicketOwned";
-            btn_NavigationTicketOwned.Size = new System.Drawing.Size(245, 50);
-            btn_NavigationTicketOwned.TabIndex = 2;
-            btn_NavigationTicketOwned.Text = "Tickets Owned";
-            btn_NavigationTicketOwned.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btn_NavigationTicketOwned.UseVisualStyleBackColor = false;
-            btn_NavigationTicketOwned.Click += btn_NavigationTicketOwned_Click;
+            lbl_btnBookingHistory.BackColor = System.Drawing.Color.Transparent;
+            lbl_btnBookingHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            lbl_btnBookingHistory.Location = new System.Drawing.Point(6, 124);
+            lbl_btnBookingHistory.Name = "lbl_btnBookingHistory";
+            lbl_btnBookingHistory.Size = new System.Drawing.Size(241, 49);
+            lbl_btnBookingHistory.TabIndex = 7;
+            lbl_btnBookingHistory.Click += lbl_btnBookingHistory_Click;
             // 
-            // btn_NavigationBookingHistory
+            // lbl_btnNavTicketsOwned
             // 
-            btn_NavigationBookingHistory.BackColor = System.Drawing.Color.White;
-            btn_NavigationBookingHistory.BackgroundImage = Properties.Resources.NavigationButtonRem_Background;
-            btn_NavigationBookingHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            btn_NavigationBookingHistory.FlatAppearance.BorderSize = 0;
-            btn_NavigationBookingHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationBookingHistory.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            btn_NavigationBookingHistory.ForeColor = System.Drawing.Color.Black;
-            btn_NavigationBookingHistory.Location = new System.Drawing.Point(6, 147);
-            btn_NavigationBookingHistory.Name = "btn_NavigationBookingHistory";
-            btn_NavigationBookingHistory.Size = new System.Drawing.Size(245, 50);
-            btn_NavigationBookingHistory.TabIndex = 3;
-            btn_NavigationBookingHistory.Text = "Booking History";
-            btn_NavigationBookingHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btn_NavigationBookingHistory.UseVisualStyleBackColor = false;
-            btn_NavigationBookingHistory.Click += btn_NavigationBookingHistory_Click;
+            lbl_btnNavTicketsOwned.BackColor = System.Drawing.Color.Transparent;
+            lbl_btnNavTicketsOwned.Cursor = System.Windows.Forms.Cursors.Hand;
+            lbl_btnNavTicketsOwned.Location = new System.Drawing.Point(6, 68);
+            lbl_btnNavTicketsOwned.Name = "lbl_btnNavTicketsOwned";
+            lbl_btnNavTicketsOwned.Size = new System.Drawing.Size(241, 49);
+            lbl_btnNavTicketsOwned.TabIndex = 6;
+            lbl_btnNavTicketsOwned.Click += lbl_btnNavTicketsOwned_Click;
             // 
-            // btn_NavigationHome
+            // lbl_btnNavHome
             // 
-            btn_NavigationHome.BackColor = System.Drawing.Color.FromArgb(0, 119, 182);
-            btn_NavigationHome.BackgroundImage = Properties.Resources.NavigationButtonRem_Background;
-            btn_NavigationHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            btn_NavigationHome.FlatAppearance.BorderSize = 0;
-            btn_NavigationHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_NavigationHome.Font = new System.Drawing.Font("Poppins", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            btn_NavigationHome.ForeColor = System.Drawing.Color.White;
-            btn_NavigationHome.Location = new System.Drawing.Point(6, 3);
-            btn_NavigationHome.Name = "btn_NavigationHome";
-            btn_NavigationHome.Size = new System.Drawing.Size(245, 50);
-            btn_NavigationHome.TabIndex = 1;
-            btn_NavigationHome.Text = "Home";
-            btn_NavigationHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btn_NavigationHome.UseVisualStyleBackColor = false;
-            btn_NavigationHome.Click += btn_NavigationHome_Click;
+            lbl_btnNavHome.BackColor = System.Drawing.Color.Transparent;
+            lbl_btnNavHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            lbl_btnNavHome.Location = new System.Drawing.Point(6, 0);
+            lbl_btnNavHome.Name = "lbl_btnNavHome";
+            lbl_btnNavHome.Size = new System.Drawing.Size(241, 49);
+            lbl_btnNavHome.TabIndex = 5;
+            lbl_btnNavHome.Click += lbl_btnNavHome_Click;
             // 
             // pb_Logo
             // 
@@ -133,28 +111,26 @@
             // pnl_Content
             // 
             pnl_Content.BackgroundImage = Properties.Resources.Content_background;
-            pnl_Content.Controls.Add(tableLayoutPanel1);
+            pnl_Content.Controls.Add(tbl_Account);
             pnl_Content.Location = new System.Drawing.Point(329, 0);
             pnl_Content.Name = "pnl_Content";
             pnl_Content.Size = new System.Drawing.Size(1052, 775);
             pnl_Content.TabIndex = 2;
-            pnl_Content.Paint += pnl_Content_Paint;
             // 
-            // tableLayoutPanel1
+            // tbl_Account
             // 
-            tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.6714554F));
-            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.3285427F));
-            tableLayoutPanel1.Controls.Add(pb_Account, 1, 0);
-            tableLayoutPanel1.Controls.Add(lbl_AccountEmail, 0, 0);
-            tableLayoutPanel1.Location = new System.Drawing.Point(562, 12);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(477, 58);
-            tableLayoutPanel1.TabIndex = 2;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            tbl_Account.BackColor = System.Drawing.Color.Transparent;
+            tbl_Account.ColumnCount = 2;
+            tbl_Account.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.6714554F));
+            tbl_Account.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.3285427F));
+            tbl_Account.Controls.Add(pb_Account, 1, 0);
+            tbl_Account.Controls.Add(lbl_AccountEmail, 0, 0);
+            tbl_Account.Location = new System.Drawing.Point(562, 12);
+            tbl_Account.Name = "tbl_Account";
+            tbl_Account.RowCount = 1;
+            tbl_Account.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tbl_Account.Size = new System.Drawing.Size(477, 58);
+            tbl_Account.TabIndex = 2;
             // 
             // pb_Account
             // 
@@ -195,8 +171,8 @@
             pnl_NavigationButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pb_Logo).EndInit();
             pnl_Content.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
+            tbl_Account.ResumeLayout(false);
+            tbl_Account.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Account).EndInit();
             ResumeLayout(false);
         }
@@ -204,13 +180,13 @@
         #endregion
         private System.Windows.Forms.Panel pnl_NavigationBar;
         private System.Windows.Forms.PictureBox pb_Logo;
-        private System.Windows.Forms.Button btn_NavigationHome;
-        private System.Windows.Forms.Button btn_NavigationBookingHistory;
-        private System.Windows.Forms.Button btn_NavigationTicketOwned;
         private System.Windows.Forms.Panel pnl_Content;
         private System.Windows.Forms.Panel pnl_NavigationButtons;
         private System.Windows.Forms.Label lbl_AccountEmail;
         private System.Windows.Forms.PictureBox pb_Account;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tbl_Account;
+        private System.Windows.Forms.Label lbl_btnNavHome;
+        private System.Windows.Forms.Label lbl_btnBookingHistory;
+        private System.Windows.Forms.Label lbl_btnNavTicketsOwned;
     }
 }

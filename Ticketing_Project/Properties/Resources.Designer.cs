@@ -83,6 +83,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap BookingHistoryHighlighted {
+            get {
+                object obj = ResourceManager.GetObject("BookingHistoryHighlighted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap BorderBackgroundRemoved {
             get {
                 object obj = ResourceManager.GetObject("BorderBackgroundRemoved", resourceCulture);
@@ -293,6 +303,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap HomePageHighlighted {
+            get {
+                object obj = ResourceManager.GetObject("HomePageHighlighted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_baseline_account_circle_32x {
             get {
                 object obj = ResourceManager.GetObject("ic_baseline-account-circle-32x", resourceCulture);
@@ -446,6 +466,16 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap Ticket_Template_Background {
             get {
                 object obj = ResourceManager.GetObject("Ticket Template Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap TicketsOwnedHighLighted {
+            get {
+                object obj = ResourceManager.GetObject("TicketsOwnedHighLighted", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

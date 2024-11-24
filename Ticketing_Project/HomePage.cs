@@ -49,29 +49,25 @@ namespace Ticketing_Project
             data.Add(ticket);
         }
 
-        public void removeTicket(TicketTemplate ticket)
+        private void lbl_btnNavHome_Click(object sender, EventArgs e)
         {
-            data.Remove(ticket);
-        }
-
-        private void btn_NavigationHome_Click(object sender, EventArgs e)
-        {
+            // stop reloading if the control is visibile
             if (homePage.Visible) return;
 
-            WhitenNavigationButtons();
-            HighlightNavigationButton(btn_NavigationHome);
             HidePreviousContent();
+            // Change the background
+            pnl_NavigationButtons.BackgroundImage = Properties.Resources.HomePageHighlighted;
             homePage.Show();
-
         }
 
-        private void btn_NavigationTicketOwned_Click(object sender, EventArgs e)
+        private void lbl_btnNavTicketsOwned_Click(object sender, EventArgs e)
         {
             if (ticketsOwnedControl.Visible) return;
 
-            WhitenNavigationButtons();
             HidePreviousContent();
-            HighlightNavigationButton(btn_NavigationTicketOwned);
+            // Change the background
+            pnl_NavigationButtons.BackgroundImage = Properties.Resources.TicketsOwnedHighLighted;
+
             if (!isTicketAdded)
             {
                 pnl_Content.Controls.Add(ticketsOwnedControl);
@@ -86,13 +82,14 @@ namespace Ticketing_Project
                 ticketsOwnedControl.flow_TicketsOwned.Controls.Add(ticket);
             }
         }
-        private void btn_NavigationBookingHistory_Click(object sender, EventArgs e)
+
+        private void lbl_btnBookingHistory_Click(object sender, EventArgs e)
         {
             if (receiptControl.Visible) return;
 
-            WhitenNavigationButtons();
             HidePreviousContent();
-            HighlightNavigationButton(btn_NavigationBookingHistory);
+            // Change the background
+            pnl_NavigationButtons.BackgroundImage = Properties.Resources.BookingHistoryHighlighted;
 
             if (!isReceiptAdded)
             {
@@ -128,32 +125,6 @@ namespace Ticketing_Project
             {
                 child.Hide();
             }
-        }
-
-        private void WhitenNavigationButtons()
-        {
-            var buttons = pnl_NavigationButtons.Controls.OfType<Button>();
-            foreach (var button in buttons)
-            {
-                button.BackColor = Color.White;
-                button.ForeColor = Color.Black;
-            }
-        }
-
-        private void HighlightNavigationButton(Button button)
-        {
-            button.BackColor = Color.FromArgb(0, 119, 182);
-            button.ForeColor = Color.White;
-        }
-
-        private void pnl_Content_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
