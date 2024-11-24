@@ -65,5 +65,10 @@ namespace Ticketing_Project.User_controls
             Checkout checkout = new Checkout(int.Parse(lbl_TotalTickets.Text), _ticket, (int)_price);
             _ticket.ShowCheckout(FindForm(), checkout);
         }
+
+        private void CalculatorFlightDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

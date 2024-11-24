@@ -45,6 +45,7 @@
             lbl_Destination = new System.Windows.Forms.Label();
             lbl_From = new System.Windows.Forms.Label();
             lbl_TotalTickets = new System.Windows.Forms.Label();
+            lbl_EachPerson = new System.Windows.Forms.Label();
             pnl_FlightDetails.SuspendLayout();
             tbl_Total.SuspendLayout();
             tbl_PriceDetails.SuspendLayout();
@@ -54,6 +55,7 @@
             // pnl_FlightDetails
             // 
             pnl_FlightDetails.BackgroundImage = Properties.Resources.FlightDetailsControl;
+            pnl_FlightDetails.Controls.Add(lbl_EachPerson);
             pnl_FlightDetails.Controls.Add(btn_Proceed);
             pnl_FlightDetails.Controls.Add(btn_Cancel);
             pnl_FlightDetails.Controls.Add(tbl_Total);
@@ -297,6 +299,18 @@
             lbl_TotalTickets.Text = "N/A";
             lbl_TotalTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // lbl_EachPerson
+            // 
+            lbl_EachPerson.AutoSize = true;
+            lbl_EachPerson.BackColor = System.Drawing.Color.Transparent;
+            lbl_EachPerson.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_EachPerson.ForeColor = System.Drawing.Color.DarkGray;
+            lbl_EachPerson.Location = new System.Drawing.Point(194, 484);
+            lbl_EachPerson.Name = "lbl_EachPerson";
+            lbl_EachPerson.Size = new System.Drawing.Size(117, 25);
+            lbl_EachPerson.TabIndex = 17;
+            lbl_EachPerson.Text = "( Each Person )";
+            // 
             // CalculatorFlightDetails
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -308,7 +322,9 @@
             DoubleBuffered = true;
             Name = "CalculatorFlightDetails";
             Size = new System.Drawing.Size(1396, 768);
+            Load += CalculatorFlightDetails_Load;
             pnl_FlightDetails.ResumeLayout(false);
+            pnl_FlightDetails.PerformLayout();
             tbl_Total.ResumeLayout(false);
             tbl_Total.PerformLayout();
             tbl_PriceDetails.ResumeLayout(false);
@@ -337,5 +353,6 @@
         private System.Windows.Forms.Label lbl_Total;
         private System.Windows.Forms.Button btn_Proceed;
         private System.Windows.Forms.Button btn_Cancel;
+        private System.Windows.Forms.Label lbl_EachPerson;
     }
 }
