@@ -26,7 +26,7 @@ namespace Ticketing_Project
             if (txt_LoginEmail.Text == dummyAcc.Email &&
                 txt_PasswordLogin.Text == dummyAcc.Password)
             {
-                HomePage home = new HomePage(dummyAcc.Email);
+                HomePage home = new HomePage(this, dummyAcc.Email);
                 this.Hide();
                 home.Show();
             }
@@ -45,6 +45,11 @@ namespace Ticketing_Project
             }
 
             txt_PasswordLogin.PasswordChar = '*';
+        }
+
+        public void ClearPassword()
+        {
+            txt_PasswordLogin.Clear();
         }
     }
 } 

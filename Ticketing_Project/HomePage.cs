@@ -14,6 +14,8 @@ namespace Ticketing_Project
 {
     public partial class HomePage : Form
     {
+        // LoginForm
+        Form_Login LoginForm;
         // Controls
         CalculatorAndFlightDeals homePage = new CalculatorAndFlightDeals();
         TicketsOwnedControl ticketsOwnedControl = new TicketsOwnedControl();
@@ -26,9 +28,13 @@ namespace Ticketing_Project
         List<Receipt> receipts = new List<Receipt>();
         string accEmail;
 
-        public HomePage(string Email = "Timotheo@gmail.com")
+        public HomePage(Form_Login _LoginForm, string Email = "Timotheo@gmail.com")
+
         {
             InitializeComponent();
+            // Keep track of last form
+            LoginForm = _LoginForm;
+
             ticketsOwnedControl.Hide();
             receiptControl.Hide();
             accEmail = Email;
@@ -125,6 +131,13 @@ namespace Ticketing_Project
             {
                 child.Hide();
             }
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm.ClearPassword();
+            LoginForm.Show();
         }
     }
 }

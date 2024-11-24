@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnl_NavigationBar = new System.Windows.Forms.Panel();
+            btn_Logout = new System.Windows.Forms.Button();
             pnl_NavigationButtons = new System.Windows.Forms.Panel();
             lbl_btnBookingHistory = new System.Windows.Forms.Label();
             lbl_btnNavTicketsOwned = new System.Windows.Forms.Label();
@@ -49,12 +50,27 @@
             // pnl_NavigationBar
             // 
             pnl_NavigationBar.BackColor = System.Drawing.Color.White;
+            pnl_NavigationBar.Controls.Add(btn_Logout);
             pnl_NavigationBar.Controls.Add(pnl_NavigationButtons);
             pnl_NavigationBar.Controls.Add(pb_Logo);
             pnl_NavigationBar.Location = new System.Drawing.Point(0, 0);
             pnl_NavigationBar.Name = "pnl_NavigationBar";
             pnl_NavigationBar.Size = new System.Drawing.Size(332, 768);
             pnl_NavigationBar.TabIndex = 1;
+            // 
+            // btn_Logout
+            // 
+            btn_Logout.BackColor = System.Drawing.Color.Transparent;
+            btn_Logout.BackgroundImage = Properties.Resources.Logout_button;
+            btn_Logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            btn_Logout.FlatAppearance.BorderSize = 0;
+            btn_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn_Logout.Location = new System.Drawing.Point(33, 690);
+            btn_Logout.Name = "btn_Logout";
+            btn_Logout.Size = new System.Drawing.Size(163, 49);
+            btn_Logout.TabIndex = 5;
+            btn_Logout.UseVisualStyleBackColor = false;
+            btn_Logout.Click += btn_Logout_Click;
             // 
             // pnl_NavigationButtons
             // 
@@ -188,5 +204,6 @@
         private System.Windows.Forms.Label lbl_btnNavHome;
         private System.Windows.Forms.Label lbl_btnBookingHistory;
         private System.Windows.Forms.Label lbl_btnNavTicketsOwned;
+        private System.Windows.Forms.Button btn_Logout;
     }
 }

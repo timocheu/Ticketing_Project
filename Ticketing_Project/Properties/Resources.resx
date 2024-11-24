@@ -121,14 +121,20 @@
   <data name="ic_baseline-account-circle-32x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_baseline-account-circle-32x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ticket Template Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ticket Template Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="from box" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\from box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mobile_Payment_Highlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mobile Payment Highlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HomePageHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HomePageHighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Content background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Content background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brand Leftside Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brand Leftside Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_baseline-people" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_baseline-people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,20 +145,11 @@
   <data name="button for book flight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button for book flight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mobile_Payment_Lowlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mobile Payment Lowlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BorderBackgroundRemoved" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BorderBackgroundRemoved.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="InputPassengerBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\InputPassengerBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FlightDealBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FlightDealBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BlueCurvedButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueCurvedButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flight Calculator1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flight Calculator1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,17 +157,26 @@
   <data name="Button Book Flight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button Book Flight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BookingHistoryHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BookingHistoryHighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedCurvedButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedCurvedButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CalcutorButtonRemovedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CalcutorButtonRemovedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Content background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Content background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FlightDealBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlightDealBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PaymentBoxRemovedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PaymentBoxRemovedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HomePageHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomePageHighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="world_cities_geoname" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\world_cities_geoname.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TicketsOwnedHighLighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TicketsOwnedHighLighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login Background Photo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login Background Photo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,14 +205,11 @@
   <data name="Login Section" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login Section.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RedCurvedButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedCurvedButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueCurvedButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueCurvedButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Card_Payment_Lowlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Card Payment Lowlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CardDealsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CardDealsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FlightDealsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FlightDealsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,11 +235,14 @@
   <data name="Poppins_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Poppins-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Ticket Template Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ticket Template Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PaymentBoxRemovedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaymentBoxRemovedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Brand Leftside Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Brand Leftside Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mobile_Payment_Lowlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mobile Payment Lowlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CardDealsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CardDealsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FlightDetailsControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FlightDetailsControl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,10 +256,7 @@
   <data name="Comfortable flights, turns into happy travel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Comfortable flights, turns into happy travel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TicketsOwnedHighLighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TicketsOwnedHighLighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BookingHistoryHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BookingHistoryHighlighted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logout button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

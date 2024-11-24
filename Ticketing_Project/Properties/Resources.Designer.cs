@@ -393,6 +393,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Logout_button {
+            get {
+                object obj = ResourceManager.GetObject("Logout button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Mobile_Payment_Highlight {
             get {
                 object obj = ResourceManager.GetObject("Mobile_Payment_Highlight", resourceCulture);
