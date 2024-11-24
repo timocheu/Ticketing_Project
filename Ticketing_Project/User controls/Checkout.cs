@@ -129,6 +129,7 @@ namespace Ticketing_Project.User_controls
                 form.addTicket(controlTicket);
             }
             this.Hide();
+            MessageBox.Show("Booked Succesfully!", "Book status");
         }
 
         private Ticket createTicket(string name)
