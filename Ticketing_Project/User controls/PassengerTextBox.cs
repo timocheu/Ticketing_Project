@@ -16,5 +16,15 @@ namespace Ticketing_Project.User_controls
         {
             InitializeComponent();
         }
+
+        private void txt_Passenger_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Only allow alphabet
+            // Char 8 is the ascii number of backspace
+            if (!Char.IsLetter(e.KeyChar) && !Char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

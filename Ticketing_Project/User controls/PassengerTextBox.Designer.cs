@@ -53,6 +53,7 @@
             txt_Passenger.PlaceholderText = " Passenger";
             txt_Passenger.Size = new System.Drawing.Size(420, 28);
             txt_Passenger.TabIndex = 5;
+            txt_Passenger.KeyPress += txt_Passenger_KeyPress;
             // 
             // PassengerTextBox
             // 
