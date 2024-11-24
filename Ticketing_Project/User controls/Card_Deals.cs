@@ -25,7 +25,7 @@ namespace Ticketing_Project
             lbl_From.Text = $"{ticket.From} ({ticket.FromCountryCode})";
             lbl_Destination.Text = $"{ticket.Destination} ({ticket.DestinationCountryCode})";
             lbl_FlightDetails.Text = $"{ticket.FlightDate} • {ticket.Duration} • {ticket.BoardClass}";
-            lbl_Price.Text = $"Price: ₱{price.ToString()}";
+            lbl_Price.Text = $"Price: ₱{price.ToString("N")}";
             lbl_TripType.Text = ticket.TripType;
         }
 

@@ -114,7 +114,7 @@ namespace Ticketing_Project
                     receipt.PaymentMethod,
                     receipt.TripType,
                     receipt.Passengers,
-                    receipt.Total.ToString()
+                    "₱" + receipt.Total.ToString("N")
                 );
             }
         }

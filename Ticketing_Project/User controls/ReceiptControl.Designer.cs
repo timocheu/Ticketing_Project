@@ -35,7 +35,6 @@
             ReceiptID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             CreationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             PaymentMethod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             TripType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Passengers = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +47,8 @@
             dgv_Receipts.AllowUserToAddRows = false;
             dgv_Receipts.AllowUserToDeleteRows = false;
             dgv_Receipts.AllowUserToOrderColumns = true;
+            dgv_Receipts.AllowUserToResizeColumns = false;
+            dgv_Receipts.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             dgv_Receipts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -66,7 +67,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             dgv_Receipts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgv_Receipts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_Receipts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ReceiptID, CreationDate, Email, Column1, PaymentMethod, TripType, Passengers, Total });
+            dgv_Receipts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ReceiptID, CreationDate, Email, PaymentMethod, TripType, Passengers, Total });
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -103,12 +104,6 @@
             Email.HeaderText = "Email";
             Email.Name = "Email";
             Email.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Column1";
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
             // 
             // PaymentMethod
             // 
@@ -152,7 +147,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ReceiptID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CreationDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentMethod;
         private System.Windows.Forms.DataGridViewTextBoxColumn TripType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Passengers;
