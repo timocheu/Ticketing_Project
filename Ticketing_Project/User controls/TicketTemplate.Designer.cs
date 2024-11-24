@@ -49,7 +49,7 @@
             lbl_NameOfPassenger.AutoSize = true;
             lbl_NameOfPassenger.BackColor = System.Drawing.Color.Transparent;
             lbl_NameOfPassenger.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_NameOfPassenger.Location = new System.Drawing.Point(17, 132);
+            lbl_NameOfPassenger.Location = new System.Drawing.Point(17, 166);
             lbl_NameOfPassenger.Name = "lbl_NameOfPassenger";
             lbl_NameOfPassenger.Size = new System.Drawing.Size(251, 39);
             lbl_NameOfPassenger.TabIndex = 0;
@@ -61,7 +61,7 @@
             lbl_From.AutoSize = true;
             lbl_From.BackColor = System.Drawing.Color.Transparent;
             lbl_From.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_From.Location = new System.Drawing.Point(15, 209);
+            lbl_From.Location = new System.Drawing.Point(16, 235);
             lbl_From.Name = "lbl_From";
             lbl_From.Size = new System.Drawing.Size(251, 39);
             lbl_From.TabIndex = 1;
@@ -73,7 +73,7 @@
             lbl_Destination.AutoSize = true;
             lbl_Destination.BackColor = System.Drawing.Color.Transparent;
             lbl_Destination.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Destination.Location = new System.Drawing.Point(17, 279);
+            lbl_Destination.Location = new System.Drawing.Point(18, 305);
             lbl_Destination.Name = "lbl_Destination";
             lbl_Destination.Size = new System.Drawing.Size(251, 39);
             lbl_Destination.TabIndex = 2;
@@ -85,7 +85,7 @@
             lbl_Seat.AutoSize = true;
             lbl_Seat.BackColor = System.Drawing.Color.Transparent;
             lbl_Seat.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Seat.Location = new System.Drawing.Point(283, 211);
+            lbl_Seat.Location = new System.Drawing.Point(283, 245);
             lbl_Seat.Name = "lbl_Seat";
             lbl_Seat.Size = new System.Drawing.Size(71, 39);
             lbl_Seat.TabIndex = 4;
@@ -97,7 +97,7 @@
             lbl_Date.AutoSize = true;
             lbl_Date.BackColor = System.Drawing.Color.Transparent;
             lbl_Date.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Date.Location = new System.Drawing.Point(283, 134);
+            lbl_Date.Location = new System.Drawing.Point(283, 168);
             lbl_Date.Name = "lbl_Date";
             lbl_Date.Size = new System.Drawing.Size(71, 39);
             lbl_Date.TabIndex = 3;
@@ -109,7 +109,7 @@
             lbl_Gate.AutoSize = true;
             lbl_Gate.BackColor = System.Drawing.Color.Transparent;
             lbl_Gate.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Gate.Location = new System.Drawing.Point(417, 211);
+            lbl_Gate.Location = new System.Drawing.Point(417, 250);
             lbl_Gate.Name = "lbl_Gate";
             lbl_Gate.Size = new System.Drawing.Size(86, 39);
             lbl_Gate.TabIndex = 6;
@@ -121,7 +121,7 @@
             lbl_FlightNumber.AutoSize = true;
             lbl_FlightNumber.BackColor = System.Drawing.Color.Transparent;
             lbl_FlightNumber.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_FlightNumber.Location = new System.Drawing.Point(417, 134);
+            lbl_FlightNumber.Location = new System.Drawing.Point(417, 170);
             lbl_FlightNumber.Name = "lbl_FlightNumber";
             lbl_FlightNumber.Size = new System.Drawing.Size(86, 39);
             lbl_FlightNumber.TabIndex = 5;
@@ -133,7 +133,7 @@
             lbl_FlightDuration.AutoSize = true;
             lbl_FlightDuration.BackColor = System.Drawing.Color.Transparent;
             lbl_FlightDuration.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_FlightDuration.Location = new System.Drawing.Point(534, 211);
+            lbl_FlightDuration.Location = new System.Drawing.Point(530, 249);
             lbl_FlightDuration.Name = "lbl_FlightDuration";
             lbl_FlightDuration.Size = new System.Drawing.Size(85, 39);
             lbl_FlightDuration.TabIndex = 8;
@@ -145,7 +145,7 @@
             lbl_TripType.AutoSize = true;
             lbl_TripType.BackColor = System.Drawing.Color.Transparent;
             lbl_TripType.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_TripType.Location = new System.Drawing.Point(535, 134);
+            lbl_TripType.Location = new System.Drawing.Point(531, 170);
             lbl_TripType.Name = "lbl_TripType";
             lbl_TripType.Size = new System.Drawing.Size(85, 39);
             lbl_TripType.TabIndex = 7;
@@ -171,7 +171,7 @@
             tbl_BoardingPassStablizer.ColumnCount = 1;
             tbl_BoardingPassStablizer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tbl_BoardingPassStablizer.Controls.Add(lbl_BoardingClass, 0, 0);
-            tbl_BoardingPassStablizer.Location = new System.Drawing.Point(443, 42);
+            tbl_BoardingPassStablizer.Location = new System.Drawing.Point(443, 75);
             tbl_BoardingPassStablizer.Name = "tbl_BoardingPassStablizer";
             tbl_BoardingPassStablizer.RowCount = 1;
             tbl_BoardingPassStablizer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -187,7 +187,7 @@
             btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_Cancel.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_Cancel.ForeColor = System.Drawing.Color.White;
-            btn_Cancel.Location = new System.Drawing.Point(465, 308);
+            btn_Cancel.Location = new System.Drawing.Point(465, 342);
             btn_Cancel.Name = "btn_Cancel";
             btn_Cancel.Size = new System.Drawing.Size(100, 40);
             btn_Cancel.TabIndex = 11;
@@ -204,7 +204,7 @@
             btn_Print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_Print.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btn_Print.ForeColor = System.Drawing.Color.White;
-            btn_Print.Location = new System.Drawing.Point(571, 308);
+            btn_Print.Location = new System.Drawing.Point(571, 342);
             btn_Print.Name = "btn_Print";
             btn_Print.Size = new System.Drawing.Size(100, 40);
             btn_Print.TabIndex = 12;
@@ -232,7 +232,7 @@
             Controls.Add(lbl_NameOfPassenger);
             DoubleBuffered = true;
             Name = "TicketTemplate";
-            Size = new System.Drawing.Size(700, 387);
+            Size = new System.Drawing.Size(700, 449);
             tbl_BoardingPassStablizer.ResumeLayout(false);
             tbl_BoardingPassStablizer.PerformLayout();
             ResumeLayout(false);
