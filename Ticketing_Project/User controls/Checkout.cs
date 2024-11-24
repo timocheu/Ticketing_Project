@@ -119,11 +119,14 @@ namespace Ticketing_Project.User_controls
                     Names.Add(PassengerInput.Text);
                 }
             }
-
+            
             HomePage form = (HomePage) this.Parent;
+            Ticket blankOwnerTicket = ticket;
             foreach (string name in Names)
             {
-                form.ticketsOwned.Add(createTicket(name));
+                blankOwnerTicket.Owner = name;
+                TicketTemplate controlTicket = new TicketTemplate(blankOwnerTicket);
+                form.addTicket(controlTicket);
             }
             this.Hide();
         }

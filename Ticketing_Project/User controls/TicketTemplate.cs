@@ -32,7 +32,7 @@ namespace Ticketing_Project.User_controls
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-                "Do you want to proceed?",
+                "Do you want to proceed the booking cancellation?",
                 "Confirmation",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Question
@@ -41,15 +41,18 @@ namespace Ticketing_Project.User_controls
             if (result == DialogResult.OK)
             {
                 // User clicked OK
-                this.Parent.Controls.Remove(this);
-                HomePage form = (HomePage) this.Parent.Parent.Parent.Parent;
-                form.RemoveTicket(thisTicket);
+                this.Hide();
             }
         }
 
         private void btn_Print_Click(object sender, EventArgs e)
         {
-
+            DialogResult res = MessageBox.Show(
+                "Confirm to print the ticket.",
+                "Confirmation",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question
+            );
         }
     }
 }

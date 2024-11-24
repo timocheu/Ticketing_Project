@@ -19,6 +19,8 @@ namespace Ticketing_Project
         TicketsOwnedControl ticketsOwnedControl = new TicketsOwnedControl();
         bool isTicketAdded = false;
 
+        List<TicketTemplate> data = new List<TicketTemplate>();
+
         public HomePage()
         {
             InitializeComponent();
@@ -28,6 +30,16 @@ namespace Ticketing_Project
             this.Controls.Add(homePage);
             homePage.Parent = pnl_Content;
             homePage.Location = new Point(0, 95);
+        }
+
+        public void addTicket(TicketTemplate ticket)
+        {
+            data.Add(ticket);
+        }
+
+        public void removeTicket(TicketTemplate ticket)
+        {
+            data.Remove(ticket);
         }
 
         private void btn_NavigationHome_Click(object sender, EventArgs e)
@@ -56,10 +68,9 @@ namespace Ticketing_Project
 
             ticketsOwnedControl.Show();
             ticketsOwnedControl.flow_TicketsOwned.Controls.Clear();
-            foreach (Ticket ticket in ticketsOwned)
+            foreach (TicketTemplate ticket in data)
             {
-                TicketTemplate ticketToAdd = new TicketTemplate(ticket);
-                ticketsOwnedControl.flow_TicketsOwned.Controls.Add(ticketToAdd);
+                ticketsOwnedControl.flow_TicketsOwned.Controls.Add(ticket);
             }
         }
         private void btn_NavigationBookingHistory_Click(object sender, EventArgs e)
