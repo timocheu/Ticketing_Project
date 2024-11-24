@@ -293,6 +293,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_baseline_account_circle_32x {
+            get {
+                object obj = ResourceManager.GetObject("ic_baseline-account-circle-32x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_baseline_people {
             get {
                 object obj = ResourceManager.GetObject("ic_baseline-people", resourceCulture);
