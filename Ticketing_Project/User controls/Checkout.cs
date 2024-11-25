@@ -83,7 +83,8 @@ namespace Ticketing_Project.User_controls
                 return;
             }
             passengers--;
-            flow_Passengers.Controls.RemoveAt(0);
+            // Remove the last textbox
+            flow_Passengers.Controls.RemoveAt(flow_Passengers.Controls.Count - 1);
             reCalculateTotal();
         }
 
