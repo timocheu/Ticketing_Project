@@ -60,7 +60,7 @@
             cbb_BoardClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_BoardClass.Name = "cbb_BoardClass";
             cbb_BoardClass.Size = new System.Drawing.Size(131, 30);
-            cbb_BoardClass.TabIndex = 2;
+            cbb_BoardClass.TabIndex = 3;
             // 
             // cbb_NumberOfPassengers
             // 
@@ -72,7 +72,7 @@
             cbb_NumberOfPassengers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_NumberOfPassengers.Name = "cbb_NumberOfPassengers";
             cbb_NumberOfPassengers.Size = new System.Drawing.Size(133, 30);
-            cbb_NumberOfPassengers.TabIndex = 3;
+            cbb_NumberOfPassengers.TabIndex = 2;
             // 
             // pb_CalculatorPeopleIcon
             // 
@@ -97,7 +97,7 @@
             cbb_TripType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_TripType.Name = "cbb_TripType";
             cbb_TripType.Size = new System.Drawing.Size(98, 30);
-            cbb_TripType.TabIndex = 5;
+            cbb_TripType.TabIndex = 1;
             // 
             // pb_CalculatorFromSelection
             // 
@@ -158,7 +158,7 @@
             btn_Calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             btn_Calculate.Name = "btn_Calculate";
             btn_Calculate.Size = new System.Drawing.Size(125, 50);
-            btn_Calculate.TabIndex = 11;
+            btn_Calculate.TabIndex = 7;
             btn_Calculate.Text = "Calculate";
             btn_Calculate.UseVisualStyleBackColor = false;
             btn_Calculate.Click += btn_Calculate_Click;
@@ -175,7 +175,7 @@
             dtp_FlightDate.Name = "dtp_FlightDate";
             dtp_FlightDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             dtp_FlightDate.Size = new System.Drawing.Size(121, 31);
-            dtp_FlightDate.TabIndex = 12;
+            dtp_FlightDate.TabIndex = 6;
             dtp_FlightDate.Value = new System.DateTime(2024, 11, 23, 21, 20, 48, 0);
             // 
             // cbb_From
@@ -193,8 +193,7 @@
             cbb_From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_From.Name = "cbb_From";
             cbb_From.Size = new System.Drawing.Size(300, 42);
-            cbb_From.TabIndex = 15;
-            cbb_From.TabStop = false;
+            cbb_From.TabIndex = 4;
             cbb_From.MouseClick += cbb_From_MouseClick;
             // 
             // cbb_Destination
@@ -211,8 +210,7 @@
             cbb_Destination.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_Destination.Name = "cbb_Destination";
             cbb_Destination.Size = new System.Drawing.Size(290, 42);
-            cbb_Destination.TabIndex = 16;
-            cbb_Destination.TabStop = false;
+            cbb_Destination.TabIndex = 5;
             cbb_Destination.MouseClick += cbb_Destination_MouseClick;
             // 
             // lbl_TripType
@@ -223,7 +221,7 @@
             lbl_TripType.Location = new System.Drawing.Point(41, 33);
             lbl_TripType.Name = "lbl_TripType";
             lbl_TripType.Size = new System.Drawing.Size(79, 26);
-            lbl_TripType.TabIndex = 17;
+            lbl_TripType.TabIndex = 20;
             lbl_TripType.Text = "Trip Type";
             // 
             // lbl_NumberOfPassenger
@@ -233,9 +231,10 @@
             lbl_NumberOfPassenger.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_NumberOfPassenger.Location = new System.Drawing.Point(175, 33);
             lbl_NumberOfPassenger.Name = "lbl_NumberOfPassenger";
-            lbl_NumberOfPassenger.Size = new System.Drawing.Size(116, 26);
-            lbl_NumberOfPassenger.TabIndex = 18;
+            lbl_NumberOfPassenger.Size = new System.Drawing.Size(107, 25);
+            lbl_NumberOfPassenger.TabIndex = 20;
             lbl_NumberOfPassenger.Text = "# Passengers";
+            lbl_NumberOfPassenger.UseCompatibleTextRendering = true;
             // 
             // lbl_BoardClass
             // 
@@ -245,7 +244,7 @@
             lbl_BoardClass.Location = new System.Drawing.Point(317, 33);
             lbl_BoardClass.Name = "lbl_BoardClass";
             lbl_BoardClass.Size = new System.Drawing.Size(103, 26);
-            lbl_BoardClass.TabIndex = 19;
+            lbl_BoardClass.TabIndex = 20;
             lbl_BoardClass.Text = "Board Class";
             // 
             // Calculator
