@@ -15,6 +15,8 @@ namespace Ticketing_Project
     {
         readonly public Utilities utility = new Utilities();
         readonly Account dummyAcc = new Account("Timotheo", "tim@gmail.com", "1234");
+        HomePage home;
+
         
         public Form_Login()
         {
@@ -26,7 +28,12 @@ namespace Ticketing_Project
             if (txt_LoginEmail.Text == dummyAcc.Email &&
                 txt_PasswordLogin.Text == dummyAcc.Password)
             {
-                HomePage home = new HomePage(this, dummyAcc.Email);
+                // Instantiate a new home
+                if (home == null)
+                {
+                    home = new HomePage(this, dummyAcc.Email);
+                }
+
                 this.Hide();
                 home.Show();
             }
