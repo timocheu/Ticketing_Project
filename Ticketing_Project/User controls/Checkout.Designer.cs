@@ -66,6 +66,7 @@
             lbl_PriceDetails = new System.Windows.Forms.Label();
             btn_CardPayment = new System.Windows.Forms.Button();
             lbl_Payment = new System.Windows.Forms.Label();
+            lbl_BookedSuccessfully = new System.Windows.Forms.Label();
             pnl_CheckoutSection.SuspendLayout();
             flow_Checkout.SuspendLayout();
             flow_Passengers.SuspendLayout();
@@ -94,6 +95,7 @@
             pnl_CheckoutSection.Name = "pnl_CheckoutSection";
             pnl_CheckoutSection.Size = new System.Drawing.Size(683, 768);
             pnl_CheckoutSection.TabIndex = 0;
+            pnl_CheckoutSection.Paint += pnl_CheckoutSection_Paint_1;
             // 
             // lbl_SubDescription
             // 
@@ -572,6 +574,17 @@
             lbl_Payment.Text = "Payment";
             lbl_Payment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // lbl_BookedSuccessfully
+            // 
+            lbl_BookedSuccessfully.AutoSize = true;
+            lbl_BookedSuccessfully.BackColor = System.Drawing.Color.White;
+            lbl_BookedSuccessfully.Font = new System.Drawing.Font("Poppins", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_BookedSuccessfully.Location = new System.Drawing.Point(458, 346);
+            lbl_BookedSuccessfully.Name = "lbl_BookedSuccessfully";
+            lbl_BookedSuccessfully.Size = new System.Drawing.Size(480, 76);
+            lbl_BookedSuccessfully.TabIndex = 1;
+            lbl_BookedSuccessfully.Text = "Booked Successfully!";
+            // 
             // Checkout
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -579,6 +592,7 @@
             BackgroundImage = Properties.Resources.BackgroundForCheckout;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Controls.Add(pnl_CheckoutSection);
+            Controls.Add(lbl_BookedSuccessfully);
             DoubleBuffered = true;
             Name = "Checkout";
             Size = new System.Drawing.Size(1396, 768);
@@ -600,6 +614,7 @@
             tlp_PriceTable.ResumeLayout(false);
             tlp_PriceTable.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -642,5 +657,6 @@
         private System.Windows.Forms.Panel pnl_BookingSummary;
         private System.Windows.Forms.Panel pnl_PassengerOption;
         private System.Windows.Forms.Button btn_RemovePassenger;
+        private System.Windows.Forms.Label lbl_BookedSuccessfully;
     }
 }

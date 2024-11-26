@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 using Ticketing_Project.Classes;
 
@@ -15,7 +16,7 @@ namespace Ticketing_Project.User_controls
     {
         // Utility variable
         Random random = new Random();
-        
+
         // Data of flight details
         public Ticket ticket;
         public int passengers;
@@ -123,9 +124,9 @@ namespace Ticketing_Project.User_controls
                     Names.Add(PassengerInput.Text);
                 }
             }
-            
+
             // Select homepage form
-            HomePage form = (HomePage) this.Parent;
+            HomePage form = (HomePage)this.Parent;
             Ticket blankOwnerTicket = ticket;
 
             // Create receipt and add data
@@ -146,8 +147,27 @@ namespace Ticketing_Project.User_controls
             }
             form.addReceipt(receipt);
 
-            this.Hide();
-            MessageBox.Show("Booked Succesfully!", "Book status");
+            // Add timer for the booked successfully to show for 1.5s then hide
+            System.Timers.Timer timer = new System.Timers.Timer(1500);
+            // Repeat only once
+            timer.AutoReset = false;
+            timer.Elapsed += HideCheckoutSectionPanel;
+
+            // Hide the checkout
+            pnl_CheckoutSection.Hide();
+            // Start the timer
+            timer.Start();
+        }
+
+        private void HideCheckoutSectionPanel(object sender, ElapsedEventArgs e)
+        {
+            // Hide the control
+            // Use invoke for safely handling the threads
+            this.Invoke(new Action(() =>
+            {
+                this.Hide();
+                pnl_CheckoutSection.Show();
+            }));
         }
 
         private Ticket createTicket(string name)
@@ -164,6 +184,11 @@ namespace Ticketing_Project.User_controls
         }
 
         private void pnl_CheckoutSection_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_CheckoutSection_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
