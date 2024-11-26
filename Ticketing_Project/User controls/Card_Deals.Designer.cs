@@ -136,7 +136,6 @@
             lbl_Destination.TabIndex = 2;
             lbl_Destination.Text = "<Destination>";
             lbl_Destination.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            lbl_Destination.Click += lbl_Destination_Click;
             // 
             // pnl_Arrow
             // 

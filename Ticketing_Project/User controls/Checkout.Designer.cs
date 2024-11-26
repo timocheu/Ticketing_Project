@@ -95,7 +95,6 @@
             pnl_CheckoutSection.Name = "pnl_CheckoutSection";
             pnl_CheckoutSection.Size = new System.Drawing.Size(683, 768);
             pnl_CheckoutSection.TabIndex = 0;
-            pnl_CheckoutSection.Paint += pnl_CheckoutSection_Paint_1;
             // 
             // lbl_SubDescription
             // 

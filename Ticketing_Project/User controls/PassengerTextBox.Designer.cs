@@ -48,7 +48,7 @@
             txt_Passenger.BorderStyle = System.Windows.Forms.BorderStyle.None;
             txt_Passenger.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             txt_Passenger.Location = new System.Drawing.Point(11, 16);
-            txt_Passenger.MaxLength = 20;
+            txt_Passenger.MaxLength = 50;
             txt_Passenger.Name = "txt_Passenger";
             txt_Passenger.PlaceholderText = " Passenger";
             txt_Passenger.Size = new System.Drawing.Size(420, 28);

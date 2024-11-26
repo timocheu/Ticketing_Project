@@ -90,7 +90,6 @@
             dgv_Receipts.RowTemplate.Height = 25;
             dgv_Receipts.Size = new System.Drawing.Size(989, 637);
             dgv_Receipts.TabIndex = 0;
-            dgv_Receipts.CellContentClick += dataGridView1_CellContentClick;
             // 
             // ReceiptID
             // 
@@ -142,7 +141,6 @@
             Controls.Add(dgv_Receipts);
             Name = "ReceiptControl";
             Size = new System.Drawing.Size(1050, 668);
-            Load += ReceiptControl_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_Receipts).EndInit();
             ResumeLayout(false);
         }

@@ -322,7 +322,6 @@
             DoubleBuffered = true;
             Name = "CalculatorFlightDetails";
             Size = new System.Drawing.Size(1396, 768);
-            Load += CalculatorFlightDetails_Load;
             pnl_FlightDetails.ResumeLayout(false);
             pnl_FlightDetails.PerformLayout();
             tbl_Total.ResumeLayout(false);

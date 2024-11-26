@@ -182,16 +182,6 @@ namespace Ticketing_Project.User_controls
             lbl_TotalTicketDisplay.Text = passengers.ToString();
             lbl_TotalDisplay.Text = "₱" + (passengers * priceEachPerson).ToString("N");
         }
-
-        private void pnl_CheckoutSection_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnl_CheckoutSection_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
 

@@ -29,11 +29,6 @@ namespace Ticketing_Project
             lbl_TripType.Text = ticket.TripType;
         }
 
-        private void lbl_Destination_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_BookFlight_Click(object sender, EventArgs e)
         {
 

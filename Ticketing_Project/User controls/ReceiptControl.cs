@@ -16,15 +16,5 @@ namespace Ticketing_Project.User_controls
         {
             InitializeComponent();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void ReceiptControl_Load(object sender, EventArgs e)
-        {
-            dgv_Receipts.Rows.Add(1, "Tim", "Test");
-        }
     }
 }
