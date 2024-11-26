@@ -16,8 +16,9 @@ namespace Ticketing_Project
         readonly public Utilities utility = new Utilities();
         readonly Account dummyAcc = new Account("Timotheo", "tim@gmail.com", "1234");
         HomePage home;
+        // Use the Timers's timer
+        System.Timers.Timer incorrectTimer = new System.Timers.Timer(3000);
 
-        
         public Form_Login()
         {
             InitializeComponent();
@@ -39,8 +40,18 @@ namespace Ticketing_Project
             }
             else
             {
+                // Show incorrect
                 lbl_Incorrect.Show();
+                incorrectTimer.AutoReset = false;
+                incorrectTimer.Elapsed += HideLabelIncorrect;
+                incorrectTimer.Start();
             }
+        }
+
+        private void HideLabelIncorrect(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            // Hide using invoke for safe threading
+            lbl_Incorrect.Invoke(new Action(() => lbl_Incorrect.Hide()));
         }
 
         private void cb_ShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -57,6 +68,24 @@ namespace Ticketing_Project
         public void ClearPassword()
         {
             txt_PasswordLogin.Clear();
+        }
+
+        private void txt_LoginEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Call login method
+            if (e.KeyChar == (char) Keys.Enter)
+            {
+                btn_Login_Click(sender, e);
+            }
+        }
+
+        private void Txt_PasswordLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Call login method
+            if (e.KeyChar == (char) Keys.Enter)
+            {
+                btn_Login_Click(sender, e);
+            }
         }
     }
 } 

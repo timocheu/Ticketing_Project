@@ -52,6 +52,7 @@
             txt_LoginEmail.PlaceholderText = "timzoiechandy@gmail.com";
             txt_LoginEmail.Size = new System.Drawing.Size(444, 27);
             txt_LoginEmail.TabIndex = 1;
+            txt_LoginEmail.KeyPress += txt_LoginEmail_KeyPress;
             // 
             // txt_PasswordLogin
             // 
@@ -66,6 +67,7 @@
             txt_PasswordLogin.PlaceholderText = "at least 8 characters";
             txt_PasswordLogin.Size = new System.Drawing.Size(444, 27);
             txt_PasswordLogin.TabIndex = 2;
+            txt_PasswordLogin.KeyPress += Txt_PasswordLogin_KeyPress;
             // 
             // lbl_ForgotPassword
             // 
