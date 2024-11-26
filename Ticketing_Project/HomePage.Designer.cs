@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             pnl_NavigationBar = new System.Windows.Forms.Panel();
             btn_Logout = new System.Windows.Forms.Button();
             pnl_NavigationButtons = new System.Windows.Forms.Panel();
@@ -179,6 +180,7 @@
             ClientSize = new System.Drawing.Size(1380, 768);
             Controls.Add(pnl_Content);
             Controls.Add(pnl_NavigationBar);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "HomePage";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
