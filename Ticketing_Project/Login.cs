@@ -26,26 +26,42 @@ namespace Ticketing_Project
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            if (txt_LoginEmail.Text == dummyAcc.Email &&
-                txt_PasswordLogin.Text == dummyAcc.Password)
+            if (txt_LoginEmail.Text != dummyAcc.Email && txt_PasswordLogin.Text != dummyAcc.Password)
             {
-                // Instantiate a new home
-                if (home == null)
-                {
-                    home = new HomePage(this, dummyAcc.Email);
-                }
+                lbl_Incorrect.Text = "Incorrect Email and Password";
+                TimerIncorrect();
+                return;
+            }
+            else if (txt_PasswordLogin.Text != dummyAcc.Password)
+            {
+                lbl_Incorrect.Text = "Incorrect Password";
+                TimerIncorrect();
+                return;
+            }
+            else if (txt_LoginEmail.Text != dummyAcc.Email)
+            {
+                lbl_Incorrect.Text = "Incorrect Email";
+                TimerIncorrect(); 
+                return;
+            }
 
-                this.Hide();
-                home.Show();
-            }
-            else
+            // Instantiate a new home
+            if (home == null)
             {
-                // Show incorrect
-                lbl_Incorrect.Show();
-                incorrectTimer.AutoReset = false;
-                incorrectTimer.Elapsed += HideLabelIncorrect;
-                incorrectTimer.Start();
+                home = new HomePage(this, dummyAcc.Email);
             }
+
+            this.Hide();
+            home.Show();
+        }
+        
+        private void TimerIncorrect()
+        {
+            // Show incorrect
+            lbl_Incorrect.Show();
+            incorrectTimer.AutoReset = false;
+            incorrectTimer.Elapsed += HideLabelIncorrect;
+            incorrectTimer.Start();
         }
 
         private void HideLabelIncorrect(object sender, System.Timers.ElapsedEventArgs e)
