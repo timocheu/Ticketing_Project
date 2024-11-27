@@ -11,6 +11,16 @@ using Ticketing_Project.Classes;
 
 namespace Ticketing_Project.User_controls
 {
+    // Class for Downlaoding
+    public static class DownloadExtensions
+    {
+        public static Bitmap CaptureToImage(this Control control)
+        {
+            Bitmap bitmap = new Bitmap(control.Width, control.Height);
+            control.DrawToBitmap(bitmap, new Rectangle(0, 0, bitmap.Width, bitmap.Height));
+            return bitmap;
+        }
+    }
     public partial class TicketTemplate : UserControl
     {
         Ticket thisTicket;
@@ -48,11 +58,23 @@ namespace Ticketing_Project.User_controls
         private void btn_Print_Click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show(
-                "Confirm to print the ticket.",
+                "Confirm to download the ticket.",
                 "Confirmation",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Question
             );
+
+            if (res == DialogResult.OK)
+            {
+                btn_Cancel.Hide();
+                btn_Print.Hide();
+                Bitmap ticket = this.CaptureToImage();
+                string filePath = @$"C:\Users\ACT-STUDENT\Desktop\{thisTicket.Owner}.png";
+                ticket.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
+                btn_Cancel.Show();
+                btn_Print.Show();
+                MessageBox.Show("Printed!");
+            }
         }
     }
 }

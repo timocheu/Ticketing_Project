@@ -208,7 +208,7 @@
             btn_Print.Name = "btn_Print";
             btn_Print.Size = new System.Drawing.Size(100, 40);
             btn_Print.TabIndex = 12;
-            btn_Print.Text = "Print";
+            btn_Print.Text = "Download";
             btn_Print.UseVisualStyleBackColor = true;
             btn_Print.Click += btn_Print_Click;
             // 
