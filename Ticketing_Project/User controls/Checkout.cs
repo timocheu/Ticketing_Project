@@ -144,7 +144,26 @@ namespace Ticketing_Project.User_controls
                 blankOwnerTicket.Owner = name;
                 TicketTemplate controlTicket = new TicketTemplate(blankOwnerTicket);
                 form.addTicket(controlTicket);
+
+                if (ticket.TripType == "Round Trip")
+                {
+                    // Store in temporary variables
+                    string tmpFrom = blankOwnerTicket.From;
+                    string tmpFromCountry = blankOwnerTicket.FromCountry;
+                    string tmpFromCountryCode = blankOwnerTicket.FromCountryCode;
+                    // Perform swap
+                    blankOwnerTicket.From = blankOwnerTicket.Destination;
+                    blankOwnerTicket.FromCountry = blankOwnerTicket.DestinationCountry;
+                    blankOwnerTicket.FromCountryCode = blankOwnerTicket.DestinationCountryCode;
+
+                    blankOwnerTicket.Destination = tmpFrom;
+                    blankOwnerTicket.DestinationCountry = tmpFromCountry;
+                    blankOwnerTicket.DestinationCountryCode = tmpFromCountryCode;
+                    controlTicket = new TicketTemplate(blankOwnerTicket);
+                    form.addTicket(controlTicket);
+                }
             }
+            // Add the receipt
             form.addReceipt(receipt);
 
             // Add timer for the booked successfully to show for 1.5s then hide
