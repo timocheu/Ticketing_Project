@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,6 +27,14 @@ namespace Ticketing_Project
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
+            if (!IsValidEmail(txt_LoginEmail.Text)) 
+            {
+                lbl_Incorrect.Text = "Please enter a valid email";
+                TimerIncorrect();
+                return;
+            } 
+
+
             if (txt_LoginEmail.Text != dummyAcc.Email && txt_PasswordLogin.Text != dummyAcc.Password)
             {
                 lbl_Incorrect.Text = "Incorrect Email and Password";
@@ -54,7 +63,29 @@ namespace Ticketing_Project
             this.Hide();
             home.Show();
         }
-        
+
+        public static bool IsValidEmail(string email)
+        {
+            if (!MailAddress.TryCreate(email, out var mailAddress))
+                return false;
+
+            // And if you want to be more strict:
+            var hostParts = mailAddress.Host.Split('.');
+            if (hostParts.Length == 1)
+                return false; // No dot.
+            if (hostParts.Any(p => p == string.Empty))
+                return false; // Double dot.
+            if (hostParts[^1].Length < 2)
+                return false; // TLD only one letter.
+
+            if (mailAddress.User.Contains(' '))
+                return false;
+            if (mailAddress.User.Split('.').Any(p => p == string.Empty))
+                return false; // Double dot or dot at end of user part.
+
+            return true;
+        }
+
         private void TimerIncorrect()
         {
             // Show incorrect

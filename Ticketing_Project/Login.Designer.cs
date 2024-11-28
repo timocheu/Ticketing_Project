@@ -37,8 +37,10 @@
             pb_LoginSection = new System.Windows.Forms.PictureBox();
             pb_LoginBackgroundPhoto = new System.Windows.Forms.PictureBox();
             lbl_Incorrect = new System.Windows.Forms.Label();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)pb_LoginSection).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pb_LoginBackgroundPhoto).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // txt_LoginEmail
@@ -137,16 +139,30 @@
             // 
             // lbl_Incorrect
             // 
+            lbl_Incorrect.Anchor = System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             lbl_Incorrect.AutoSize = true;
             lbl_Incorrect.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_Incorrect.ForeColor = System.Drawing.Color.Red;
-            lbl_Incorrect.Location = new System.Drawing.Point(232, 396);
+            lbl_Incorrect.Location = new System.Drawing.Point(3, 1);
             lbl_Incorrect.Name = "lbl_Incorrect";
-            lbl_Incorrect.Size = new System.Drawing.Size(231, 28);
+            lbl_Incorrect.Size = new System.Drawing.Size(268, 28);
             lbl_Incorrect.TabIndex = 6;
             lbl_Incorrect.Text = "Incorrect Email or Password";
             lbl_Incorrect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             lbl_Incorrect.Visible = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel1.Controls.Add(lbl_Incorrect, 0, 0);
+            tableLayoutPanel1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            tableLayoutPanel1.Location = new System.Drawing.Point(212, 397);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel1.Size = new System.Drawing.Size(274, 30);
+            tableLayoutPanel1.TabIndex = 7;
             // 
             // Form_Login
             // 
@@ -154,7 +170,7 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
             ClientSize = new System.Drawing.Size(1380, 768);
-            Controls.Add(lbl_Incorrect);
+            Controls.Add(tableLayoutPanel1);
             Controls.Add(cb_ShowPassword);
             Controls.Add(lbl_ForgotPassword);
             Controls.Add(btn_Login);
@@ -169,6 +185,8 @@
             Text = "Cloud Express";
             ((System.ComponentModel.ISupportInitialize)pb_LoginSection).EndInit();
             ((System.ComponentModel.ISupportInitialize)pb_LoginBackgroundPhoto).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,6 +201,7 @@
         private System.Windows.Forms.Label lbl_ForgotPassword;
         private System.Windows.Forms.CheckBox cb_ShowPassword;
         private System.Windows.Forms.Label lbl_Incorrect;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 
