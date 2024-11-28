@@ -23,6 +23,7 @@ namespace Ticketing_Project.Classes
         public string DestinationCountryCode { get; set; }
         // FLIGHT DETAILS
         public DateTime FlightDate { get; set; }
+        public DateTime ReturnDate { get; set; }
         public string BoardClass { get; set; }
         public string TripType { get; set; }
         public string Duration { get; set; }

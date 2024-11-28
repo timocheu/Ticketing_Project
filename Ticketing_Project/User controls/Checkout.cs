@@ -50,7 +50,7 @@ namespace Ticketing_Project.User_controls
             // CHECK IF TRIPTYPE
             if (_ticket.TripType == "Round Trip")
             {
-                lbl_ReturnDateDisplay.Text = _ticket.FlightDate.AddDays(365).ToString();
+                lbl_ReturnDateDisplay.Text = ticket.ReturnDate.ToString();
             }
             // Show discount for flash deals
             if (_ticket.isDeal)

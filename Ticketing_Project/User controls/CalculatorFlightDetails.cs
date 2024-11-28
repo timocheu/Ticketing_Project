@@ -41,7 +41,7 @@ namespace Ticketing_Project.User_controls
             // If round trip display 
             if (ticket.TripType == "Round Trip")
             {
-                lbl_ReturnDate.Text = ticket.FlightDate.AddDays(365).ToString();
+                lbl_ReturnDate.Text = ticket.ReturnDate.ToString();
             }
 
             // Show discount for flash deals

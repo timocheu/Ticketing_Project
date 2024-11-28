@@ -68,6 +68,7 @@ namespace Ticketing_Project
             // Flight Details
             int passengers = int.Parse(cbb_NumberOfPassengers.Text);
             ticket.FlightDate = dtp_FlightDate.Value;
+            ticket.ReturnDate = dtp_ReturnDate.Value;
             ticket.BoardClass = cbb_BoardClass.Text;
             ticket.TripType = cbb_TripType.Text;
             ticket.Seat = ticket.RandomSeat();
@@ -102,6 +103,17 @@ namespace Ticketing_Project
         private void cbb_Destination_MouseClick(object sender, MouseEventArgs e)
         {
             cbb_From_MouseClick(sender, e);
+        }
+
+        private void cbb_TripType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbb_TripType.SelectedIndex == 1)
+            {
+                dtp_ReturnDate.Enabled = true;
+            } else
+            {
+                dtp_ReturnDate.Enabled = false;
+            }
         }
     }
 }

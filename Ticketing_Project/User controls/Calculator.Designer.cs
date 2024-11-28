@@ -101,6 +101,7 @@
             cbb_TripType.Name = "cbb_TripType";
             cbb_TripType.Size = new System.Drawing.Size(98, 30);
             cbb_TripType.TabIndex = 1;
+            cbb_TripType.SelectedIndexChanged += cbb_TripType_SelectedIndexChanged;
             // 
             // pb_CalculatorFromSelection
             // 
@@ -194,7 +195,7 @@
             cbb_From.FormattingEnabled = true;
             cbb_From.IntegralHeight = false;
             cbb_From.ItemHeight = 34;
-            cbb_From.Location = new System.Drawing.Point(480, 106);
+            cbb_From.Location = new System.Drawing.Point(51, 106);
             cbb_From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_From.Name = "cbb_From";
             cbb_From.Size = new System.Drawing.Size(355, 42);
@@ -211,7 +212,7 @@
             cbb_Destination.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cbb_Destination.FormattingEnabled = true;
             cbb_Destination.IntegralHeight = false;
-            cbb_Destination.Location = new System.Drawing.Point(51, 106);
+            cbb_Destination.Location = new System.Drawing.Point(480, 106);
             cbb_Destination.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             cbb_Destination.Name = "cbb_Destination";
             cbb_Destination.Size = new System.Drawing.Size(355, 42);
