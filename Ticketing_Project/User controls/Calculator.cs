@@ -49,10 +49,9 @@ namespace Ticketing_Project
                 }
             }
 
-
             // Get the index and use it to get the location object
-            int indexFrom = cbb_From.Items.IndexOf(cbb_From.Text);
-            int indexDestination = cbb_Destination.Items.IndexOf(cbb_Destination.Text);
+            int indexFrom = locations.IndexOf(cbb_From.Text);
+            int indexDestination = locations.IndexOf(cbb_Destination.Text);
             // Store the details in the calculator in object
             Ticket ticket = new Ticket();
             Location loc1 = util.GetLocation(indexFrom);
@@ -101,9 +100,27 @@ namespace Ticketing_Project
                 // Add the locations as a datasource
                 cbb_From.DataSource = new List<string>(locations);
                 cbb_Destination.DataSource = new List<string>(locations);
+                // Clear text
+                cbb_From.Text = "";
+                cbb_Destination.Text = "";
+
+                // For filtering
+                cbb_From.TextUpdate += Cbb_From_TextUpdate;
+                cbb_Destination.TextUpdate += Cbb_Destination_TextUpdate;
 
                 isListGenerated = true;
             }
+
+        }
+
+        private void Cbb_Destination_TextUpdate(object sender, EventArgs e)
+        {
+            Filter(cbb_Destination);
+        }
+
+        private void Cbb_From_TextUpdate(object sender, EventArgs e)
+        {
+            Filter(cbb_From);
         }
 
         private void cbb_Destination_MouseClick(object sender, MouseEventArgs e)
@@ -116,10 +133,36 @@ namespace Ticketing_Project
             if (cbb_TripType.SelectedIndex == 1)
             {
                 dtp_ReturnDate.Enabled = true;
-            } else
+            }
+            else
             {
                 dtp_ReturnDate.Enabled = false;
             }
+        }
+
+        // Method for filtering the locations
+        private void Filter(ComboBox box)
+        {
+            string currentText = box.Text;
+
+            var filteredLocation = locations
+                .Where(item => item.IndexOf(currentText, StringComparison.OrdinalIgnoreCase) >= 0)
+                .ToList();
+
+
+            // Update the list
+            box.DataSource = filteredLocation;
+            // Keep the text
+            box.Text = currentText;
+            box.SelectionStart = currentText.Length;
+            box.SelectionLength = 0;
+
+            // Cursor countermeasure due to flickering when typing in combo box
+            if (!box.DroppedDown)
+            {
+                box.DroppedDown = true;
+            }
+            Cursor.Current = Cursors.Default;
         }
     }
 }

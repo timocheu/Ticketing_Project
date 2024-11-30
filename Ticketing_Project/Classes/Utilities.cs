@@ -60,6 +60,7 @@ namespace Ticketing_Project.Classes
         {
             // Latitude and Longitude
             // utilize distance formula for finding distance between two coordinates
+            // 5% Error Margin
             double x = Math.Pow((loc2.Latitude - loc1.Latitude), 2);
             double y = Math.Pow((loc2.Longitude - loc1.Longitude), 2);
             double distance = Math.Sqrt(x + y);
