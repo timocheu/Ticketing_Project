@@ -162,12 +162,15 @@ namespace Ticketing_Project.Classes
             }
         }
 
-        public void GenerateCityCountryList(ComboBox box)
+        public List<string> GenerateCityCountryList()
         {
+            List<string> list = new List<string>();
             foreach (var location in data) 
             {
-                box.Items.Add($"{location.City} ({location.Country})");
+                list.Add($"{location.City} ({location.Country})");
             }
+
+            return list;
         }
 
         public void ShowCheckout(Form form, Checkout checkout)

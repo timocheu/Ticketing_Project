@@ -16,6 +16,8 @@ namespace Ticketing_Project
     {
         bool isListGenerated = false;
         Utilities util = new();
+
+        List<string> locations;
         public Calculator()
         {
             InitializeComponent();
@@ -94,8 +96,12 @@ namespace Ticketing_Project
                 // Add the data to the utility
                 util.LinkData();
                 // Generate all the list
-                util.GenerateCityCountryList(cbb_From);
-                util.GenerateCityCountryList(cbb_Destination);
+                locations = util.GenerateCityCountryList();
+
+                // Add the locations as a datasource
+                cbb_From.DataSource = new List<string>(locations);
+                cbb_Destination.DataSource = new List<string>(locations);
+
                 isListGenerated = true;
             }
         }
