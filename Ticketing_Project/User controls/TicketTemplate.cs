@@ -73,7 +73,7 @@ namespace Ticketing_Project.User_controls
                 //ticket.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
                 //btn_Cancel.Show();
                 //btn_Print.Show();
-                MessageBox.Show("Printed!");
+                MessageBox.Show("Downloaded!");
             }
         }
     }

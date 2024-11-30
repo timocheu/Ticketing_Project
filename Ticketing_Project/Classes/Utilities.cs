@@ -81,7 +81,7 @@ namespace Ticketing_Project.Classes
 
         protected string RandomTripType()
         {
-            if (random.Next(1, 2) == 1)
+            if (random.Next(1, 5) == 1)
             {
                 return "Round Trip";
             }
@@ -91,12 +91,12 @@ namespace Ticketing_Project.Classes
 
         protected string RandomBoardClass()
         {
-            if (random.Next(1, 2) == 1)
+            if (random.Next(1, 5) == 1)
             {
-                return "Economy";
+                return "Business Class";
             }
 
-            return "Business Class";
+            return "Economy";
         }
 
         protected Location RandomLocation() 
