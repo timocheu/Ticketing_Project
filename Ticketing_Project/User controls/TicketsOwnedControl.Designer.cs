@@ -35,11 +35,12 @@
             // flow_TicketsOwned
             // 
             flow_TicketsOwned.AutoScroll = true;
-            flow_TicketsOwned.BackColor = System.Drawing.Color.White;
+            flow_TicketsOwned.BackColor = System.Drawing.Color.FromArgb(234, 234, 234);
+            flow_TicketsOwned.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             flow_TicketsOwned.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            flow_TicketsOwned.Location = new System.Drawing.Point(142, 83);
+            flow_TicketsOwned.Location = new System.Drawing.Point(75, 73);
             flow_TicketsOwned.Name = "flow_TicketsOwned";
-            flow_TicketsOwned.Size = new System.Drawing.Size(732, 566);
+            flow_TicketsOwned.Size = new System.Drawing.Size(825, 576);
             flow_TicketsOwned.TabIndex = 0;
             flow_TicketsOwned.WrapContents = false;
             // 
@@ -47,7 +48,7 @@
             // 
             lbl_PageTitle.AutoSize = true;
             lbl_PageTitle.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_PageTitle.Location = new System.Drawing.Point(288, 24);
+            lbl_PageTitle.Location = new System.Drawing.Point(292, 14);
             lbl_PageTitle.Name = "lbl_PageTitle";
             lbl_PageTitle.Size = new System.Drawing.Size(394, 56);
             lbl_PageTitle.TabIndex = 1;
@@ -58,9 +59,9 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Transparent;
-            BackgroundImage = Properties.Resources.FlightDealsBackground;
-            Controls.Add(lbl_PageTitle);
+            BackgroundImage = Properties.Resources.TicketsOwnedBackground;
             Controls.Add(flow_TicketsOwned);
+            Controls.Add(lbl_PageTitle);
             Name = "TicketsOwnedControl";
             Size = new System.Drawing.Size(989, 649);
             ResumeLayout(false);

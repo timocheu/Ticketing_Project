@@ -73,16 +73,6 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap BlueCurvedButton {
-            get {
-                object obj = ResourceManager.GetObject("BlueCurvedButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap BookingHistoryHighlighted {
             get {
                 object obj = ResourceManager.GetObject("BookingHistoryHighlighted", resourceCulture);
@@ -173,6 +163,16 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap CancelBookingButton {
+            get {
+                object obj = ResourceManager.GetObject("CancelBookingButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Card_Payment_Highlight {
             get {
                 object obj = ResourceManager.GetObject("Card_Payment_Highlight", resourceCulture);
@@ -226,6 +226,16 @@ namespace Ticketing_Project.Properties {
         public static System.Drawing.Bitmap Date_Selection {
             get {
                 object obj = ResourceManager.GetObject("Date Selection", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DownloadTicket {
+            get {
+                object obj = ResourceManager.GetObject("DownloadTicket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,9 +473,9 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap RedCurvedButton {
+        public static System.Drawing.Bitmap Ticket {
             get {
-                object obj = ResourceManager.GetObject("RedCurvedButton", resourceCulture);
+                object obj = ResourceManager.GetObject("Ticket", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,9 +493,9 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap TicketsOwnedHighLighted {
+        public static System.Drawing.Bitmap TicketsOwnedBackground {
             get {
-                object obj = ResourceManager.GetObject("TicketsOwnedHighLighted", resourceCulture);
+                object obj = ResourceManager.GetObject("TicketsOwnedBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,9 +503,9 @@ namespace Ticketing_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap TicketTemplateBackground {
+        public static System.Drawing.Bitmap TicketsOwnedHighLighted {
             get {
-                object obj = ResourceManager.GetObject("TicketTemplateBackground", resourceCulture);
+                object obj = ResourceManager.GetObject("TicketsOwnedHighLighted", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
