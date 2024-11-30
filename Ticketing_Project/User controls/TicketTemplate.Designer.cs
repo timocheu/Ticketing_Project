@@ -155,12 +155,12 @@
             // 
             // lbl_BoardingClass
             // 
-            lbl_BoardingClass.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            lbl_BoardingClass.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_BoardingClass.AutoSize = true;
             lbl_BoardingClass.BackColor = System.Drawing.Color.Transparent;
             lbl_BoardingClass.Font = new System.Drawing.Font("Poppins SemiBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lbl_BoardingClass.ForeColor = System.Drawing.Color.White;
-            lbl_BoardingClass.Location = new System.Drawing.Point(18, 0);
+            lbl_BoardingClass.Location = new System.Drawing.Point(34, 0);
             lbl_BoardingClass.Name = "lbl_BoardingClass";
             lbl_BoardingClass.Size = new System.Drawing.Size(265, 50);
             lbl_BoardingClass.TabIndex = 9;
@@ -206,7 +206,7 @@
             tbl_BoardingPassStablizer.ColumnCount = 1;
             tbl_BoardingPassStablizer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tbl_BoardingPassStablizer.Controls.Add(lbl_BoardingClass, 0, 0);
-            tbl_BoardingPassStablizer.Location = new System.Drawing.Point(431, 17);
+            tbl_BoardingPassStablizer.Location = new System.Drawing.Point(444, 19);
             tbl_BoardingPassStablizer.Name = "tbl_BoardingPassStablizer";
             tbl_BoardingPassStablizer.RowCount = 1;
             tbl_BoardingPassStablizer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
