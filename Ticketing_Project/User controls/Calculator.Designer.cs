@@ -186,8 +186,6 @@
             // 
             // cbb_From
             // 
-            cbb_From.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            cbb_From.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             cbb_From.BackColor = System.Drawing.Color.White;
             cbb_From.CausesValidation = false;
             cbb_From.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -204,8 +202,6 @@
             // 
             // cbb_Destination
             // 
-            cbb_Destination.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            cbb_Destination.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             cbb_Destination.BackColor = System.Drawing.Color.White;
             cbb_Destination.CausesValidation = false;
             cbb_Destination.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnl_FlightDetails = new System.Windows.Forms.Panel();
+            lbl_EachPerson = new System.Windows.Forms.Label();
             btn_Proceed = new System.Windows.Forms.Button();
             btn_Cancel = new System.Windows.Forms.Button();
             tbl_Total = new System.Windows.Forms.TableLayoutPanel();
@@ -45,7 +46,6 @@
             lbl_Destination = new System.Windows.Forms.Label();
             lbl_From = new System.Windows.Forms.Label();
             lbl_TotalTickets = new System.Windows.Forms.Label();
-            lbl_EachPerson = new System.Windows.Forms.Label();
             pnl_FlightDetails.SuspendLayout();
             tbl_Total.SuspendLayout();
             tbl_PriceDetails.SuspendLayout();
@@ -66,6 +66,18 @@
             pnl_FlightDetails.Name = "pnl_FlightDetails";
             pnl_FlightDetails.Size = new System.Drawing.Size(683, 768);
             pnl_FlightDetails.TabIndex = 0;
+            // 
+            // lbl_EachPerson
+            // 
+            lbl_EachPerson.AutoSize = true;
+            lbl_EachPerson.BackColor = System.Drawing.Color.Transparent;
+            lbl_EachPerson.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lbl_EachPerson.ForeColor = System.Drawing.Color.DarkGray;
+            lbl_EachPerson.Location = new System.Drawing.Point(194, 484);
+            lbl_EachPerson.Name = "lbl_EachPerson";
+            lbl_EachPerson.Size = new System.Drawing.Size(117, 25);
+            lbl_EachPerson.TabIndex = 17;
+            lbl_EachPerson.Text = "( Each Person )";
             // 
             // btn_Proceed
             // 
@@ -196,7 +208,7 @@
             tbl_Summary.Controls.Add(lbl_Destination, 0, 2);
             tbl_Summary.Controls.Add(lbl_From, 0, 1);
             tbl_Summary.Controls.Add(lbl_TotalTickets, 0, 0);
-            tbl_Summary.Location = new System.Drawing.Point(337, 223);
+            tbl_Summary.Location = new System.Drawing.Point(243, 223);
             tbl_Summary.Name = "tbl_Summary";
             tbl_Summary.RowCount = 7;
             tbl_Summary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.287344F));
@@ -206,7 +218,7 @@
             tbl_Summary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.2873478F));
             tbl_Summary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.2816334F));
             tbl_Summary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.2816334F));
-            tbl_Summary.Size = new System.Drawing.Size(218, 208);
+            tbl_Summary.Size = new System.Drawing.Size(312, 208);
             tbl_Summary.TabIndex = 0;
             // 
             // lbl_ReturnDate
@@ -214,7 +226,7 @@
             lbl_ReturnDate.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_ReturnDate.AutoSize = true;
             lbl_ReturnDate.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_ReturnDate.Location = new System.Drawing.Point(177, 183);
+            lbl_ReturnDate.Location = new System.Drawing.Point(271, 183);
             lbl_ReturnDate.Name = "lbl_ReturnDate";
             lbl_ReturnDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_ReturnDate.Size = new System.Drawing.Size(38, 25);
@@ -226,7 +238,7 @@
             lbl_PickUpDate.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_PickUpDate.AutoSize = true;
             lbl_PickUpDate.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_PickUpDate.Location = new System.Drawing.Point(177, 149);
+            lbl_PickUpDate.Location = new System.Drawing.Point(271, 149);
             lbl_PickUpDate.Name = "lbl_PickUpDate";
             lbl_PickUpDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_PickUpDate.Size = new System.Drawing.Size(38, 25);
@@ -239,7 +251,7 @@
             lbl_Distance.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_Distance.AutoSize = true;
             lbl_Distance.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Distance.Location = new System.Drawing.Point(177, 120);
+            lbl_Distance.Location = new System.Drawing.Point(271, 120);
             lbl_Distance.Name = "lbl_Distance";
             lbl_Distance.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_Distance.Size = new System.Drawing.Size(38, 25);
@@ -252,7 +264,7 @@
             lbl_Duration.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_Duration.AutoSize = true;
             lbl_Duration.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Duration.Location = new System.Drawing.Point(177, 91);
+            lbl_Duration.Location = new System.Drawing.Point(271, 91);
             lbl_Duration.Name = "lbl_Duration";
             lbl_Duration.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_Duration.Size = new System.Drawing.Size(38, 25);
@@ -265,7 +277,7 @@
             lbl_Destination.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_Destination.AutoSize = true;
             lbl_Destination.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_Destination.Location = new System.Drawing.Point(177, 62);
+            lbl_Destination.Location = new System.Drawing.Point(271, 62);
             lbl_Destination.Name = "lbl_Destination";
             lbl_Destination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_Destination.Size = new System.Drawing.Size(38, 25);
@@ -278,7 +290,7 @@
             lbl_From.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_From.AutoSize = true;
             lbl_From.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_From.Location = new System.Drawing.Point(177, 33);
+            lbl_From.Location = new System.Drawing.Point(271, 33);
             lbl_From.Name = "lbl_From";
             lbl_From.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_From.Size = new System.Drawing.Size(38, 25);
@@ -291,25 +303,13 @@
             lbl_TotalTickets.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_TotalTickets.AutoSize = true;
             lbl_TotalTickets.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_TotalTickets.Location = new System.Drawing.Point(177, 4);
+            lbl_TotalTickets.Location = new System.Drawing.Point(271, 4);
             lbl_TotalTickets.Name = "lbl_TotalTickets";
             lbl_TotalTickets.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             lbl_TotalTickets.Size = new System.Drawing.Size(38, 25);
             lbl_TotalTickets.TabIndex = 1;
             lbl_TotalTickets.Text = "N/A";
             lbl_TotalTickets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lbl_EachPerson
-            // 
-            lbl_EachPerson.AutoSize = true;
-            lbl_EachPerson.BackColor = System.Drawing.Color.Transparent;
-            lbl_EachPerson.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_EachPerson.ForeColor = System.Drawing.Color.DarkGray;
-            lbl_EachPerson.Location = new System.Drawing.Point(194, 484);
-            lbl_EachPerson.Name = "lbl_EachPerson";
-            lbl_EachPerson.Size = new System.Drawing.Size(117, 25);
-            lbl_EachPerson.TabIndex = 17;
-            lbl_EachPerson.Text = "( Each Person )";
             // 
             // CalculatorFlightDetails
             // 
