@@ -166,7 +166,7 @@ namespace Ticketing_Project.Classes
         {
             foreach (var location in data) 
             {
-                box.Items.Add($"{location.City} ({location.Country_Code})");
+                box.Items.Add($"{location.City} ({location.Country})");
             }
         }
 
