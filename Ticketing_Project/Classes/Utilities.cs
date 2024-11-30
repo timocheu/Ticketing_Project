@@ -140,7 +140,9 @@ namespace Ticketing_Project.Classes
                 ticket.DestinationCountry = loc2.Country;
                 ticket.DestinationCountryCode = loc2.Country_Code;
                 // Other flight details
+                // Randomize details
                 ticket.FlightDate = RandomDate();
+                ticket.ReturnDate = ticket.FlightDate.AddDays(random.Next(30, 90));
                 ticket.BoardClass = RandomBoardClass();
                 ticket.TripType = RandomTripType();
                 ticket.Distance = distance;
