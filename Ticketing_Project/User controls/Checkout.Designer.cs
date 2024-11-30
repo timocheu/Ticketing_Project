@@ -120,7 +120,7 @@
             btn_Proceed.Name = "btn_Proceed";
             btn_Proceed.Size = new System.Drawing.Size(152, 43);
             btn_Proceed.TabIndex = 14;
-            btn_Proceed.Text = "Proceed";
+            btn_Proceed.Text = "Confirm Booking";
             btn_Proceed.UseVisualStyleBackColor = false;
             btn_Proceed.Click += btn_Proceed_Click;
             // 
