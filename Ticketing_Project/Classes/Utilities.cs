@@ -13,7 +13,7 @@ namespace Ticketing_Project.Classes
     public class Utilities
     {
         // Randomizer
-        Random random = new Random();
+        public Random random = new Random();
 
         Places place = new Places();
         List<Location> data;
@@ -205,7 +205,7 @@ namespace Ticketing_Project.Classes
         public string RandomSeat()
         {
             string[] gates = { "A", "B", "C", "D", "E", "F", };
-            return $"{gates[random.Next(0, 5)]}-{random.Next(1, 100)}";
+            return $"{gates[random.Next(0, 5)]}-";
         }
     }
 }

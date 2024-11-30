@@ -31,7 +31,7 @@ namespace Ticketing_Project.User_controls
 
             // FLIGHT DETAILS
             lbl_Duration.Text = ticket.Duration;
-            lbl_Distance.Text = $"{ticket.Distance:F2}KM";
+            lbl_Distance.Text = ticket.Distance.ToString("N") + "KM";
             lbl_PickUpDate.Text = ticket.FlightDate.ToString();
 
             // BALANCE

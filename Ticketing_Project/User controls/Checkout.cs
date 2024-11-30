@@ -129,18 +129,17 @@ namespace Ticketing_Project.User_controls
             HomePage form = (HomePage)this.Parent;
             Ticket blankOwnerTicket = ticket;
 
-            // Create receipt and add data
-            Receipt receipt = new Receipt();
-            receipt.ReceiptID = random.Next(1, 1000);
-            receipt.CreationDate = DateTime.Now;
-            receipt.Passengers = passengers;
-            receipt.PaymentMethod = paymentMethod;
-            receipt.TripType = blankOwnerTicket.TripType;
-            receipt.Total = priceEachPerson * passengers;
+            // seat number
+            string seat = blankOwnerTicket.Seat;
+            int seatNum = ticket.random.Next(1, 50);
 
             // Add receipt and ticket to the homepage
             foreach (string name in Names)
             {
+                // Make the seats for multiple passengers consecutive
+                blankOwnerTicket.Seat = seat + seatNum.ToString();
+                seatNum++;
+
                 blankOwnerTicket.Owner = name;
                 TicketTemplate controlTicket = new TicketTemplate(blankOwnerTicket);
                 form.addTicket(controlTicket);
@@ -163,6 +162,16 @@ namespace Ticketing_Project.User_controls
                     form.addTicket(controlTicket);
                 }
             }
+
+            // Create receipt and add data
+            Receipt receipt = new Receipt();
+            receipt.ReceiptID = random.Next(1, 1000);
+            receipt.CreationDate = DateTime.Now;
+            receipt.Passengers = passengers;
+            receipt.PaymentMethod = paymentMethod;
+            receipt.TripType = blankOwnerTicket.TripType;
+            receipt.Total = priceEachPerson * passengers;
+
             // Add the receipt
             form.addReceipt(receipt);
 
