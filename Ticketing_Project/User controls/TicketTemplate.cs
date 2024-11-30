@@ -37,6 +37,12 @@ namespace Ticketing_Project.User_controls
             lbl_FlightNumber.Text = ticket.FlightNumber;
             lbl_TripType.Text = ticket.TripType;
             lbl_FlightDuration.Text = ticket.Duration;
+
+            // Add the return date if 
+            if (ticket.TripType == "Round Trip")
+            {
+                lbl_ReturnDate.Text = ticket.ReturnDate.ToShortDateString();
+            }
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)

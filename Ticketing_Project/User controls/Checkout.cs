@@ -136,31 +136,14 @@ namespace Ticketing_Project.User_controls
             // Add receipt and ticket to the homepage
             foreach (string name in Names)
             {
+                // Change the name of ticket
+                blankOwnerTicket.Owner = name;
                 // Make the seats for multiple passengers consecutive
                 blankOwnerTicket.Seat = seat + seatNum.ToString();
                 seatNum++;
 
-                blankOwnerTicket.Owner = name;
                 TicketTemplate controlTicket = new TicketTemplate(blankOwnerTicket);
                 form.addTicket(controlTicket);
-
-                if (ticket.TripType == "Round Trip")
-                {
-                    // Store in temporary variables
-                    string tmpFrom = blankOwnerTicket.From;
-                    string tmpFromCountry = blankOwnerTicket.FromCountry;
-                    string tmpFromCountryCode = blankOwnerTicket.FromCountryCode;
-                    // Perform swap
-                    blankOwnerTicket.From = blankOwnerTicket.Destination;
-                    blankOwnerTicket.FromCountry = blankOwnerTicket.DestinationCountry;
-                    blankOwnerTicket.FromCountryCode = blankOwnerTicket.DestinationCountryCode;
-
-                    blankOwnerTicket.Destination = tmpFrom;
-                    blankOwnerTicket.DestinationCountry = tmpFromCountry;
-                    blankOwnerTicket.DestinationCountryCode = tmpFromCountryCode;
-                    controlTicket = new TicketTemplate(blankOwnerTicket);
-                    form.addTicket(controlTicket);
-                }
             }
 
             // Create receipt and add data

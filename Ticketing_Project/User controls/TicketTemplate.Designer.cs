@@ -220,9 +220,9 @@
             lbl_ReturnDate.Font = new System.Drawing.Font("Poppins", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             lbl_ReturnDate.Location = new System.Drawing.Point(582, 266);
             lbl_ReturnDate.Name = "lbl_ReturnDate";
-            lbl_ReturnDate.Size = new System.Drawing.Size(71, 39);
+            lbl_ReturnDate.Size = new System.Drawing.Size(57, 39);
             lbl_ReturnDate.TabIndex = 13;
-            lbl_ReturnDate.Text = "DATE";
+            lbl_ReturnDate.Text = "N/A";
             lbl_ReturnDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TicketTemplate
