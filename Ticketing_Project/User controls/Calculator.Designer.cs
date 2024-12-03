@@ -183,6 +183,7 @@
             dtp_FlightDate.Size = new System.Drawing.Size(121, 35);
             dtp_FlightDate.TabIndex = 6;
             dtp_FlightDate.Value = new System.DateTime(2024, 11, 23, 21, 20, 48, 0);
+            dtp_FlightDate.ValueChanged += dtp_FlightDate_ValueChanged;
             // 
             // cbb_From
             // 

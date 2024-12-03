@@ -24,7 +24,9 @@ namespace Ticketing_Project
 
             // Limit the minimum flight date
             dtp_FlightDate.MinDate = DateTime.Now;
+            dtp_ReturnDate.MinDate = dtp_FlightDate.Value.AddDays(14);
             // Limit flight reservation for 3years
+            dtp_FlightDate.MaxDate = DateTime.Now.AddDays(1000);
             dtp_FlightDate.MaxDate = DateTime.Now.AddDays(1000);
         }
 
@@ -163,6 +165,12 @@ namespace Ticketing_Project
                 box.DroppedDown = true;
             }
             Cursor.Current = Cursors.Default;
+        }
+
+        private void dtp_FlightDate_ValueChanged(object sender, EventArgs e)
+        {
+            // Minimum return date of 2 weeks
+            dtp_ReturnDate.MinDate = dtp_ReturnDate.Value.AddDays(14);
         }
     }
 }
