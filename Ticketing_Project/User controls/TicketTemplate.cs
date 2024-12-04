@@ -73,7 +73,12 @@ namespace Ticketing_Project.User_controls
                 // Reshow buttons
                 btn_Cancel.Show();
                 btn_Print.Show();
-                MessageBox.Show("Downloaded!");
+                MessageBox.Show(
+                    "The ticket has been downloaded successfully!", 
+                    "Download Status",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
             }
         }
     }
