@@ -169,36 +169,41 @@
             // 
             // btn_Cancel
             // 
-            btn_Cancel.BackgroundImage = Properties.Resources.CancelBookingButton;
+            btn_Cancel.BackgroundImage = Properties.Resources.Button_RedButtonStrokeOnly;
             btn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_Cancel.FlatAppearance.BorderSize = 0;
             btn_Cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             btn_Cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_Cancel.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            btn_Cancel.ForeColor = System.Drawing.Color.White;
-            btn_Cancel.Location = new System.Drawing.Point(497, 348);
+            btn_Cancel.Font = new System.Drawing.Font("Poppins SemiBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btn_Cancel.ForeColor = System.Drawing.Color.FromArgb(206, 9, 2);
+            btn_Cancel.Location = new System.Drawing.Point(444, 327);
             btn_Cancel.Name = "btn_Cancel";
-            btn_Cancel.Size = new System.Drawing.Size(100, 40);
+            btn_Cancel.Size = new System.Drawing.Size(130, 40);
             btn_Cancel.TabIndex = 11;
+            btn_Cancel.Text = "CANCEL";
+            btn_Cancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btn_Cancel.UseVisualStyleBackColor = true;
             btn_Cancel.Click += btn_Cancel_Click;
             // 
             // btn_Print
             // 
-            btn_Print.BackgroundImage = Properties.Resources.DownloadTicket;
-            btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            btn_Print.BackColor = System.Drawing.Color.FromArgb(0, 113, 188);
+            btn_Print.BackgroundImage = Properties.Resources.WhiteCornedButtons32x;
+            btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             btn_Print.FlatAppearance.BorderSize = 0;
             btn_Print.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             btn_Print.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             btn_Print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_Print.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn_Print.Font = new System.Drawing.Font("Poppins SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_Print.ForeColor = System.Drawing.Color.White;
-            btn_Print.Location = new System.Drawing.Point(603, 348);
+            btn_Print.Location = new System.Drawing.Point(583, 327);
             btn_Print.Name = "btn_Print";
             btn_Print.Size = new System.Drawing.Size(130, 40);
             btn_Print.TabIndex = 12;
-            btn_Print.UseVisualStyleBackColor = true;
+            btn_Print.Text = "DOWNLOAD";
+            btn_Print.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btn_Print.UseVisualStyleBackColor = false;
             btn_Print.Click += btn_Print_Click;
             // 
             // tbl_BoardingPassStablizer
@@ -206,7 +211,7 @@
             tbl_BoardingPassStablizer.ColumnCount = 1;
             tbl_BoardingPassStablizer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tbl_BoardingPassStablizer.Controls.Add(lbl_BoardingClass, 0, 0);
-            tbl_BoardingPassStablizer.Location = new System.Drawing.Point(444, 19);
+            tbl_BoardingPassStablizer.Location = new System.Drawing.Point(433, 19);
             tbl_BoardingPassStablizer.Name = "tbl_BoardingPassStablizer";
             tbl_BoardingPassStablizer.RowCount = 1;
             tbl_BoardingPassStablizer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));

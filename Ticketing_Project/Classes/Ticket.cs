@@ -35,4 +35,15 @@ namespace Ticketing_Project.Classes
         public string FlightNumber { get; set; }
         public bool isDeal { get; set; }
     }
+
+    // Class for Downlaoding
+    public static class DownloadExtensions
+    {
+        public static Bitmap CaptureToImage(this Control control)
+        {
+            Bitmap bitmap = new Bitmap(control.Width, control.Height);
+            control.DrawToBitmap(bitmap, new Rectangle(0, 0, bitmap.Width, bitmap.Height));
+            return bitmap;
+        }
+    }
 }

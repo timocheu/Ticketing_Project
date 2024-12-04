@@ -11,16 +11,6 @@ using Ticketing_Project.Classes;
 
 namespace Ticketing_Project.User_controls
 {
-    // Class for Downlaoding
-    public static class DownloadExtensions
-    {
-        public static Bitmap CaptureToImage(this Control control)
-        {
-            Bitmap bitmap = new Bitmap(control.Width, control.Height);
-            control.DrawToBitmap(bitmap, new Rectangle(0, 0, bitmap.Width, bitmap.Height));
-            return bitmap;
-        }
-    }
     public partial class TicketTemplate : UserControl
     {
         Ticket thisTicket;
