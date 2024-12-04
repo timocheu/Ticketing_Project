@@ -172,12 +172,10 @@
             btn_Cancel.BackgroundImage = Properties.Resources.Button_RedButtonStrokeOnly;
             btn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btn_Cancel.FlatAppearance.BorderSize = 0;
-            btn_Cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            btn_Cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_Cancel.Font = new System.Drawing.Font("Poppins SemiBold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_Cancel.ForeColor = System.Drawing.Color.FromArgb(206, 9, 2);
-            btn_Cancel.Location = new System.Drawing.Point(444, 327);
+            btn_Cancel.Location = new System.Drawing.Point(449, 327);
             btn_Cancel.Name = "btn_Cancel";
             btn_Cancel.Size = new System.Drawing.Size(130, 40);
             btn_Cancel.TabIndex = 11;
@@ -192,12 +190,10 @@
             btn_Print.BackgroundImage = Properties.Resources.WhiteCornedButtons32x;
             btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             btn_Print.FlatAppearance.BorderSize = 0;
-            btn_Print.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            btn_Print.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             btn_Print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_Print.Font = new System.Drawing.Font("Poppins SemiBold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btn_Print.ForeColor = System.Drawing.Color.White;
-            btn_Print.Location = new System.Drawing.Point(583, 327);
+            btn_Print.Location = new System.Drawing.Point(590, 327);
             btn_Print.Name = "btn_Print";
             btn_Print.Size = new System.Drawing.Size(130, 40);
             btn_Print.TabIndex = 12;
