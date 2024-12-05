@@ -14,7 +14,6 @@ namespace Ticketing_Project
 {
     public partial class Form_Login : Form
     {
-        readonly public Utilities utility = new Utilities();
         readonly Account dummyAcc = new Account("Timotheo", "tim@gmail.com", "1234");
         HomePage home;
         // Use the Timers's timer

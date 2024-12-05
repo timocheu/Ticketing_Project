@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Ticketing_Project.Classes
 {
-    public class Ticket : Utilities
+    public class Ticket
     {
         //CardDeal temp = new CardDeal(price, tripType,loc1.City, loc2.City, "Tuesday, November 4th", duration, boardClass);
         public string Owner { get; set; }
@@ -36,14 +36,4 @@ namespace Ticketing_Project.Classes
         public bool isDeal { get; set; }
     }
 
-    // Class for Downlaoding
-    public static class DownloadExtensions
-    {
-        public static Bitmap CaptureToImage(this Control control)
-        {
-            Bitmap bitmap = new Bitmap(control.Width, control.Height);
-            control.DrawToBitmap(bitmap, new Rectangle(0, 0, bitmap.Width, bitmap.Height));
-            return bitmap;
-        }
-    }
 }

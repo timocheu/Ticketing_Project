@@ -14,9 +14,6 @@ namespace Ticketing_Project.User_controls
 {
     public partial class Checkout : UserControl
     {
-        // Utility variable
-        Random random = new Random();
-
         // Data of flight details
         public Ticket ticket;
         public int passengers;
@@ -131,7 +128,7 @@ namespace Ticketing_Project.User_controls
 
             // seat number
             string seat = blankOwnerTicket.Seat;
-            int seatNum = ticket.random.Next(1, 50);
+            int seatNum = FlightRandomizer.random.Next(1, 50);
 
             // Add receipt and ticket to the homepage
             foreach (string name in Names)
@@ -148,7 +145,7 @@ namespace Ticketing_Project.User_controls
 
             // Create receipt and add data
             Receipt receipt = new Receipt();
-            receipt.ReceiptID = random.Next(1, 1000);
+            receipt.ReceiptID = FlightRandomizer.random.Next(1, 1000);
             receipt.CreationDate = DateTime.Now;
             receipt.Passengers = passengers;
             receipt.PaymentMethod = paymentMethod;

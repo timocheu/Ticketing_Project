@@ -13,20 +13,18 @@ namespace Ticketing_Project
 {
     public partial class CalculatorAndFlightDeals : UserControl
     {
-        Utilities util = new Utilities();
         public CalculatorAndFlightDeals()
         {
             InitializeComponent();
             // Link data
-            util.LinkData();
-            util.GenerateFlashDeals(flow_Deals);
+            Utilities.GenerateFlashDeals(flow_Deals);
         }
 
         private void btn_RefreshDeals_Click(object sender, EventArgs e)
         {
             // Clear the last deals then add new
             flow_Deals.Controls.Clear();
-            util.GenerateFlashDeals(flow_Deals);
+            Utilities.GenerateFlashDeals(flow_Deals);
         }
     }
 }

@@ -13,8 +13,8 @@ namespace Ticketing_Project.User_controls
 {
     public partial class CalculatorFlightDetails : UserControl
     {
-        Ticket _ticket;
-        double _price;
+        readonly Ticket _ticket;
+        readonly double _price;
         public CalculatorFlightDetails(Ticket ticket, int passengers, double price)
         {
             InitializeComponent();
@@ -63,7 +63,7 @@ namespace Ticketing_Project.User_controls
         {
             this.Hide();
             Checkout checkout = new Checkout(int.Parse(lbl_TotalTickets.Text), _ticket, (int)_price);
-            _ticket.ShowCheckout(FindForm(), checkout);
+            Utilities.ShowCheckout(FindForm(), checkout);
         }
     }
 }

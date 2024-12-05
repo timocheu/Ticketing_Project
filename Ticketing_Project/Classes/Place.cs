@@ -11,9 +11,10 @@ using System.Globalization;
 
 namespace Ticketing_Project.Classes
 {
-    public class Places
+    static class Places
     {
-        public List<Location> GetLocationList()
+        public static List<Location> AllLocation = GetLocationList();
+        static List<Location> GetLocationList()
         {
             List<Location> data;
             using (var stream = new StreamReader(@$"{Environment.CurrentDirectory}\\..\..\\..\\Resources\\world_cities_geoname.csv"))

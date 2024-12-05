@@ -32,14 +32,14 @@ namespace Ticketing_Project
         private void btn_BookFlight_Click(object sender, EventArgs e)
         {
 
-            ticket.Seat = ticket.RandomSeat();
-            ticket.Gate = ticket.RandomGate();
-            ticket.FlightNumber = ticket.RandomTerminal();
+            ticket.Seat = FlightRandomizer.RandomSeat();
+            ticket.Gate = FlightRandomizer.RandomGate();
+            ticket.FlightNumber = FlightRandomizer.RandomTerminal();
 
             CalculatorFlightDetails details = new CalculatorFlightDetails(ticket, 1, price);
 
             var form = Application.OpenForms.Cast<Form>().Last();
-            ticket.ShowFlightDetails(form, details);
+            Utilities.ShowFlightDetails(form, details);
         }
     }
 }

@@ -15,8 +15,6 @@ namespace Ticketing_Project
     public partial class Calculator : UserControl
     {
         bool isListGenerated = false;
-        Utilities util = new();
-
         List<string> locations;
         public Calculator()
         {
@@ -56,8 +54,8 @@ namespace Ticketing_Project
             int indexDestination = locations.IndexOf(cbb_Destination.Text);
             // Store the details in the calculator in object
             Ticket ticket = new Ticket();
-            Location loc1 = util.GetLocation(indexFrom);
-            Location loc2 = util.GetLocation(indexDestination);
+            Location loc1 = Places.AllLocation[indexFrom];
+            Location loc2 = Places.AllLocation[indexDestination];
 
             // LOCATION (FROM)
             ticket.From = loc1.City;
@@ -74,30 +72,28 @@ namespace Ticketing_Project
             ticket.ReturnDate = dtp_ReturnDate.Value;
             ticket.BoardClass = cbb_BoardClass.Text;
             ticket.TripType = cbb_TripType.Text;
-            ticket.Seat = ticket.RandomSeat();
-            ticket.Gate = ticket.RandomGate();
-            ticket.FlightNumber = ticket.RandomTerminal();
+            ticket.Seat = FlightRandomizer.RandomSeat();
+            ticket.Gate = FlightRandomizer.RandomGate();
+            ticket.FlightNumber = FlightRandomizer.RandomTerminal();
 
 
 
-            ticket.Distance = ticket.CalculateDistance(loc1, loc2);
-            ticket.Duration = ticket.CalculateDuration(ticket.Distance);
-            double price = ticket.GeneratePrice(ticket.Distance, ticket.BoardClass, ticket.TripType);
+            ticket.Distance = FlightMath.CalculateDistance(loc1, loc2);
+            ticket.Duration = FlightMath.CalculateDuration(ticket.Distance);
+            double price = FlightMath.CalculatePrice(ticket.Distance, ticket.BoardClass, ticket.TripType);
 
             CalculatorFlightDetails details = new CalculatorFlightDetails(ticket, passengers, (int)price);
 
             var form = Application.OpenForms.Cast<Form>().Last();
-            util.ShowFlightDetails(form, details);
+            Utilities.ShowFlightDetails(form, details);
         }
 
         private void cbb_From_MouseClick(object sender, MouseEventArgs e)
         {
             if (!isListGenerated)
             {
-                // Add the data to the utility
-                util.LinkData();
                 // Generate all the list
-                locations = util.GenerateCityCountryList();
+                locations = Utilities.GenerateCityCountryList();
 
                 // Add the locations as a datasource
                 cbb_From.DataSource = new List<string>(locations);
