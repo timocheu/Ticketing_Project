@@ -8,7 +8,7 @@ namespace Ticketing_Project.Classes
 {
     static class FlightMath
     {
-        static public double CalculatePrice(double distance, string boardClass, string TripType, bool deal = false)
+        public static double CalculatePrice(double distance, string boardClass, string TripType, bool deal = false)
         {
             int trips = 1;
             double multiplier;
@@ -41,7 +41,7 @@ namespace Ticketing_Project.Classes
             return Math.Truncate(price * .2);
         }
 
-        static public double CalculateDistance(Location loc1, Location loc2)
+        public static double CalculateDistance(Location loc1, Location loc2)
         {
             // Latitude and Longitude
             // utilize distance formula for finding distance between two coordinates
@@ -54,7 +54,7 @@ namespace Ticketing_Project.Classes
             return distance * 111;
         }
 
-        static public string CalculateDuration(double distance)
+        public static string CalculateDuration(double distance)
         {
             // Average plane speed km/h
             double hours = distance / 880;

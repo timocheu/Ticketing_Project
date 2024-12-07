@@ -20,7 +20,7 @@ namespace Ticketing_Project.Classes
             return bitmap;
         }
         
-        static public void GenerateFlashDeals(FlowLayoutPanel panel)
+        public static void GenerateFlashDeals(FlowLayoutPanel panel)
         {
             // Number of flash deals
             const int numCards = 10;
@@ -36,7 +36,7 @@ namespace Ticketing_Project.Classes
             }
         }
 
-        static public void ShowTicketsOwned(FlowLayoutPanel panel, List<Ticket> ownedTicket)
+        public static void ShowTicketsOwned(FlowLayoutPanel panel, List<Ticket> ownedTicket)
         {
             foreach (Ticket ticket in ownedTicket)
             {
@@ -45,7 +45,7 @@ namespace Ticketing_Project.Classes
             }
         }
 
-        static public List<string> GenerateCityCountryList()
+        public static List<string> GenerateCityCountryList()
         {
             List<string> list = new List<string>();
             foreach (var location in Places.AllLocation)
@@ -56,13 +56,13 @@ namespace Ticketing_Project.Classes
             return list;
         }
 
-        static public void ShowCheckout(Form form, Checkout checkout)
+        public static void ShowCheckout(Form form, Checkout checkout)
         {
             form.Controls.Add(checkout);
             checkout.BringToFront();
         }
 
-        static public void ShowFlightDetails(Form form, CalculatorFlightDetails FlightDetails)
+        public static void ShowFlightDetails(Form form, CalculatorFlightDetails FlightDetails)
         {
             form.Controls.Add(FlightDetails);
             FlightDetails.BringToFront();
