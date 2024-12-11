@@ -122,7 +122,7 @@ namespace Ticketing_Project.User_controls
                 }
             }
 
-            // Select homepage form
+            // Select homepage form, and downcast
             HomePage form = (HomePage)this.Parent;
             Ticket blankOwnerTicket = ticket;
 
