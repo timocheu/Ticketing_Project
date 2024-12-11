@@ -38,14 +38,12 @@
             pb_Logo = new System.Windows.Forms.PictureBox();
             pnl_Content = new System.Windows.Forms.Panel();
             tbl_Account = new System.Windows.Forms.TableLayoutPanel();
-            pb_Account = new System.Windows.Forms.PictureBox();
             lbl_AccountEmail = new System.Windows.Forms.Label();
             pnl_NavigationBar.SuspendLayout();
             pnl_NavigationButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pb_Logo).BeginInit();
             pnl_Content.SuspendLayout();
             tbl_Account.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pb_Account).BeginInit();
             SuspendLayout();
             // 
             // pnl_NavigationBar
@@ -137,10 +135,8 @@
             // tbl_Account
             // 
             tbl_Account.BackColor = System.Drawing.Color.Transparent;
-            tbl_Account.ColumnCount = 2;
+            tbl_Account.ColumnCount = 1;
             tbl_Account.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.6714554F));
-            tbl_Account.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.3285427F));
-            tbl_Account.Controls.Add(pb_Account, 1, 0);
             tbl_Account.Controls.Add(lbl_AccountEmail, 0, 0);
             tbl_Account.Location = new System.Drawing.Point(562, 12);
             tbl_Account.Name = "tbl_Account";
@@ -149,27 +145,15 @@
             tbl_Account.Size = new System.Drawing.Size(477, 58);
             tbl_Account.TabIndex = 2;
             // 
-            // pb_Account
-            // 
-            pb_Account.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            pb_Account.BackColor = System.Drawing.Color.Transparent;
-            pb_Account.Image = Properties.Resources.ic_baseline_account_circle_32x;
-            pb_Account.Location = new System.Drawing.Point(383, 3);
-            pb_Account.Name = "pb_Account";
-            pb_Account.Size = new System.Drawing.Size(91, 52);
-            pb_Account.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            pb_Account.TabIndex = 0;
-            pb_Account.TabStop = false;
-            // 
             // lbl_AccountEmail
             // 
             lbl_AccountEmail.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             lbl_AccountEmail.AutoSize = true;
             lbl_AccountEmail.BackColor = System.Drawing.Color.Transparent;
-            lbl_AccountEmail.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            lbl_AccountEmail.Location = new System.Drawing.Point(309, 0);
+            lbl_AccountEmail.Font = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbl_AccountEmail.Location = new System.Drawing.Point(398, 0);
             lbl_AccountEmail.Name = "lbl_AccountEmail";
-            lbl_AccountEmail.Size = new System.Drawing.Size(68, 58);
+            lbl_AccountEmail.Size = new System.Drawing.Size(76, 58);
             lbl_AccountEmail.TabIndex = 1;
             lbl_AccountEmail.Text = "Email";
             lbl_AccountEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -191,7 +175,6 @@
             pnl_Content.ResumeLayout(false);
             tbl_Account.ResumeLayout(false);
             tbl_Account.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pb_Account).EndInit();
             ResumeLayout(false);
         }
 
@@ -201,7 +184,6 @@
         private System.Windows.Forms.Panel pnl_Content;
         private System.Windows.Forms.Panel pnl_NavigationButtons;
         private System.Windows.Forms.Label lbl_AccountEmail;
-        private System.Windows.Forms.PictureBox pb_Account;
         private System.Windows.Forms.TableLayoutPanel tbl_Account;
         private System.Windows.Forms.Label lbl_btnNavHome;
         private System.Windows.Forms.Label lbl_btnBookingHistory;
