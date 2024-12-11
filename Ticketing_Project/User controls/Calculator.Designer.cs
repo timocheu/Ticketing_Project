@@ -199,6 +199,7 @@
             cbb_From.Name = "cbb_From";
             cbb_From.Size = new System.Drawing.Size(355, 42);
             cbb_From.TabIndex = 4;
+            cbb_From.KeyPress += cbb_From_KeyPress;
             cbb_From.MouseClick += cbb_From_MouseClick;
             // 
             // cbb_Destination
@@ -214,6 +215,7 @@
             cbb_Destination.Name = "cbb_Destination";
             cbb_Destination.Size = new System.Drawing.Size(355, 42);
             cbb_Destination.TabIndex = 5;
+            cbb_Destination.KeyPress += cbb_Destination_KeyPress;
             cbb_Destination.MouseClick += cbb_Destination_MouseClick;
             // 
             // lbl_TripType

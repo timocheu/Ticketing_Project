@@ -199,5 +199,25 @@ namespace Ticketing_Project
                 MessageBoxIcon.Error
                 );
         }
+
+        private void cbb_From_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Only allow alphabet
+            // Char 8 is the ascii number of backspace
+            if (!Char.IsLetter(e.KeyChar) && !Char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbb_Destination_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Only allow alphabet
+            // Char 8 is the ascii number of backspace
+            if (!Char.IsLetter(e.KeyChar) && !Char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
