@@ -30,12 +30,6 @@ namespace Ticketing_Project
 
         private void btn_Calculate_Click(object sender, EventArgs e)
         {
-            // Check if FROM and DESTINATION is the same
-            if (cbb_From.Text == cbb_Destination.Text)
-            {
-                MessageBox.Show("Invalid: Please choose different destination");
-                return;
-            }
             // Restrictions
             // Check if every combo box is filled
             var comboBox = this.Controls.OfType<ComboBox>();
@@ -44,7 +38,7 @@ namespace Ticketing_Project
             {
                 if (String.IsNullOrEmpty(field.Text))
                 {
-                    MessageBox.Show("Please complete the following fields to continue.");
+                    ErrMessage("Please complete the following fields to continue.");
                     return;
                 }
             }
@@ -52,6 +46,30 @@ namespace Ticketing_Project
             // Get the index and use it to get the location object
             int indexFrom = locations.IndexOf(cbb_From.Text);
             int indexDestination = locations.IndexOf(cbb_Destination.Text);
+
+            if (indexFrom == -1 && indexDestination == -1)
+            {
+                ErrMessage("Both locations doesn't exist.");
+                return;
+            }
+            else if (indexDestination == -1)
+            {
+                ErrMessage("The desination doesn't exist.");
+                return;
+            }
+            else if (indexFrom == -1)
+            {
+                ErrMessage("The from or current location doesn't exist.");
+                return;
+            }
+
+            // Check if FROM and DESTINATION is the same
+            if (cbb_From.Text == cbb_Destination.Text)
+            {
+                ErrMessage("Invalid: Please choose different destination");
+                return;
+            }
+
             // Store the details in the calculator in object
             Ticket ticket = new Ticket();
             Location loc1 = Places.AllLocation[indexFrom];
@@ -170,6 +188,16 @@ namespace Ticketing_Project
         {
             // Minimum return date of 2 weeks
             dtp_ReturnDate.MinDate = dtp_ReturnDate.Value.AddDays(14);
+        }
+
+        private void ErrMessage(string err)
+        {
+            MessageBox.Show(
+                err,
+                "Invalid Selection",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+                );
         }
     }
 }
