@@ -143,11 +143,14 @@ namespace Ticketing_Project
         {
             string currentText = box.Text;
 
-            var filteredLocation = locations
+            List<string> filteredLocation = locations
                 .Where(item => item.IndexOf(currentText, StringComparison.OrdinalIgnoreCase) >= 0)
                 .ToList();
 
-
+            if (filteredLocation.Count == 0)
+            {
+                return;
+            }
             // Update the list
             box.DataSource = filteredLocation;
             // Keep the text
