@@ -50,6 +50,7 @@
             btn_ConfirmBooking.TabIndex = 15;
             btn_ConfirmBooking.Text = "Confirm Booking";
             btn_ConfirmBooking.UseVisualStyleBackColor = false;
+            btn_ConfirmBooking.Click += btn_ConfirmBooking_Click;
             // 
             // btn_Cancel
             // 
@@ -64,8 +65,9 @@
             btn_Cancel.Name = "btn_Cancel";
             btn_Cancel.Size = new System.Drawing.Size(152, 43);
             btn_Cancel.TabIndex = 16;
-            btn_Cancel.Text = "Cancel";
+            btn_Cancel.Text = "Return";
             btn_Cancel.UseVisualStyleBackColor = false;
+            btn_Cancel.Click += btn_Cancel_Click;
             // 
             // lbl_TermsAndAgreements
             // 
@@ -98,6 +100,7 @@
             Controls.Add(btn_ConfirmBooking);
             Name = "TermsAndAgreements";
             Size = new System.Drawing.Size(614, 258);
+            Load += TermsAndAgreements_Load;
             ResumeLayout(false);
             PerformLayout();
         }

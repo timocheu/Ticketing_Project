@@ -120,7 +120,7 @@
             btn_Proceed.Name = "btn_Proceed";
             btn_Proceed.Size = new System.Drawing.Size(152, 43);
             btn_Proceed.TabIndex = 14;
-            btn_Proceed.Text = "Confirm Booking";
+            btn_Proceed.Text = "Proceed";
             btn_Proceed.UseVisualStyleBackColor = false;
             btn_Proceed.Click += btn_Proceed_Click;
             // 
@@ -583,6 +583,7 @@
             lbl_BookedSuccessfully.Size = new System.Drawing.Size(480, 76);
             lbl_BookedSuccessfully.TabIndex = 1;
             lbl_BookedSuccessfully.Text = "Booked Successfully!";
+            lbl_BookedSuccessfully.Visible = false;
             // 
             // Checkout
             // 
@@ -617,8 +618,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnl_CheckoutSection;
         private System.Windows.Forms.Label lbl_Payment;
         private System.Windows.Forms.Label lbl_SubDescription;
         private System.Windows.Forms.Button btn_CardPayment;
@@ -656,6 +655,7 @@
         private System.Windows.Forms.Panel pnl_BookingSummary;
         private System.Windows.Forms.Panel pnl_PassengerOption;
         private System.Windows.Forms.Button btn_RemovePassenger;
-        private System.Windows.Forms.Label lbl_BookedSuccessfully;
+        public System.Windows.Forms.Panel pnl_CheckoutSection;
+        public System.Windows.Forms.Label lbl_BookedSuccessfully;
     }
 }

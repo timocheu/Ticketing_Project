@@ -14,16 +14,22 @@ namespace Ticketing_Project.User_controls
 {
     public partial class Checkout : UserControl
     {
+
         // Data of flight details
         public Ticket ticket;
         public int passengers;
         public int priceEachPerson;
+        TermsAndAgreements terms = new TermsAndAgreements();
         // FALSE = MOBILE PAYMENT, TRUE = CARD PAYMENT
         string paymentMethod = "Mobile";
 
         public Checkout(int Passengers, Ticket _ticket, int price)
         {
             InitializeComponent();
+            // Hide the terms first
+            terms.Hide();
+            this.Controls.Add(terms);
+
             // Pass the data
             ticket = _ticket;
             passengers = Passengers;
@@ -104,7 +110,23 @@ namespace Ticketing_Project.User_controls
             btn_CardPayment.BackgroundImage = Properties.Resources.Card_Payment_Lowlight;
         }
 
-        private void btn_Proceed_Click(object sender, EventArgs e)
+        private void reCalculateTotal()
+        {
+            lbl_TotalTicketDisplay.Text = passengers.ToString();
+            lbl_TotalDisplay.Text = "₱" + (passengers * priceEachPerson).ToString("N");
+        }
+        public void HideCheckoutSectionPanel(object sender, ElapsedEventArgs e)
+        {
+            // Hide the control
+            // Use invoke for safely handling the threads
+            this.Invoke(new Action(() =>
+            {
+                this.Hide();
+                pnl_CheckoutSection.Show();
+            }));
+        }
+
+        public void btn_Proceed_Click(object sender, EventArgs e)
         {
             List<string> Names = new List<string>();
             foreach (Control control in flow_Passengers.Controls)
@@ -121,74 +143,18 @@ namespace Ticketing_Project.User_controls
                     Names.Add(PassengerInput.Text);
                 }
             }
+            // Set the data
+            terms._names = Names;
+            terms._ticket = ticket;
+            terms._passengers = passengers;
+            terms._priceEachPerson = priceEachPerson;
+            terms._paymentMethod = paymentMethod;
 
-            // Select homepage form, and downcast
-            HomePage form = (HomePage)this.Parent;
-            Ticket blankOwnerTicket = ticket;
-
-            // seat number
-            string seat = blankOwnerTicket.Seat;
-            int seatNum = FlightRandomizer.random.Next(1, 50);
-
-            // Add receipt and ticket to the homepage
-            foreach (string name in Names)
-            {
-                // Change the name of ticket
-                blankOwnerTicket.Owner = name;
-                // Make the seats for multiple passengers consecutive
-                blankOwnerTicket.Seat = seat + seatNum.ToString();
-                seatNum++;
-
-                TicketTemplate controlTicket = new TicketTemplate(blankOwnerTicket);
-                form.addTicket(controlTicket);
-            }
-
-            // Create receipt and add data
-            Receipt receipt = new Receipt();
-            receipt.ReceiptID = FlightRandomizer.random.Next(1, 1000);
-            receipt.CreationDate = DateTime.Now;
-            receipt.Passengers = passengers;
-            receipt.PaymentMethod = paymentMethod;
-            receipt.TripType = blankOwnerTicket.TripType;
-            receipt.Total = priceEachPerson * passengers;
-
-            // Add the receipt
-            form.addReceipt(receipt);
-
-            // Add timer for the booked successfully to show for 1.5s then hide
-            System.Timers.Timer timer = new System.Timers.Timer(1500);
-            // Repeat only once
-            timer.AutoReset = false;
-            timer.Elapsed += HideCheckoutSectionPanel;
-
-            // Hide the checkout
+            // Hide current panel
             pnl_CheckoutSection.Hide();
-            // Start the timer
-            timer.Start();
-        }
-
-        private void HideCheckoutSectionPanel(object sender, ElapsedEventArgs e)
-        {
-            // Hide the control
-            // Use invoke for safely handling the threads
-            this.Invoke(new Action(() =>
-            {
-                this.Hide();
-                pnl_CheckoutSection.Show();
-            }));
-        }
-
-        private Ticket createTicket(string name)
-        {
-            Ticket newTicket = ticket;
-            newTicket.Owner = name;
-            return newTicket;
-        }
-
-        private void reCalculateTotal()
-        {
-            lbl_TotalTicketDisplay.Text = passengers.ToString();
-            lbl_TotalDisplay.Text = "₱" + (passengers * priceEachPerson).ToString("N");
+            
+            // Show terms and agreements
+            terms.Show();
         }
     }
 }
