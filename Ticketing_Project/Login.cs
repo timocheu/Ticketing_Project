@@ -26,12 +26,12 @@ namespace Ticketing_Project
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            if (!IsValidEmail(txt_LoginEmail.Text)) 
+            if (!IsValidEmail(txt_LoginEmail.Text))
             {
                 lbl_Incorrect.Text = "Please enter a valid email";
                 TimerIncorrect();
                 return;
-            } 
+            }
 
 
             if (txt_LoginEmail.Text != dummyAcc.Email && txt_PasswordLogin.Text != dummyAcc.Password)
@@ -49,7 +49,7 @@ namespace Ticketing_Project
             else if (txt_LoginEmail.Text != dummyAcc.Email)
             {
                 lbl_Incorrect.Text = "Incorrect Email";
-                TimerIncorrect(); 
+                TimerIncorrect();
                 return;
             }
 
@@ -119,7 +119,7 @@ namespace Ticketing_Project
         private void txt_LoginEmail_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Call login method
-            if (e.KeyChar == (char) Keys.Enter)
+            if (e.KeyChar == (char)Keys.Enter)
             {
                 btn_Login_Click(sender, e);
             }
@@ -128,10 +128,20 @@ namespace Ticketing_Project
         private void Txt_PasswordLogin_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Call login method
-            if (e.KeyChar == (char) Keys.Enter)
+            if (e.KeyChar == (char)Keys.Enter)
             {
                 btn_Login_Click(sender, e);
             }
+        }
+
+        private void lbl_ForgotPassword_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Your Password: 1234",
+                "Account Password Recover",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+                );
         }
     }
 } 
