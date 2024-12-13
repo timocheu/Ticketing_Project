@@ -187,7 +187,7 @@ namespace Ticketing_Project
         private void dtp_FlightDate_ValueChanged(object sender, EventArgs e)
         {
             // Minimum return date of 2 weeks
-            dtp_ReturnDate.MinDate = dtp_ReturnDate.Value.AddDays(14);
+            dtp_ReturnDate.MinDate = dtp_FlightDate.Value.AddDays(14);
         }
 
         private void ErrMessage(string err)
